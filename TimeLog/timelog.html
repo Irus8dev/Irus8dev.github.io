@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irus 8 Time Tracking</title>
+</head>
+
+<!-- <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .app-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    /* Occupy full width */
+    height: 100vh;
+    /* Occupy full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Push elements to top and bottom */
+  }
+
+  .form {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sessions {
+    margin-top: 20px;
+    overflow-y: auto;
+    /* Add scrollbar for session list if it overflows */
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+</style> -->
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .app-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+    /* Add margin to the notepad container */
+    margin: 5px;
+    /* Subtract double margin from the total width */
+    width: calc(100% - 10px);
+    /* Subtract margins and button height from viewport height */
+    height: calc(100vh - 10px - 40px);
+    /* Add vertical scrollbar if content overflows */
+    overflow-y: hidden;
+    /* Add position to align save button */
+    position: relative;
+
+
+    /* 
+    padding: 20px;
+    width: 400px; */
+  }
+
+  .form {
+    display: flex;
+    gap: 10px;
+  }
+
+  .sessions {
+    margin-top: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+</style>
+
+<body>
+  <div class="app-container">
+    <h1>Time Tracking App</h1>
+    <div class="form">
+      <input type="text" id="project" placeholder="Project">
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>
+    </div>
+    <div class="sessions">
+      <ul id="sessionList"></ul>
+    </div>
+    <div class="totals">
+      <h2>Project Totals</h2>
+      <ul id="totalsList"></ul>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+<script>
+  const projectInput = document.getElementById("project");
+  const startButton = document.getElementById("startButton");
+  const stopButton = document.getElementById("stopButton");
+  const sessionList = document.getElementById("sessionList");
+
+  let currentSession = null;
+
+  startButton.addEventListener("click", () => {
+    const project = projectInput.value;
+    const startTime = new Date().toLocaleTimeString();
+    currentSession = { project, startTime };
+  });
+
+  stopButton.addEventListener("click", () => {
+    if (currentSession) {
+      const endTime = new Date().toLocaleTimeString();
+      currentSession.endTime = endTime;
+      const sessionItem = document.createElement("li");
+      sessionItem.textContent = `${currentSession.project} - ${currentSession.startTime} to ${currentSession.endTime}`;
+      sessionList.appendChild(sessionItem);
+      currentSession = null;
+      updateTotals();
+    }
+  });
+
+
+  const totalsList = document.getElementById("totalsList");
+
+  function updateTotals() {
+    const projectTotals = {};
+
+    sessions.forEach(session => {
+      if (session.endTime) {
+        const { project, startTime, endTime } = session;
+        const start = new Date(`2000-01-01 ${startTime}`);
+        const end = new Date(`2000-01-01 ${endTime}`);
+        const duration = (end - start) / (1000 * 60 * 60); // Calculate duration in hours
+
+        if (!projectTotals[project]) {
+          projectTotals[project] = 0;
+        }
+        projectTotals[project] += duration;
+      }
+    });
+
+    totalsList.innerHTML = "";
+    Object.keys(projectTotals).forEach(project => {
+      const totalHours = projectTotals[project].toFixed(2);
+      const totalItem = document.createElement("li");
+      totalItem.textContent = `${project}: ${totalHours} hours`;
+      totalsList.appendChild(totalItem);
+    });
+
+
+  }
+
+  function displaySessions() {
+    sessionList.innerHTML = "";
+    sessions.forEach(session => {
+      const sessionItem = document.createElement("li");
+      const endTime = session.endTime ? `to ${session.endTime}` : "In Progress";
+
+      // Add visual indicator for start and stop status
+      const statusIndicator = session.endTime ? "🔴" : "🟢";
+      sessionItem.textContent = `${statusIndicator} ${session.project} - ${session.startTime} ${endTime}`;
+
+      sessionList.appendChild(sessionItem);
+    });
+    updateTotals();
+  }
+
+  // Initial display of sessions and totals when the page loads
+  displaySessions();
+  updateTotals();
+
+</script>

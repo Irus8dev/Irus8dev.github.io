@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Irus8 Notepad</title>
+  <title>Irus8 Notepad </title>
 </head>
 
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -23,16 +23,15 @@
     /* Subtract double margin from the total width */
     width: calc(100% - 10px);
     /* Subtract margins and button height from viewport height */
-     height: calc(100vh - 10px - 40px);
+     height: calc(100vh - 10px);
     /* Add vertical scrollbar if content overflows */
     overflow-y: hidden;
-    /* Add position to align save button */
-    position: relative;
+    font-size: small;
   }
 
   textarea {
     width: calc(100% - 30px);
-    height: 95%;
+    height: 92%;
     border: 1px solid #ccc;
     padding: 10px;
     resize: none;
@@ -41,22 +40,14 @@
     font-size: 14px;
   }
 
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 3px;
-  }
 </style>
 
 <body>
   <div class="notepad">
-    <p style="color:rgb(184, 184, 184); line-height: 0.4;">Irus 8 Notepad</p>
+    <p style="color:rgb(184, 184, 184); line-height: 0.4;">Irus8 Notepad - <a href="https://www.chalardservices.com/">Visit Site</a> </p>
     <textarea id="content" placeholder="Enter your notes here"></textarea>
-    </br>
-    <!-- <button id="saveButton">Save</button> -->
+    <!-- </br> -->
+    <p style="font-size: smaller; margin: 0px;">Copyright 2023 Chalard LLC.</p>
   </div>
 </body>
 
@@ -75,13 +66,6 @@
       contentTextarea.value = savedContent;
     }
   });
-
-  // // Save content to local storage when the save button is clicked
-  // saveButton.addEventListener("click", () => {
-  //   const content = contentTextarea.value;
-  //   localStorage.setItem("savedContent", content);
-  //   alert("Content saved!");
-  // });
 
   // Save content to local storage with auto-save delay
   contentTextarea.addEventListener("input", () => {
