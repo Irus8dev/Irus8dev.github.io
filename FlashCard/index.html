@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
     <div class="centered-div">
         <input type="file" id="csv-import" accept=".csv">
+        <select id="csv-file-selector" style="float: right;margin-right: 10px;max-width: 300px;">
+            <option value="">Samples...</option>
+            <option value="">Fun Facts</option>
+            <option value="resource/samples/Facts about Thailand.csv">Facts About Thailand</option>
+            <option value="">Staying Healthy</option>
+            <!-- Add more options as needed -->
+        </select>
         <hr>
         <button id="next-flashcard" style="float: right;margin-right: 10px;">Next ></button>
         <label for="auto-advance">Auto-advance on wrong answers:</label>
