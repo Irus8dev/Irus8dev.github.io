@@ -20,10 +20,11 @@
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     /* Add margin to the notepad container */
     margin: 5px;
+    /* min-width: 300px; */
     /* Subtract double margin from the total width */
     width: calc(100% - 10px);
     /* Subtract margins and button height from viewport height */
-     height: calc(100vh - 10px);
+    height: calc(100vh - 10px);
     /* Add vertical scrollbar if content overflows */
     overflow-y: hidden;
     font-size: small;
@@ -39,15 +40,18 @@
     /*don't allow sizing*/
     font-size: 14px;
   }
-
 </style>
 
 <body>
   <div class="notepad">
-    <p style="color:rgb(184, 184, 184); line-height: 0.4;">Irus8 Notepad - <a href="https://www.chalardservices.com/" target="_blank">Visit Site</a>Visit Site</a> </p>
+    <div style="color:rgb(184, 184, 184);margin: 0px 10px 10px 10px">Irus8 Notepad - <a
+        href="https://www.chalardservices.com/" target="_blank">Visit Site</a>
+      <!-- Date/time button -->
+      <button id="insert-date-btn" style="float: right;margin: 0px 10px;">Date/Time</button>
+    </div>
+    <!-- Text area -->
     <textarea id="content" placeholder="Enter your notes here"></textarea>
-    <!-- </br> -->
-    <p style="font-size: smaller; margin: 0px;">Copyright 2023 Chalard LLC.</p>
+    <p style="font-size: smaller; margin: 0px;">Copyright 2024 Chalard LLC.</p>
   </div>
 </body>
 
@@ -55,6 +59,17 @@
   const contentTextarea = document.getElementById("content");
   const saveButton = document.getElementById("saveButton");
   let autoSaveTimeout;
+
+  // Insert Date/time button event
+  document.getElementById('insert-date-btn').addEventListener('click', function () {
+    const textArea = document.getElementById('content');
+    const now = new Date();
+    const dateString = now.toLocaleString(); // Converts the date and time to a string
+    textArea.value = dateString + '\n' + textArea.value; // Inserts the date string at the top
+    textArea.focus();
+    // Place the cursor at the end of the inserted date/time
+    textArea.setSelectionRange(dateString.length + 1, dateString.length + 1);
+  });
 
   // // Load saved content from local storage
   // contentTextarea.value = localStorage.getItem("savedContent") || "";
