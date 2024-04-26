@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irus8 Notepad </title>
+</head>
+
+<style>
+  body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .notepad {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    /* Add margin to the notepad container */
+    margin: 5px;
+    /* Subtract double margin from the total width */
+    width: calc(100% - 10px);
+    /* Subtract margins and button height from viewport height */
+     height: calc(100vh - 10px);
+    /* Add vertical scrollbar if content overflows */
+    overflow-y: hidden;
+    font-size: small;
+  }
+
+  textarea {
+    width: calc(100% - 30px);
+    height: 92%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+    cursor: text;
+    /*don't allow sizing*/
+    font-size: 14px;
+  }
+
+</style>
+
+<body>
+  <div class="notepad">
+    <p style="color:rgb(184, 184, 184); line-height: 0.4;">Irus8 Notepad - <a href="https://www.chalardservices.com/" target="_blank">Visit Site</a>Visit Site</a> </p>
+    <textarea id="content" placeholder="Enter your notes here"></textarea>
+    <!-- </br> -->
+    <p style="font-size: smaller; margin: 0px;">Copyright 2023 Chalard LLC.</p>
+  </div>
+</body>
+
+<script>
+  const contentTextarea = document.getElementById("content");
+  const saveButton = document.getElementById("saveButton");
+  let autoSaveTimeout;
+
+  // // Load saved content from local storage
+  // contentTextarea.value = localStorage.getItem("savedContent") || "";
+
+  // Load saved content from local storage when the page loads
+  window.addEventListener("load", () => {
+    const savedContent = localStorage.getItem("savedContent");
+    if (savedContent) {
+      contentTextarea.value = savedContent;
+    }
+  });
+
+  // Save content to local storage with auto-save delay
+  contentTextarea.addEventListener("input", () => {
+    clearTimeout(autoSaveTimeout);
+    autoSaveTimeout = setTimeout(() => {
+      const content = contentTextarea.value;
+      localStorage.setItem("savedContent", content);
+      console.log("Auto-saved content!");
+    }, 1000); // Set the delay in milliseconds (e.g., 1000ms = 1 second)
+  });
+
+  // Insert a tab character when the tab key is pressed inside the textarea
+  contentTextarea.addEventListener("keydown", (e) => {
+    if (e.key === "Tab") {
+      e.preventDefault(); // Prevent the default tab behavior (focus switching)
+      const start = contentTextarea.selectionStart;
+      const end = contentTextarea.selectionEnd;
+      const value = contentTextarea.value;
+
+      // Insert the tab character at the cursor position
+      contentTextarea.value = value.substring(0, start) + "\t" + value.substring(end);
+
+      // Set the cursor position after the inserted tab
+      contentTextarea.selectionStart = contentTextarea.selectionEnd = start + 1;
+    }
+  });
+
+</script>
+
+</html>
