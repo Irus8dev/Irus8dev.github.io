@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irus8Dev Flashcard</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="centered-div">
+        <input type="file" id="csv-import" accept=".csv">
+        <hr>
+        <button id="next-flashcard" style="float: right;margin-right: 10px;">Next ></button>
+        <label for="auto-advance">Auto-advance on wrong answers:</label>
+        <input type="checkbox" id="auto-advance" checked>
+        <br>
+        <div id="flashcard-container"></div>
+        <div id="answer-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
