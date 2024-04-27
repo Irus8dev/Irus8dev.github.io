@@ -66,9 +66,12 @@
     const now = new Date();
     const dateString = now.toLocaleString(); // Converts the date and time to a string
     textArea.value = dateString + '\n' + textArea.value; // Inserts the date string at the top
-    textArea.focus();
-    // Place the cursor at the end of the inserted date/time
-    textArea.setSelectionRange(dateString.length + 1, dateString.length + 1);
+
+    textArea.focus(); // Sets the focus back to the text area
+    // Set the cursor position right after the date/time line
+    const cursorPosition = dateString.length + 1; // +1 for the newline character
+    textArea.setSelectionRange(cursorPosition, cursorPosition);
+    textArea.scrollTop = 0; // Scrolls to the top of the text area
   });
 
   // // Load saved content from local storage
