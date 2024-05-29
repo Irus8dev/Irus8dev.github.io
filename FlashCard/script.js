@@ -9,34 +9,40 @@ document.addEventListener('DOMContentLoaded', function () {
   const csvImport = document.getElementById('csv-import');
   const nextFlashcardButton = document.getElementById('next-flashcard');
   const csvFile = document.getElementById('csv-file-selector');
+  const gflashHeader = document.getElementById('flash-header');
 
   //loadCSVFileNames('resource/Flashcard Samples/filelist.txt');
 
   //-- When user select the sample
   csvFile.addEventListener('change', function (event) {
-    csvImport.value = '';
     const selectedFile = event.target.value;
+
+    gflashHeader.textContent = getFileName(selectedFile);
+  
     fetch(selectedFile)
       .then(response => response.blob())
       .then(blob => {
         readCsvFile(blob);
       })
       .catch(error => console.error('Error fetching CSV:', error));
+    csvFile.value = '';
+    csvImport.value = '';
 
   });
 
   //-- When user uploades the file.
   csvImport.addEventListener('change', function (e) {
     const lfile = e.target.files[0];
-    csvFile.value = '';
+    gflashHeader.textContent = getFileName(lfile.name);
 
     readCsvFile(lfile);
+    csvFile.value = '';
+    csvImport.value = '';
   });
 
   //-- read the file
   function readCsvFile(mfile) {
     const lreader = new FileReader();
-
     //-- reader event
     lreader.onload = function (e) {
 
@@ -62,6 +68,17 @@ document.addEventListener('DOMContentLoaded', function () {
     lreader.readAsText(mfile);
   }
 
+  //-- extract just the file name
+  function getFileName(mname) {
+    // Split the path by both backslash and forward slash
+    var parts = mname.split(/[/\\]/);
+    // Get the last part of the array (the file name with extension)
+    var fileNameWithExtension = parts[parts.length - 1];
+    // Remove the extension if needed
+    var fileName = fileNameWithExtension.split('.')[0];
+    return fileName;
+  }
+  
   //-- next button press
   nextFlashcardButton.addEventListener('click', function () {
     currentFlashcardIndex = getNextFlashcardIndex();
