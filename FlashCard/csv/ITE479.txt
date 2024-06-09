@@ -1,0 +1,7 @@
+csv/prjmgr/CH5 Project Scope Management.csv
+csv/prjmgr/CH6 Project Schedule Management.csv
+csv/prjmgr/CH8 Project Cost Management.csv
+csv/prjmgr/CH9 Project Quality Management.csv
+csv/prjmgr/CH10 Project Resource Management.csv
+csv/prjmgr/CH5-CH10.csv
+

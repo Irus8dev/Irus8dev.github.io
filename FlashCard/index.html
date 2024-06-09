@@ -4,32 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irus8Dev Flashcard</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Flashcard App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-    <div class="centered-div">
-        <input type="file" id="csv-import" accept=".csv">
-        <select id="csv-file-selector" style="float: right;margin-right: 10px;max-width: 300px;">
-            <option value="">Samples...</option>
-            <option value="resource/samples/Fun Facts.csv">Fun Facts</option>
-            <option value="resource/samples/Facts about Thailand.csv">Facts About Thailand</option>
-            <option value="resource/samples/Staying Healthy.csv">Staying Healthy</option>
-            <!-- Add more options as needed -->
-        </select>
-        <h3 id="flash-header">Irus8dev Flashcard App (Version 1.0)</h3>
-        <hr>
-        <button id="next-flashcard" style="float: right;margin-right: 10px;">Next ></button>
-        <label for="auto-advance">Auto-advance on wrong answers:</label>
-        <input type="checkbox" id="auto-advance">
-        <br>
-        <div id="flashcard-container"></div>
-        <div id="answer-message"></div>
-        <hr>
-        <a target="_blank" href="csvformat.html">CSV Format Help</a>
+    <div class="container">
+        <header>
+            <h1 id="flash-header">Flashcard App</h1>
+        </header>
+        <div class="controls">
+            <div class="control-row">
+                <label for="csv-file-selector">Sample:</label>
+                <select id="csv-file-selector">
+                    <option value="">Sample...</option>
+                </select>
+                <button id="download-button" style="margin-right: 10px;" disabled>Download</button>
+                <label>-OR-</label>
+                <button id="custom-file-button" style="margin-left: 10px">Open...</button>
+                <input type="file" id="csv-import" accept=".csv" style="display: none;">
+            </div>
+            <div class="control-row">
+                <a target="_blank" href="csvformat.html">CSV Format Help</a>
+            </div>
+            <div class="control-row">
+                <label for="order-selector">Order:</label>
+                <select id="order-selector">
+                    <option value="sequential">Sequential</option>
+                    <option value="random">Random</option>
+                </select>
+                <label for="auto-advance" style="padding-left: 20px;">Advance on Wrong Answer</label>
+                <input type="checkbox" id="auto-advance">
+            </div>
+        </div>
+        <div id="flashcard-container" class="flashcard-container"></div>
+        <div id="answer-message" class="answer-message"></div>
+        <button id="next-flashcard" class="next-flashcard">Next</button>
     </div>
     <script src="script.js"></script>
 </body>

@@ -1,0 +1,20 @@
+What is AI prompt engineering?,Creating and refining prompts for AI;Building AI hardware;Writing AI algorithms;Training AI models,Creating and refining prompts for AI
+Why is prompt engineering important for AI?,It improves AI output quality;It increases AI speed;It reduces AI costs;It maintains AI hardware,It improves AI output quality
+What does GPT stand for?,Generative Pre-trained Transformer;General Purpose Technology;Graphic Processing Tool;Global Positioning Tracker,Generative Pre-trained Transformer
+What is the primary goal of prompt engineering?,To achieve desired AI responses;To train AI models;To design AI hardware;To reduce AI energy consumption,To achieve desired AI responses
+What is a prompt in AI?,A user input to guide AI;A type of AI model;AI training data;AI hardware component,A user input to guide AI
+What is one key aspect of a good prompt?,Clarity and specificity;Length and complexity;Ambiguity;Technical jargon,Clarity and specificity
+Why should prompts be clear and specific?,To reduce ambiguity in responses;To increase response length;To make AI slower;To confuse the AI,To reduce ambiguity in responses
+How can you refine a prompt for better AI output?,By iterating and testing;By ignoring feedback;By making it longer;By adding randomness,By iterating and testing
+What is a common mistake in prompt engineering?,Using vague language;Being too specific;Overloading with details;Using formal language,Using vague language
+What is a contextual prompt?,A prompt with background information;A random prompt;An unrelated prompt;A complex prompt,A prompt with background information
+What is the benefit of using examples in prompts?,To guide the AI response;To confuse the AI;To make the prompt longer;To test AI memory,To guide the AI response
+What is a zero-shot prompt?,A prompt without examples;A prompt with multiple examples;A prompt for image generation;A prompt for audio processing,A prompt without examples
+What is a one-shot prompt?,A prompt with one example;A prompt with two examples;A prompt for video processing;A prompt for text translation,A prompt with one example
+What is a few-shot prompt?,A prompt with multiple examples;A random prompt;A short prompt;A prompt for speech synthesis,A prompt with multiple examples
+Why is it important to consider the AI model's capabilities?,To align prompts with model strengths;To test AI weaknesses;To make prompts difficult;To reduce AI efficiency,To align prompts with model strengths
+What is prompt injection?,Embedding prompts within other text;Avoiding prompt testing;Ignoring AI feedback;Removing prompt examples,Embedding prompts within other text
+What is the purpose of prompt templates?,To standardize prompt creation;To make prompts random;To confuse the AI;To test AI limits,To standardize prompt creation
+How can prompt engineering impact AI bias?,By reducing bias through careful design;By increasing bias intentionally;By ignoring bias;By using random prompts,By reducing bias through careful design
+What is prompt chaining?,Linking multiple prompts for complex tasks;Breaking prompts into smaller parts;Randomizing prompt order;Ignoring prompt sequence,Linking multiple prompts for complex tasks
+Why is user feedback important in prompt engineering?,To refine and improve prompts;To disregard AI output;To make prompts longer;To reduce prompt clarity,To refine and improve prompts

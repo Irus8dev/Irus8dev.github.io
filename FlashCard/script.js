@@ -1,36 +1,67 @@
 document.addEventListener('DOMContentLoaded', function () {
   let flashcards = [];
+  let originalOrder = [];
   let currentFlashcardIndex = 0;
 
   // Initialize an object to track performance
   let performanceTracker = {};
 
   const flashcardContainer = document.getElementById('flashcard-container');
+  const customFileButton = document.getElementById('custom-file-button');
   const csvImport = document.getElementById('csv-import');
   const nextFlashcardButton = document.getElementById('next-flashcard');
   const csvFile = document.getElementById('csv-file-selector');
   const gflashHeader = document.getElementById('flash-header');
+  const orderSelector = document.getElementById('order-selector');
+  const downloadButton = document.getElementById('download-button');
 
-  //loadCSVFileNames('resource/Flashcard Samples/filelist.txt');
 
-  //-- When user select the sample
+  // Get the sample file list from the URL parameter
+  const params = new URLSearchParams(window.location.search);
+  var sampleFileList = params.get('samples') || 'samplefiles.txt';
+
+  //-- append the csv path "csv/samplefiles.txt"
+  sampleFileList = "csv/" + sampleFileList;
+
+  // Load sample files names
+  loadCSVFileNames(sampleFileList);
+
+  //-- When user selects the sample
   csvFile.addEventListener('change', function (event) {
     const selectedFile = event.target.value;
 
+    //-- ignore and empty value selection
+    if (!selectedFile) {
+      gflashHeader.textContent = "Flashcard App";
+      //-- clear the array
+      flashcards = [];
+      performanceTracker = {};
+      flashcardContainer.innerHTML = '<div class="flashcard-question"></div>';
+      //-- Disable download button
+      downloadButton.disabled = true;
+      return;
+    }
+
     gflashHeader.textContent = getFileName(selectedFile);
-  
+
     fetch(selectedFile)
       .then(response => response.blob())
       .then(blob => {
         readCsvFile(blob);
       })
       .catch(error => console.error('Error fetching CSV:', error));
-    csvFile.value = '';
+    
+    //-- enable download button
+    downloadButton.disabled = false;
     csvImport.value = '';
-
   });
 
-  //-- When user uploades the file.
+  //-- Custom button to trigger file input
+  customFileButton.addEventListener('click', function () {
+    csvImport.click();
+  });
+
+  //-- When user uploads the file.
   csvImport.addEventListener('change', function (e) {
     const lfile = e.target.files[0];
     gflashHeader.textContent = getFileName(lfile.name);
@@ -40,12 +71,26 @@ document.addEventListener('DOMContentLoaded', function () {
     csvImport.value = '';
   });
 
+  //-- Download button
+  downloadButton.addEventListener('click', function () {
+    const selectedFile = csvFile.value;
+
+    if (!selectedFile) {
+      alert('Please select a sample file to download.');
+      return;
+    }
+
+    const link = document.createElement('a');
+    link.href = selectedFile;
+    link.download = getFileName(selectedFile) + '.csv';
+    link.click();
+  });
+
   //-- read the file
   function readCsvFile(mfile) {
     const lreader = new FileReader();
     //-- reader event
     lreader.onload = function (e) {
-
       //-- clear the array
       flashcards = [];
       performanceTracker = {};
@@ -54,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const llines = ltext.split('\n');
 
       llines.forEach((line) => {
-
         // Remove quotes and trim each field
         const lfields = line.split(',').map(field => field.replace(/['"]+/g, '').trim());
         var [question, selections, correctAnswer] = lfields;
@@ -62,7 +106,15 @@ document.addEventListener('DOMContentLoaded', function () {
         flashcards.push({ question, selections: selections.split(';'), correctAnswer });
       });
 
-      shuffleArray(flashcards); // Shuffle the flashcards
+      // Store the original order
+      originalOrder = [...flashcards];
+
+      // Shuffle flashcards if random order is selected
+      if (orderSelector.value === 'random') {
+        shuffleArray(flashcards);
+      }
+
+      currentFlashcardIndex = 0; // Reset index
       displayFlashcard();
     };
     lreader.readAsText(mfile);
@@ -78,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var fileName = fileNameWithExtension.split('.')[0];
     return fileName;
   }
-  
+
   //-- next button press
   nextFlashcardButton.addEventListener('click', function () {
     currentFlashcardIndex = getNextFlashcardIndex();
@@ -93,19 +145,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const autoAdvance = document.getElementById('auto-advance').checked;
 
     //-- Answer Correctly
-    if (lselectedAnswer === lflashcard.correctAnswer) {
+    if (lselectedAnswer === replaceAndC(lflashcard.correctAnswer)) {
 
       updatePerformance(lflashcard.question, true);
 
       lanswerMessage.textContent = 'Correct!';
       lanswerMessage.style.color = 'green';
+      lanswerMessage.style.visibility = 'visible';
 
       // Optionally, set a timeout to clear the message after a few seconds
       setTimeout(() => {
         lanswerMessage.textContent = '';
+        lanswerMessage.style.visibility = 'hidden';
       }, 500);
-
-      // Update local storage for tracking
 
       // Advance to the next flashcard
       currentFlashcardIndex = getNextFlashcardIndex();
@@ -118,17 +170,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       lanswerMessage.textContent = 'The correct answer is: ' + replaceAndC(lflashcard.correctAnswer);
       lanswerMessage.style.color = 'red';
+      lanswerMessage.style.visibility = 'visible';
 
       // Optionally, set a timeout to clear the message after a few seconds
       setTimeout(() => {
         lanswerMessage.textContent = '';
+        lanswerMessage.style.visibility = 'hidden';
+        if (autoAdvance) {
+          // Advance to the next flashcard
+          currentFlashcardIndex = getNextFlashcardIndex();
+          displayFlashcard();
+        }
+
       }, 2000);
 
-      if (autoAdvance) {
-        // Advance to the next flashcard
-        currentFlashcardIndex = getNextFlashcardIndex();
-        displayFlashcard();
-      }
     }
   }
 
@@ -147,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function displayFlashcard() {
     const lflashcard = flashcards[currentFlashcardIndex];
-    //lflashcard.question;
     flashcardContainer.innerHTML = '<div class="flashcard-question">' + replaceAndC(lflashcard.question) + '</div>';
     lflashcard.selections.forEach((selection) => {
       const selectionContainer = document.createElement('div');
@@ -156,8 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const lbutton = document.createElement('button');
       if (!lflashcard.correctAnswer) {
         lbutton.className = 'buttton-selection-readonly';
-      }
-      else {
+      } else {
         lbutton.className = 'button-selection';
       }
       lbutton.textContent = replaceAndC(selection);
@@ -167,7 +220,6 @@ document.addEventListener('DOMContentLoaded', function () {
       flashcardContainer.appendChild(selectionContainer);
     });
   }
-
 
   // Function to update performance after each answer
   function updatePerformance(question, isCorrect) {
@@ -185,50 +237,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to get the next flashcard index based on performance
   function getNextFlashcardIndex() {
-
-    return (currentFlashcardIndex + 1) % flashcards.length;
-
-    let lminFrequency = Infinity;
-    let lnextIndex = currentFlashcardIndex;
-
-    //-- loop through each flashcard and see which ones are the weak ones 
-    flashcards.forEach((lflashcard, lindex) => {
-
-      //-- Get each matching performance item
-      const lperformance = performanceTracker[lflashcard.question];
-
-      //-- calculate the frequency (higher = more incorrect)
-      const lfrequency = lperformance ? (lperformance.incorrect - lperformance.correct) : 0;
-
-      //-- Select the flashcard with the highest frequency (most incorrect answers)
-      if (lfrequency > lminFrequency) {
-        lminFrequency = lfrequency;
-        lnextIndex = lindex;
-      }
-    });
-
-    return lnextIndex;
+    if (orderSelector.value === 'random') {
+      // Random order: get a random index
+      return Math.floor(Math.random() * flashcards.length);
+    } else {
+      // Sequential order: get the next index in sequence
+      return (currentFlashcardIndex + 1) % flashcards.length;
+    }
   }
-  
+
   // Function to load .csv file names into the dropdown ('path/to/files_list.txt')
   function loadCSVFileNames(mfilelist) {
     fetch(mfilelist)
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
       .then(text => {
         const lines = text.split('\n');
         const selectElement = document.getElementById('csv-file-selector');
+        selectElement.innerHTML = '<option value="">Sample...</option>'; // Reset the options
         lines.forEach(line => {
           if (line.trim().length > 0) {
             const option = document.createElement('option');
             option.value = line.trim();
-            option.textContent = line.trim();
+            option.textContent = getFileName(line.trim());
             selectElement.appendChild(option);
           }
         });
       })
-      .catch(error => console.error('Error loading file list:', error));
+      .catch(error => {
+        console.error('Error loading file list:', error);
+        // Clear the dropdown list
+        const selectElement = document.getElementById('csv-file-selector');
+        selectElement.innerHTML = '<option value="">Sample...</option>';
+      });
   }
-
+  // Add event listener to shuffle flashcards when the order is changed
+  orderSelector.addEventListener('change', function () {
+    if (orderSelector.value === 'random') {
+      shuffleArray(flashcards);
+    } else {
+      // Reset to sequential order by restoring the original order
+      flashcards = [...originalOrder];
+      currentFlashcardIndex = 0;
+    }
+    displayFlashcard();
+  });
 
 });
-

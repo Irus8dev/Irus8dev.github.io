@@ -1,0 +1,30 @@
+1. What is the process of planning schedule management?, Defining activities;Planning schedule management;Estimating activity durations;Controlling the schedule, Planning schedule management
+2. What is a Gantt chart used for in project management?, Estimating activity durations;Finding the critical path;Planning and tracking schedule information;Analyzing project risks, Planning and tracking schedule information
+3. Which scheduling method considers limited time when creating a project schedule?, PERT analysis;Critical chain scheduling;Gantt chart;Critical path analysis, Critical chain scheduling
+4. What does the symbol of a black diamond represent in a Gantt chart?, Milestones;Dependencies;Summary tasks;Durations, Milestones
+5. What is the critical path in project management?, Shortest path in the network diagram;Longest path in the network diagram;Path with most slack;Path with the least resources, Longest path in the network diagram
+6. What is a three-point estimate in activity duration estimation?, An estimate including optimistic&c most likely&c and pessimistic times;An estimate based on historical data;A single point estimate;An estimate based on expert judgment, An estimate including optimistic&c most likely&c and pessimistic times
+7. What is the purpose of a project buffer in critical chain scheduling?, To protect the project's due date;To allow for resource leveling;To extend the project duration;To identify critical tasks, To protect the project's due date
+8. What does PERT stand for?, Project Evaluation and Review Technique;Project Execution and Review Technique;Project Estimation and Review Technique;Project Evaluation and Resource Technique, Project Evaluation and Review Technique
+9. What is the goal of schedule control?, To create a project schedule;To find schedule changes;To determine project costs;To identify project risks, To find schedule changes
+10. Which rule prioritizes tasks with the shortest processing time?, EDD;FCFS;SOT;LCFS, SOT
+11. What is the term for additional time added before tasks on the critical path in critical chain scheduling?, Slack;Lag;Feeding buffer;Float, Feeding buffer
+12. How is variance calculated in PERT analysis?, (Optimistic Time + Most Likely Time + Pessimistic Time) / 6;Standard Deviation / 6;Standard Deviation * 2;(Standard Deviation)^2, (Standard Deviation)^2
+13. What is the formula for calculating a PERT estimate?, (Optimistic Time + 4 × Most Likely Time + Pessimistic Time) / 6;(Optimistic Time + Pessimistic Time) / 2;(Optimistic Time + Most Likely Time + Pessimistic Time) / 3;(Optimistic Time + Pessimistic Time) / 4, (Optimistic Time + 4 × Most Likely Time + Pessimistic Time) / 6
+14. Which tool is used to visually display the project's schedule information?, Burndown chart;Gantt chart;PERT chart;Network diagram, Gantt chart
+15. What does "LS" stand for in a network diagram?, Latest time to start activity;Last time to start activity;Latest time to finish activity;Last time to finish activity, Latest time to start activity
+16. What is the purpose of using milestones in a project schedule?, To track costs;To set schedule goals;To identify risks;To allocate resources, To set schedule goals
+17. What does the abbreviation "AOA" stand for?, Activity-on-node;Arrow-on-activity;Activity-on-arrow;Arrow-on-node, Activity-on-arrow
+18. Which method involves working on activities simultaneously to shorten the project schedule?, Crashing;Fast tracking;Resource leveling;Critical path analysis, Fast tracking
+19. In priority rules&c which rule is known as First Come&c First Served?, FCFS;EDD;SOT;LCFS, FCFS
+20. What does "ES" stand for in a network diagram?, Early start;End start;Early finish;End finish, Early start
+21. What is the main goal of developing a project schedule?, To allocate resources;To determine project scope;To create a realistic basis for monitoring progress;To identify project stakeholders, To create a realistic basis for monitoring progress
+22. What is the purpose of a burndown chart?, To track schedule changes;To display project scope;To track remaining work;To identify critical tasks, To track remaining work
+23. Which dependency type means that one task must finish before the next task can start?, Start-to-start;Finish-to-finish;Finish-to-start;Start-to-finish, Finish-to-start
+24. How is standard deviation calculated in PERT analysis?, (Pessimistic Time – Optimistic Time) / 4;(Optimistic Time + Pessimistic Time) / 6;(Pessimistic Time – Optimistic Time) / 6;(Optimistic Time + Most Likely Time) / 4, (Pessimistic Time – Optimistic Time) / 6
+25. Which scheduling method uses probabilistic time estimates?, Gantt chart;Critical chain scheduling;PERT;Critical path analysis, PERT
+26. What is the formula for calculating earliest finish (EF) in a network diagram?, ES + Duration;LS + Duration;LF + Duration;EF - Duration, ES + Duration
+27. In project management software&c what should be considered before using it?, Cost of software;User training;Compatibility;All of the above, All of the above
+28. What does the "LCFS" priority rule stand for?, Last Come&c First Served;Least Cost&c First Served;Last Cost&c First Served;Least Come&c First Served, Last Come&c First Served
+29. What is a common symbol for summary tasks in a Gantt chart?, Black diamond;Thick black bars;Light gray horizontal bars;Arrows, Thick black bars
+30. How is probability of finishing a project calculated in PERT analysis?, (Desired completion time – Expected completion time) / Sum of variances;(Optimistic Time + Pessimistic Time) / Expected completion time;(Pessimistic Time – Optimistic Time) / Expected completion time;(Desired completion time – Optimistic Time) / Sum of variances, (Desired completion time – Expected completion time) / Sum of variances
