@@ -1,0 +1,50 @@
+CH5-1. What is the main purpose of project scope management?,Ensuring project tasks are completed;Defining project objectives;Managing project costs;Tracking project schedule,Defining project objectives
+CH5-2. What is included in a project scope statement?,Project schedule;Project budget;Project constraints;Project scope statement,Project constraints
+CH5-3. What does a Work Breakdown Structure (WBS) represent?,Project schedule;Project costs;Project deliverables;Project risks,Project deliverables
+CH5-4. Which process involves defining and documenting stakeholder needs?,Planning scope management;Collecting requirements;Defining scope;Creating WBS,Collecting requirements
+CH5-5. What is the main tool used for creating a WBS?,Mind mapping;Benchmarking;Facilitated workshops;Decomposition,Decomposition
+CH5-6. Which process ensures that project deliverables meet the scope?,Planning scope management;Validating scope;Defining scope;Controlling scope,Validating scope
+CH5-7. What is scope creep?,Increasing project budget;Expanding project schedule;Uncontrolled changes in project scope;Decreasing project resources,Uncontrolled changes in project scope
+CH5-8. What document outlines how project scope will be managed?,Project charter;Scope management plan;Project schedule;Project budget,Scope management plan
+CH5-9. What is the first step in project scope management?,Planning scope management;Collecting requirements;Defining scope;Creating WBS,Planning scope management
+CH5-10. Which technique is used to compare project practices?,Benchmarking;Mind mapping;Facilitated workshops;Observation,Benchmarking
+CH6-1. What is the purpose of a Gantt chart?,Defining project scope;Tracking project schedule;Managing project budget;Evaluating project risks,Tracking project schedule
+CH6-2. What does CPM stand for?,Critical Path Management;Cost Performance Management;Critical Path Method;Cost Performance Method,Critical Path Method
+CH6-3. What is a milestone?,A project deliverable;A significant event;A project risk;A project constraint,A significant event
+CH6-4. What does PERT stand for?,Project Evaluation and Review Technique;Program Evaluation and Review Technique;Project Execution and Review Technique;Program Execution and Review Technique,Program Evaluation and Review Technique
+CH6-5. Which diagram shows the sequence of project activities?,Flowchart;Network diagram;Gantt chart;Mind map,Network diagram
+CH6-6. What is the main purpose of schedule management?,Defining project scope;Ensuring timely completion;Managing project costs;Tracking project risks,Ensuring timely completion
+CH6-7. What does the term "float" refer to in project scheduling?,Project risks;Resource allocation;Schedule flexibility;Budget variance,Schedule flexibility
+CH6-8. What is the critical path?,The longest path in a project schedule;The shortest path in a project schedule;The most expensive path in a project schedule;The least expensive path in a project schedule,The longest path in a project schedule
+CH6-9. What is a three-point estimate used for?,Estimating costs;Estimating activity durations;Estimating resource needs;Estimating project risks,Estimating activity durations
+CH6-10. What is the main output of the schedule control process?,Project charter;Updated project schedule;Scope statement;Project budget,Updated project schedule
+CH8-1. What is life cycle costing?,Managing project risks;Estimating total project costs;Evaluating project schedule;Managing project quality,Estimating total project costs
+CH8-2. What does EVM stand for?,Earned Value Management;Estimated Value Management;Evaluated Value Management;Effective Value Management,Earned Value Management
+CH8-3. What does the acronym AC stand for in EVM?,Actual Cost;Allocated Cost;Approved Cost;Accumulated Cost,Actual Cost
+CH8-4. What is a cost baseline?,The approved budget;The estimated project costs;The project schedule;The project risks,The approved budget
+CH8-5. Which process involves aggregating estimated costs?,Estimating costs;Determining the budget;Controlling costs;Planning cost management,Determining the budget
+CH8-6. What is the formula for Cost Performance Index (CPI)?,EV/AC;AC/EV;EV/PV;PV/EV,EV/AC
+CH8-7. What does variance analysis in cost management involve?,Evaluating project scope;Comparing planned and actual costs;Assessing project risks;Defining project objectives,Comparing planned and actual costs
+CH8-8. What is the purpose of cost control?,Managing project scope;Updating the cost baseline;Ensuring project costs are within budget;Tracking project schedule,Ensuring project costs are within budget
+CH8-9. What is a direct cost?,An overhead expense;A cost directly attributed to the project;A fixed cost;A variable cost,A cost directly attributed to the project
+CH8-10. What is the definition of planned value (PV)?,The actual cost incurred;The authorized budget for scheduled work;The value of work performed;The total project budget,The authorized budget for scheduled work
+CH9-1. What is the main goal of project quality management?,Ensuring project costs are minimized;Ensuring project scope is defined;Ensuring project meets customer needs;Ensuring project schedule is followed,Ensuring project meets customer needs
+CH9-2. What is Six Sigma?,A cost management technique;A quality control method;A scheduling tool;A scope management technique,A quality control method
+CH9-3. What does a control chart help to determine?,Project schedule;Quality control status;Project scope;Project budget,Quality control status
+CH9-4. What is a Pareto chart used for?,Identifying project risks;Tracking project schedule;Identifying the most significant factors;Managing project costs,Identifying the most significant factors
+CH9-5. What is a cause-and-effect diagram also known as?,Pareto chart;Control chart;Fishbone diagram;Flowchart,Fishbone diagram
+CH9-6. What is the first step in quality management planning?,Identifying quality standards;Developing a quality management plan;Conducting quality audits;Managing quality metrics,Identifying quality standards
+CH9-7. What is the purpose of quality assurance?,Ensuring project scope is defined;Preventing defects;Tracking project schedule;Managing project costs,Preventing defects
+CH9-8. What is the main output of quality control?,Project scope statement;Quality metrics;Acceptance decisions;Project budget,Acceptance decisions
+CH9-9. What is statistical sampling used for?,Estimating project costs;Evaluating project schedule;Assessing quality of a subset;Managing project scope,Assessing quality of a subset
+CH9-10. What is the role of a quality audit?,Reviewing project scope;Evaluating quality management activities;Managing project costs;Tracking project schedule,Evaluating quality management activities
+CH10-1. What is the main purpose of resource management?,Ensuring timely completion of project;Managing project scope;Tracking project costs;Utilizing resources effectively,Utilizing resources effectively
+CH10-2. What does RACI stand for?,Responsible&c Accountable&c Consulted&c Informed;Resource&c Allocation&c Coordination&c Implementation;Responsible&c Accountable&c Coordination&c Information;Resource&c Allocation&c Consulted&c Informed,Responsible&c Accountable&c Consulted&c Informed
+CH10-3. What is resource leveling?,Balancing resource availability;Reducing project scope;Increasing project costs;Tracking project schedule,Balancing resource availability
+CH10-4. Which process involves improving team competencies?,Planning resource management;Developing the project team;Acquiring resources;Controlling resources,Developing the project team
+CH10-5. What is the first step in resource management?,Acquiring resources;Planning resource management;Managing the project team;Estimating activity resources,Planning resource management
+CH10-6. What is the purpose of a resource histogram?,Tracking project costs;Managing project schedule;Visualizing resource allocation;Defining project scope,Visualizing resource allocation
+CH10-7. What does the term "conflict management" refer to?,Resolving project issues;Tracking project schedule;Managing project costs;Defining project scope,Resolving project issues
+CH10-8. What is a common technique for team building?,Scope management;Cost control;Social activities;Schedule tracking,Social activities
+CH10-9. What is emotional intelligence?,Managing project scope;Understanding and managing emotions;Tracking project costs;Scheduling project activities,Understanding and managing emotions
+CH10-10. What is the main output of controlling resources?,Updated resource plan;Project scope statement;Quality metrics;Project budget,Updated resource plan
