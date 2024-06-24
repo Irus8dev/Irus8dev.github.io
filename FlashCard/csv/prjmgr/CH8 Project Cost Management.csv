@@ -1,30 +1,20 @@
-1. What is the average cost overrun reported in a 2011 Harvard Business Review study?, 27 percent;20 percent;15 percent;10 percent, 27 percent
-2. What is the definition of cost in project management?, A resource sacrificed to achieve a specific something;A plan for project expenses;A method for managing project time;A tool for project estimation, A resource sacrificed to achieve a specific something
-3. Which process involves ensuring a project is completed within an approved budget?, Cost estimation;Budget planning;Cost control;Project cost management, Project cost management
-4. What does profit margin refer to?, Total revenue;Ratio of profits to revenues;Total expenses;Net profit, Ratio of profits to revenues
-5. What is life cycle costing?, Total cost of ownership;Cost of initial development;Cost of project closure;Cost of project approval, Total cost of ownership
-6. Which type of cost can be easily measured in dollars?, Intangible costs;Direct costs;Indirect costs;Tangible costs, Tangible costs
-7. What is a sunk cost?, Cost that can be recovered;Cost that cannot be recovered;Future cost;Estimated cost, Cost that cannot be recovered
-8. What is included in a cost management plan?, Units of measure;Project schedule;Risk assessment;Quality control, Units of measure
-9. When is a Rough Order of Magnitude (ROM) estimate typically done?, Very early in the project life cycle;During project execution;At project closure;During the project planning phase, Very early in the project life cycle
-10. What is the typical range for a budgetary cost estimate?, -50% to +100%;-10% to +25%;-5% to +10%;-20% to +30%, -10% to +25%
-11. What are analogous estimates based on?, Mathematical models;Previous similar projects;Detailed project analysis;Team experience, Previous similar projects
-12. Which estimate involves summing individual work items or activities?, Analogous estimate;Parametric estimate;Bottom-up estimate;Three-point estimate, Bottom-up estimate
-13. What is parametric estimating?, Using expert judgment;Using a mathematical model;Using previous project data;Using project scope, Using a mathematical model
-14. What is a common reason for inaccurate IT cost estimates?, Detailed analysis;Quick estimates;Experienced team;Accurate data, Quick estimates
-15. What is a cost baseline?, Maximum acceptable cost;Approved budget;Estimated cost;Project contingency, Approved budget
-16. What does Earned Value Management (EVM) involve?, Tracking project scope;Estimating future costs;Tracking actual cost and schedule;Managing project risks, Tracking actual cost and schedule
-17. How is Schedule Variance (SV) calculated in EVM?, SV = EV - AC;SV = PV - AC;SV = EV - PV;SV = PV - EV, SV = EV - PV
-18. What does Cost Performance Index (CPI) indicate?, Project's efficiency in budget use;Project's time efficiency;Project's scope efficiency;Project's quality, Project's efficiency in budget use
-19. What tool is commonly used for resource planning?, Gantt chart;Spreadsheet;Risk matrix;PERT chart, Spreadsheet
-20. What does ROI stand for?, Return on Investment;Rate of Implementation;Return on Income;Rate of Interest, Return on Investment
-21. Which company uses PM software to improve transparency of projects?, Microsoft;Apple;Pfizer;Google, Pfizer
-22. What is the main goal of controlling project costs?, Ensuring project quality;Managing project schedule;Monitoring cost performance;Estimating future costs, Monitoring cost performance
-23. What are direct costs?, Costs related to project overhead;Costs related to producing project products;Costs that cannot be recovered;Future costs, Costs related to producing project products
-24. What is included in the cost management plan's reporting formats?, Project timeline;Cost performance measurement rules;Risk management plan;Quality assurance plan, Cost performance measurement rules
-25. What is the purpose of cash flow analysis?, To determine project scope;To estimate annual costs and benefits;To assess project risks;To manage project schedule, To estimate annual costs and benefits
-26. What is the typical range for a definitive cost estimate?, -50% to +100%;-10% to +25%;-5% to +10%;-20% to +30%, -5% to +10%
-27. What is an example of an indirect cost?, Raw materials;Labor;Equipment;Utilities, Utilities
-28. How is the cost variance (CV) calculated in EVM?, CV = EV - AC;CV = PV - AC;CV = EV - PV;CV = PV - EV, CV = EV - AC
-29. What is the focus of earned value management (EVM)?, Managing project risks;Managing project scope;Tracking actual cost and schedule;Estimating future costs, Tracking actual cost and schedule
-30. Which software tool is commonly used for cost budgeting?, Risk matrix;Spreadsheet;Gantt chart;PERT chart, Spreadsheet
+1. What is life cycle costing?, Managing project risks;Estimating total project costs;Evaluating project schedule;Managing project quality, Estimating total project costs
+2. What does EVM stand for?, Earned Value Management;Estimated Value Management;Evaluated Value Management;Effective Value Management, Earned Value Management
+3. What is the formula for Cost Performance Index (CPI)?, EV/AC;AC/EV;EV/PV;PV/EV, EV/AC
+4. What is not a type of cost in project management?, Direct cost;Indirect cost;Variable cost;Quality cost, Quality cost
+5. What does the acronym AC stand for in EVM?, Actual Cost;Allocated Cost;Approved Cost;Accumulated Cost, Actual Cost
+6. What is a cost baseline?, The approved budget;The estimated project costs;The project schedule;The project risks, The approved budget
+7. What process involves aggregating estimated costs?, Estimating costs;Determining the budget;Controlling costs;Planning cost management, Determining the budget
+8. What is the formula for Schedule Performance Index (SPI)?, EV/AC;AC/EV;EV/PV;PV/EV, EV/PV
+9. What is the purpose of cost control?, Manage project scope;Update the cost baseline;Ensure project costs are within budget;Track project schedule, Ensure project costs are within budget
+10. What is not included in the cost management plan?, Project scope;Cost estimation methods;Budgeting details;Cost control procedures, Project scope
+11. What is a direct cost?, An overhead expense;A cost directly attributed to the project;A fixed cost;A variable cost, A cost directly attributed to the project
+12. What is the definition of planned value (PV)?, The actual cost incurred;The authorized budget for scheduled work;The value of work performed;The total project budget, The authorized budget for scheduled work
+13. What does variance analysis in cost management involve?, Evaluating project scope;Comparing planned and actual costs;Assessing project risks;Defining project objectives, Comparing planned and actual costs
+14. What is not a technique used in the Estimate Costs process?, Expert judgment;Parametric estimating;Analogous estimating;Root cause analysis, Root cause analysis
+15. What is the purpose of the Determine Budget process?, Estimate project costs;Aggregate estimated costs to establish the cost baseline;Monitor project costs;Define project scope, Aggregate estimated costs to establish the cost baseline
+16. What is a cost management plan?, A plan that defines how project costs will be managed;A detailed project budget;A list of project expenses;A schedule of project activities, A plan that defines how project costs will be managed
+17. What is not a key output of the Control Costs process?, Cost baseline;Work performance information;Change requests;Cost forecasts, Cost baseline
+18. What does the term 'cost of quality' refer to?, The cost of ensuring project quality;The cost of project resources;The cost of project delays;The cost of project risks, The cost of ensuring project quality
+19. What is the formula for Net Present Value (NPV)?, The sum of cash flows divided by the number of periods;The sum of discounted cash flows minus initial investment;The total project costs divided by total project benefits;The sum of all project expenses, The sum of discounted cash flows minus initial investment
+20. What is the purpose of reserve analysis?, To estimate project risks;To allocate reserves for unexpected costs;To create a detailed project budget;To define project scope, To allocate reserves for unexpected costs

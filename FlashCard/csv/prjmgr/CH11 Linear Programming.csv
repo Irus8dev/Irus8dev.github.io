@@ -1,0 +1,17 @@
+1. What is the main goal of linear programming?, Minimize resources;Maximize profit;Optimize resource allocation;Minimize cost, Optimize resource allocation
+2. What is not a component of linear programming?, Objective function;Decision variables;Constraints;Project charter, Project charter
+3. What technique is used to visually represent linear programming problems?, Gantt charts;Flowcharts;Graphical linear programming;Pareto charts, Graphical linear programming
+4. What does the objective function represent in linear programming?, Constraints;Resources;Goal to be achieved;Variables, Goal to be achieved
+5. What is not a decision variable in linear programming?, Quantity of products;Cost of materials;Project schedule;Resource allocation, Project schedule
+6. What is the purpose of constraints in linear programming?, Define project scope;Limit possible solutions;Track project schedule;Estimate project costs, Limit possible solutions
+7. What is a feasible region in linear programming?, The entire graph;Area that satisfies all constraints;Optimal solution;None of the above, Area that satisfies all constraints
+8. What method is used to solve linear programming problems with two variables?, Monte Carlo simulation;Graphical method;PERT analysis;Cost-benefit analysis, Graphical method
+9. What is not a type of constraint in linear programming?, Greater than or equal to;Less than or equal to;Equal to;Project budget, Project budget
+10. What is the formula for the objective function in the given example?, Z = 60x1 + 50x2;Z = 4x1 + 10x2;Z = 2x1 + x2;Z = 3x1 + 3x2, Z = 60x1 + 50x2
+11. What is the purpose of the Solver tool in linear programming?, Identify constraints;Define project scope;Find optimal solutions;Track project costs, Find optimal solutions
+12. What is not a limitation in the given linear programming example?, Assembly time;Inspection time;Storage space;Project budget, Project budget
+13. What is the optimal solution in the given example?, Produce 5 units of type 1 and 8 units of type 2;Produce 9 units of type 1 and 4 units of type 2;Produce 10 units of type 1 and 5 units of type 2;Produce 6 units of type 1 and 7 units of type 2, Produce 9 units of type 1 and 4 units of type 2
+14. What is the purpose of the objective function?, Define constraints;Identify decision variables;Track project schedule;Optimize the desired outcome, Optimize the desired outcome
+15. What is not an example of a decision variable?, Quantity of type 1 to produce;Quantity of type 2 to produce;Total project budget;Resource allocation, Total project budget
+16. What does a corner point represent in graphical linear programming?, A possible solution;An infeasible solution;The optimal solution;A constraint, A possible solution
+17. What is the purpose of formulating a linear programming problem?, Define project scope;Identify resource needs;Optimize resource allocation;Track project schedule, Optimize resource allocation

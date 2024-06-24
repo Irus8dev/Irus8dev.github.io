@@ -3,5 +3,6 @@ csv/prjmgr/CH6 Project Schedule Management.csv
 csv/prjmgr/CH8 Project Cost Management.csv
 csv/prjmgr/CH9 Project Quality Management.csv
 csv/prjmgr/CH10 Project Resource Management.csv
-csv/prjmgr/CH5-CH10 - 1.csv
-csv/prjmgr/CH5-CH10 - 2.csv
+csv/prjmgr/CH11 Linear Programming.csv
+csv/prjmgr/CH12 Project Procurement Management.csv
+csv/prjmgr/Final Quiz.csv

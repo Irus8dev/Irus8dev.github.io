@@ -1,30 +1,20 @@
-1. What is project scope management?, The processes involved in defining and controlling what is or is not included in a project;The process of managing project resources;The process of managing project schedules;The process of managing project costs, The processes involved in defining and controlling what is or is not included in a project
-2. What is a deliverable in project scope management?, A task to be completed;A product or service created as part of a project;A project milestone;A project constraint, A product or service created as part of a project
-3. What is the main tool for creating a Work Breakdown Structure (WBS)?, Mind-mapping;Decomposition;Brainstorming;Benchmarking, Decomposition
-4. Which process involves interviewing stakeholders to collect requirements?, Planning scope management;Collecting requirements;Defining scope;Validating scope, Collecting requirements
-5. What is included in the scope management plan?, Detailed project scope statement;Work Breakdown Structure (WBS);Control requests for changes;All of the above, All of the above
-6. What is a key reason for good project scope management?, To reduce project costs;To ensure project success;To increase project complexity;To manage project schedules, To ensure project success
-7. What is the first step in planning scope management?, Creating a WBS;Preparing a detailed project scope statement;Defining scope;Validating scope, Preparing a detailed project scope statement
-8. What is the main output of the planning scope management process?, Scope management plan;Project charter;Project schedule;Risk management plan, Scope management plan
-9. What technique is used to gather information by comparing specific project practices?, Benchmarking;Mind-mapping;Decomposition;Brainstorming, Benchmarking
-10. What is the purpose of validating scope?, To define project deliverables;To review deliverables with customers;To create a WBS;To collect project requirements, To review deliverables with customers
-11. Which document outlines how project requirements will be analyzed and managed?, Project charter;Scope management plan;Requirements management plan;Risk management plan, Requirements management plan
-12. What is a common cause of project failure?, Poor requirements management;Excessive project budgets;Overestimated schedules;Lack of stakeholder involvement, Poor requirements management
-13. What is included in the project scope statement?, Project objectives;Project constraints;Acceptance of deliverables;All of the above, All of the above
-14. What is the main focus of controlling scope?, Monitoring project costs;Managing changes to project scope;Creating a project schedule;Collecting project requirements, Managing changes to project scope
-15. What software can assist in developing a WBS?, Word-processing software;Mind-mapping software;Presentation software;Spreadsheet software, Mind-mapping software
-16. What is a work breakdown structure (WBS)?, A method for estimating project costs;A tool for defining project scope;A chart showing project timelines;A method for monitoring project progress, A tool for defining project scope
-17. What is the purpose of creating a WBS?, To assign project resources;To divide a project into smaller pieces;To develop project schedules;To monitor project progress, To divide a project into smaller pieces
-18. What is the process of defining scope?, Developing a project schedule;Creating a detailed description of the project and its deliverables;Assigning project resources;Collecting project requirements, Creating a detailed description of the project and its deliverables
-19. Which approach involves breaking down a project into smaller components?, Bottom-up;Top-down;Analogy;Decomposition, Decomposition
-20. What is the goal of scope validation?, To create project deliverables;To ensure deliverables meet customer expectations;To define project scope;To monitor project progress, To ensure deliverables meet customer expectations
-21. What should a project manager do if a deviation from the scope is found?, Take corrective action;Ignore the deviation;Increase project budget;Redefine project goals, Take corrective action
-22. Which process involves defining and documenting the project scope?, Planning scope management;Defining scope;Collecting requirements;Validating scope, Defining scope
-23. What is a key benefit of using specialized software for project scope management?, Reducing project costs;Increasing project complexity;Improving accuracy and efficiency;Reducing stakeholder involvement, Improving accuracy and efficiency
-24. What does the scope baseline include?, Project schedule;Detailed project scope statement;Risk management plan;Project budget, Detailed project scope statement
-25. What is the purpose of scope control?, To create project deliverables;To manage changes to project scope;To define project scope;To collect project requirements, To manage changes to project scope
-26. What tool can be used to transmit project scope management information?, Mind-mapping software;Communication software;Spreadsheet software;Presentation software, Communication software
-27. What is a main process in project scope management?, Planning scope management;Developing project schedules;Managing project resources;Creating project budgets, Planning scope management
-28. What is the purpose of a requirements management plan?, To define project deliverables;To document how project requirements will be analyzed and managed;To create a project schedule;To assign project resources, To document how project requirements will be analyzed and managed
-29. Which software can help create scope-related documents?, Word-processing software;Spreadsheet software;Presentation software;Mind-mapping software, Word-processing software
-30. What is a key reason for collecting project requirements?, To define project scope;To create project deliverables;To develop project schedules;To monitor project progress, To define project scope
+1. What is the first step in project scope management?, Plan Scope Management;Collect Requirements;Define Scope;Create WBS, Plan Scope Management
+2. What is a Work Breakdown Structure (WBS)?, A detailed project schedule;A hierarchical decomposition of the total scope of work;A list of project risks;A project budget, A hierarchical decomposition of the total scope of work
+3. What process involves defining and documenting stakeholder needs?, Validate Scope;Define Scope;Collect Requirements;Control Scope, Collect Requirements
+4. What is not a tool used in the Define Scope process?, Prototypes;Expert Judgment;Benchmarking;Gantt Charts, Gantt Charts
+5. What is scope creep?, Expanding project budget;Uncontrolled changes in project scope;Decreasing project resources;Increased project risks, Uncontrolled changes in project scope
+6. What document outlines how project scope will be managed?, Project charter;Scope management plan;Project schedule;Risk management plan, Scope management plan
+7. What is not included in a project scope statement?, Project exclusions;Project deliverables;Project objectives;Project budget, Project budget
+8. What is the goal of scope validation?, To create project deliverables;To ensure deliverables meet customer expectations;To define project scope;To monitor project progress, To ensure deliverables meet customer expectations
+9. Which approach involves breaking down a project into smaller components?, Bottom-up;Top-down;Analogy;Decomposition, Decomposition
+10. What is the purpose of Validate Scope?, Ensure project activities are completed;Formal acceptance of completed deliverables;Identify project risks;Manage project budget, Formal acceptance of completed deliverables
+11. What is not a key output of the Control Scope process?, Work performance information;Change requests;Project charter;Project documents updates, Project charter
+12. What is the purpose of the Collect Requirements process?, Define project scope;Identify stakeholder needs;Create project schedule;Control project costs, Identify stakeholder needs
+13. What technique is used to gather requirements from stakeholders?, Monte Carlo analysis;Brainstorming;Focus groups;Delphi technique, Focus groups
+14. What is not a purpose of the Control Scope process?, Monitor project scope;Manage changes to the scope baseline;Create project budget;Update project documents, Create project budget
+15. What document formalizes acceptance of completed project deliverables?, Project scope statement;Acceptance report;Work performance report;Change log, Acceptance report
+16. What is the purpose of the Define Scope process?, Develop detailed project and product description;Estimate project costs;Identify project risks;Develop project schedule, Develop detailed project and product description
+17. What is not a technique used in the Collect Requirements process?, Interviews;Surveys;Expert Judgment;Pareto analysis, Pareto analysis
+18. What tool helps identify the root cause of quality problems?, Fishbone diagram;Flowchart;Histogram;Control chart, Fishbone diagram
+19. What is a deliverable-oriented hierarchical decomposition of the work to be executed?, Gantt chart;Project schedule;Work Breakdown Structure;Risk Breakdown Structure, Work Breakdown Structure
+20. What is the main purpose of the Plan Scope Management process?, Define how the scope will be managed;Develop project schedule;Identify project risks;Estimate project costs, Define how the scope will be managed

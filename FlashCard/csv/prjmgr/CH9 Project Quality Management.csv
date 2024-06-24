@@ -1,30 +1,20 @@
-1. What is the main purpose of project quality management?, To ensure the project satisfies customer needs;To manage project costs;To allocate resources effectively;To estimate project duration, To ensure the project satisfies customer needs
-2. Which process involves identifying quality standards relevant to the project?, Controlling quality;Planning quality management;Managing quality;Quality assurance, Planning quality management
-3. What is a defect in project quality management?, A product that exceeds customer requirements;A product that meets customer requirements;A product that fails to meet customer requirements;A product that is under budget, A product that fails to meet customer requirements
-4. Who is ultimately responsible for quality management on a project?, Project sponsor;Project manager;Quality assurance team;Stakeholders, Project manager
-5. What is the process of continually measuring the quality of all activities and taking corrective action?, Planning quality management;Managing quality;Controlling quality;Quality assurance, Managing quality
-6. Which output of quality control involves making adjustments to the process to correct problems?, Rework;Acceptance decisions;Process adjustments;Risk assessment, Process adjustments
-7. What is the main use of a cause-and-effect diagram?, To determine project scope;To trace quality problems for the product;To estimate project costs;To allocate resources, To trace quality problems for the product
-8. What does a control chart help determine?, Whether quality is in control or out of control;The project's critical path;Project cost estimates;The project's scope, Whether quality is in control or out of control
-9. How many defects does Six Sigma allow?, No more than 3.4 defects per million opportunities;No more than 6 defects per million opportunities;No more than 10 defects per million opportunities;No more than 1 defect per million opportunities, No more than 3.4 defects per million opportunities
-10. When should testing be done in the systems development life cycle?, Only at the end of the development process;During almost every phase;Only during the planning phase;Only during the execution phase, During almost every phase
-11. What is the focus of unit testing?, Testing the entire system;Testing the functionality of grouped components;Testing each individual component of software;Testing the final software product by end users, Testing each individual component of software
-12. Which type of testing is performed by end users to accept the final software product?, Unit testing;System testing;Integration testing;User acceptance testing, User acceptance testing
-13. What is the first step in drawing a control chart in Excel?, Creating a scatter diagram;Calculating the mean;Entering the sample data;Setting control limits, Entering the sample data
-14. Which column in an Excel control chart contains the Upper Control Limit (UCL)?, Column B;Column C;Column D;Column E, Column D
-15. What does the term "sigma" mean in statistics?, Mean;Variance;Standard deviation;Median, Standard deviation
-16. What is the purpose of a Pareto chart?, To identify the project's critical path;To identify the most significant factors in a data set;To estimate project costs;To allocate resources, To identify the most significant factors in a data set
-17. What is the main goal of quality assurance?, To plan quality management;To control project costs;To ensure that quality standards are being followed;To define project scope, To ensure that quality standards are being followed
-18. What is a histogram used for in quality control?, To track project schedule;To display the distribution of data;To calculate project costs;To identify project risks, To display the distribution of data
-19. Who developed the concept of Six Sigma?, Motorola;IBM;Apple;Microsoft, Motorola
-20. What is the significance of upper and lower control limits in a control chart?, They define the project's scope;They determine acceptable project costs;They define the acceptable range of variation in a process;They identify project risks, They define the acceptable range of variation in a process
-21. What does the term "rework" refer to in quality control?, Making changes to project scope;Revising project costs;Revising project schedule;Re-doing work to correct defects, Re-doing work to correct defects
-22. What is the purpose of a scatter diagram?, To track project costs;To identify relationships between variables;To plan project schedule;To allocate resources, To identify relationships between variables
-23. What is the role of statistical sampling in quality control?, To estimate project costs;To predict project schedule;To determine project scope;To select a subset of data for analysis, To select a subset of data for analysis
-24. What is the focus of system testing?, Testing each individual component;Testing the entire system;Testing grouped components;Testing by end users, Testing the entire system
-25. How does a flowchart help in quality control?, By tracking project costs;By showing the steps in a process;By identifying project risks;By estimating project schedule, By showing the steps in a process
-26. What is the purpose of acceptance decisions in quality control?, To reject all project deliverables;To approve project costs;To determine if project results meet standards;To plan project schedule, To determine if project results meet standards
-27. Which quality control tool is also known as a fishbone diagram?, Control chart;Checksheet;Scatter diagram;Cause-and-effect diagram, Cause-and-effect diagram
-28. What is the main output of planning quality management?, Quality management plan;Project schedule;Risk management plan;Cost estimate, Quality management plan
-29. What does the term "control limits" refer to in a control chart?, Limits on project costs;Limits on project scope;Upper and lower bounds of acceptable performance;Limits on project schedule, Upper and lower bounds of acceptable performance
-30. What is the purpose of user acceptance testing?, To test each component of software;To test the functionality of grouped components;To test the entire system;To test the final software product by end users, To test the final software product by end users
+1. What is the main goal of project quality management?, Ensuring project costs are minimized;Ensuring project scope is defined;Ensuring project meets customer needs;Ensuring project schedule is followed, Ensuring project meets customer needs
+2. What is Six Sigma?, A cost management technique;A quality control method;A scheduling tool;A scope management technique, A quality control method
+3. What does a control chart help to determine?, Project schedule;Quality control status;Project scope;Project budget, Quality control status
+4. What is not a tool used in quality management?, Fishbone diagram;Control chart;Flowchart;Gantt chart, Gantt chart
+5. What is a Pareto chart used for?, Identifying project risks;Tracking project schedule;Identifying the most significant factors;Managing project costs, Identifying the most significant factors
+6. What is a cause-and-effect diagram also known as?, Pareto chart;Control chart;Fishbone diagram;Flowchart, Fishbone diagram
+7. What is not a part of the cost of quality?, Prevention costs;Appraisal costs;Failure costs;Production costs, Production costs
+8. What is the first step in quality management planning?, Identifying quality standards;Developing a quality management plan;Conducting quality audits;Managing quality metrics, Identifying quality standards
+9. What is the purpose of quality assurance?, Ensuring project scope is defined;Preventing defects;Tracking project schedule;Managing project costs, Preventing defects
+10. What is the main output of quality control?, Project scope statement;Quality metrics;Acceptance decisions;Project budget, Acceptance decisions
+11. What is statistical sampling used for?, Estimating project costs;Evaluating project schedule;Assessing quality of a subset;Managing project scope, Assessing quality of a subset
+12. What is the role of a quality audit?, Reviewing project scope;Evaluating quality management activities;Managing project costs;Tracking project schedule, Evaluating quality management activities
+13. What is not a key output of the Control Quality process?, Quality control measurements;Verified deliverables;Work performance information;Project charter, Project charter
+14. How does a flowchart help in quality control?, By tracking project costs;By showing the steps in a process;By identifying project risks;By estimating project schedule, By showing the steps in a process
+15. What does the term 'quality metrics' refer to?, Standards for project costs;Measurements for project quality;Timelines for project schedule;Resources for project tasks, Measurements for project quality
+16. What is not a technique used in the Manage Quality process?, Quality audits;Process analysis;Benchmarking;Monte Carlo analysis, Monte Carlo analysis
+17. What is the main purpose of the Plan Quality Management process?, Define how quality will be managed;Develop project schedule;Identify project risks;Estimate project costs, Define how quality will be managed
+18. What is the purpose of inspections in quality management?, Identify defects;Define project scope;Manage project budget;Track project schedule, Identify defects
+19. What is a histogram used for?, Tracking project costs;Displaying data distribution;Managing project schedule;Defining project scope, Displaying data distribution
+20. Which type of testing is performed by end users to accept the final software product?, Unit testing;System testing;Integration testing;User acceptance testing, User acceptance testing
