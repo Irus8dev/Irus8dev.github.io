@@ -99,11 +99,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const llines = ltext.split('\n');
 
       llines.forEach((line) => {
-        // Remove quotes and trim each field
-        const lfields = line.split(',').map(field => field.replace(/['"]+/g, '').trim());
-        var [question, selections, correctAnswer] = lfields;
+        // ignore any line that begins with "#"
+        if (!line.startsWith("#")) {
+          // Remove quotes and trim each field
+          const lfields = line.split(',').map(field => field.replace(/['"]+/g, '').trim());
+          var [question, selections, correctAnswer] = lfields;
 
-        flashcards.push({ question, selections: selections.split(';'), correctAnswer });
+          flashcards.push({ question, selections: selections.split(';'), correctAnswer });
+        }
       });
 
       // Store the original order

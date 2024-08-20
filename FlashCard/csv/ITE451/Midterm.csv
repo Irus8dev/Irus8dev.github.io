@@ -1,0 +1,64 @@
+M1-1. Why is AWS more economical than traditional data centers for applications with varying compute workloads?,Customers retain full administrative access to their Amazon EC2 instances;Amazon EC2 instances can be launched on-demand when needed;Amazon EC2 costs are billed monthly;Customers can permanently run enough instances to handle peak workloads,Amazon EC2 instances can be launched on-demand when needed
+M1-2. What is the primary benefit of cloud computing?,Increased security;On-demand IT resources;More complex infrastructure;Higher latency,On-demand IT resources
+M1-3. Which service model provides the most control over IT resources?,SaaS;IaaS;PaaS;DaaS,IaaS
+M1-4. What is the advantage of Platform as a Service (PaaS)?,More control over infrastructure;Simplified application management;Automatic security patches;Access to hardware,Simplified application management
+M1-5. What does AWS Cloud Adoption Framework (CAF) help with?,Networking;Cloud security;Cloud adoption strategy;Data storage,Cloud adoption strategy
+M1-6. What is the definition of cloud computing?,Remote server access;On-demand delivery of IT resources&c pay-as-you-go pricing;Data storage management;Network optimization,On-demand delivery of IT resources&c pay-as-you-go pricing
+M1-7. What are the three cloud deployment models?,Hybrid&c Cloud&c On-premises;Edge&c Cloud&c Security;Public&c Security&c Private;Cloud&c Container&c SaaS,Hybrid&c Cloud&c On-premises
+M1-8. Which of these is an example of IaaS?,Amazon EC2;AWS Lambda;Amazon S3;Amazon RDS,Amazon EC2
+M1-9. How does cloud computing improve infrastructure management?,Increases hardware requirements;Lowers maintenance costs;Adds complexity;Requires more personnel,Lowers maintenance costs
+M1-10. What is one key feature of the traditional computing model?,Elastic scaling;Hardware-based infrastructure;Multi-tenant access;On-demand pricing,Hardware-based infrastructure
+M1-11. What are the three main categories of cloud service models?,SaaS&c PaaS&c IaaS;Database&c Compute&c Networking;Development&c Infrastructure&c Compliance;Software&c Storage&c Analytics,SaaS&c PaaS&c IaaS
+M1-12. What type of cloud deployment model combines on-premises infrastructure with cloud services?,Hybrid;Edge;Cloud;Private cloud,Hybrid
+M1-13. Which of these cloud service models abstracts infrastructure to focus on code?,SaaS;IaaS;PaaS;EC2,PaaS
+M1-14. What is a primary benefit of the AWS Cloud Adoption Framework?,Scalability;Cost management;Strategic alignment;Database security,Strategic alignment
+M1-15. Which type of cloud computing model allows full control over hardware?,IaaS;On-premises;Hybrid;SaaS,On-premises
+M1-16. Which framework does AWS provide to assist with cloud migration?,AWS S3;AWS CAF;AWS EC2;AWS Lambda,AWS CAF
+M2-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon VPC,AWS edge locations​(Week3).
+M2-2. What is the primary advantage of AWS's pay-as-you-go pricing?,Low cost for large businesses;More predictable costs;No upfront expense;More hardware control,No upfront expense
+M2-3. Which pricing model offers the biggest savings for long-term use?,On-Demand;Spot Instances;Reserved Instances;Free Tier,Reserved Instances
+M2-4. Which type of discount increases as usage increases?,Volume-based;Reserved instance;Free Tier;Usage-based,Volume-based
+M2-5. Which tool helps users estimate their AWS costs?,AWS Lambda;AWS CloudWatch;AWS Pricing Calculator;AWS IAM,AWS Pricing Calculator
+M2-6. What is a key benefit of reserved instances?,Reduced scalability;Higher up-front costs;Cost savings;On-demand use,Cost savings
+M2-7. How is outbound data transfer charged?,Per instance;Per region;Per GB;Per hour,Per GB
+M2-8. What is the fundamental pricing driver for compute resources?,Compute per hour/second&c instance type;Data transfer;Memory usage;Storage capacity,Compute per hour/second&c instance type
+M2-9. What type of report provides daily usage insights for AWS resources?,AWS Cost Explorer;AWS Pricing Calculator;AWS Cost and Usage Report;AWS IAM,AWS Cost and Usage Report
+M2-10. What AWS feature helps track and manage budgets?,AWS CloudTrail;AWS Billing Dashboard;AWS Budgets;AWS Lambda,AWS Budgets
+M2-11. How do savings increase when using more of certain AWS services?,Flat-rate pricing;Volume-based discounts;No additional discounts;One-time discounts,Volume-based discounts
+M2-12. Which AWS service helps analyze and visualize cost data?,AWS IAM;AWS EC2;AWS CloudWatch;AWS Cost Explorer,AWS Cost Explorer
+M2-13. What type of AWS pricing gives you the flexibility to pay less by using more?,Volume-based;Reserved Instances;On-Demand;Savings Plans,Volume-based
+M2-14. What AWS tool provides a detailed breakdown of costs by service?,AWS CloudWatch;AWS Budgets;AWS Cost and Usage Report;AWS Lambda,AWS Cost and Usage Report
+M2-15. Which AWS pricing model is best suited for short-term workloads?,On-Demand;Savings Plans;Reserved Instances;Spot Instances,On-Demand
+M2-16. What is the key factor to consider when setting up AWS Organizations for billing?,SLA terms;Account visibility;API security;Data encryption,Account visibility
+M3-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon Virtual Private Cloud (Amazon VPC),AWS edge locations​(AcademyCloudFoundations…)​(AcademyCloudFoundations…).
+M3-2. What is an AWS Region?,An Availability Zone&c Data Center;An Edge Location;A geographical area with multiple Availability Zones,A geographical area with multiple Availability Zones
+M3-3. What are Availability Zones designed for?,High latency&c Data replication;Fault isolation;Data compression,Fault isolation
+M3-4. What does AWS recommend replicating across Availability Zones?,Cost;Latency;Resources and data;Hardware,Resources and data
+M3-5. Which of these is an example of an AWS Edge Location service?,AWS Lambda;Amazon S3;Amazon CloudFront;Amazon RDS,Amazon CloudFront
+M3-6. What factor is critical when selecting an AWS Region?,Weather conditions;Proximity to customers&c latency;Data replication speed,Proximity to customers&c latency
+M3-7. How are AWS data centers connected within a Region?,Internet;High-speed private networking;Satellite links;VPN,High-speed private networking
+M3-8. How many Availability Zones are typically in an AWS Region?,1-2;2-3;3-6;7-8,3-6
+M3-9. What feature do AWS Edge Locations improve?,Security;Pricing;Fault tolerance;Performance,Performance
+M3-10. Which AWS service would benefit most from proximity to Edge Locations?,Amazon EC2;AWS IAM;Amazon CloudFront;AWS Lambda,Amazon CloudFront
+M3-11. What is the primary purpose of Regional Edge Caches?,Data encryption;Content delivery for infrequent access;Data replication;Compute processing,Content delivery for infrequent access
+M3-12. What do AWS Regions ensure for users?,Fault tolerance;Data security;Low pricing;Availability and redundancy,Availability and redundancy
+M3-13. Which service offers dynamic adaption of capacity?,Amazon S3;Amazon EC2 Auto Scaling;AWS Lambda;Amazon CloudFront,Amazon EC2 Auto Scaling
+M3-14. What is the approximate server capacity of an AWS data center?,10-20k servers;50-80k servers;100-150k servers;Over 200k servers,50-80k servers
+M3-15. Which AWS infrastructure component is most closely related to delivering low-latency content?,Availability Zones;Regions;Edge Locations;Data Centers,Edge Locations
+M3-16. AWS Regions are interconnected using what?,Dedicated fibers;Public internet;AWS backbone network;VPN tunnels,AWS backbone network
+M4-1. Which of the following is AWS's responsibility under the AWS shared responsibility model?,Configuring third-party applications;Maintaining physical hardware;Securing application access and data;Managing custom Amazon Machine Images (AMIs),Maintaining physical hardware
+M4-2. Who is responsible for securing the infrastructure of the AWS cloud?,Customer;AWS;Shared by customer and AWS;Third-party vendors,AWS
+M4-3. What type of access does IAM manage?,Physical data center access;Access to AWS resources;Database backups;Power supply management,Access to AWS resources
+M4-4. What is MFA used for?,Scaling EC2 instances;Adding extra security layer;Reducing latency;Monitoring network activity,Adding extra security layer
+M4-5. Which AWS security feature monitors API calls and account activity?,AWS CloudTrail;AWS S3;AWS Cost Explorer;AWS Lambda,AWS CloudTrail
+M4-6. Who is responsible for managing operating systems on Amazon EC2?,Customer;AWS;Shared responsibility;IAM,Customer
+M4-7. What is the AWS service for managing encryption keys?,AWS Lambda;Amazon Cognito;AWS KMS;AWS IAM,AWS KMS
+M4-8. What does IAM stand for?,Identity and Access Monitoring;Identity and Application Management;Identity and Access Management;Infrastructural Access Management,Identity and Access Management
+M4-9. What is the primary use of AWS Shield?,Content distribution;DDoS protection;Data replication;Cost management,DDoS protection
+M4-10. Which AWS service manages identity for millions of users?,AWS KMS;Amazon Cognito;Amazon S3;AWS Lambda,Amazon Cognito
+M4-11. Which IAM policy type is attached directly to a user&c group&c or role?,Identity-based;Resource-based;Role-based;User-specific,Identity-based
+M4-12. What is an IAM Role used for?,Managing services across Regions;Granting temporary access permissions;Creating EC2 instances;Monitoring resource usage,Granting temporary access permissions
+M4-13. Which of these IAM best practices should be implemented first?,Enable MFA for users;Create IAM roles for services;Disable root user;Restrict EC2 instance access,Disable root user
+M4-14. What is the AWS service for continuous monitoring of configurations?,AWS Config;Amazon RDS;AWS CloudTrail;AWS Shield,AWS Config
+M4-15. What is a Service Control Policy (SCP) used for?,Controlling costs;Managing services within an organization;Encrypting data;Restricting permissions at the account level,Restricting permissions at the account level
+M4-16. Which type of encryption is used to protect data at rest in AWS?,TLS;SSL;AWS KMS;Server-side encryption,Server-side encryption
