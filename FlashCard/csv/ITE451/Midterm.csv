@@ -29,6 +29,7 @@ M2-12. What type of AWS pricing gives you the flexibility to pay less by using m
 M2-13. What AWS tool provides a detailed breakdown of costs by service?,AWS CloudWatch;AWS Budgets;AWS Cost and Usage Report;AWS Lambda,AWS Cost and Usage Report
 M2-14. Which AWS pricing model is best suited for short-term workloads?,On-Demand;Savings Plans;Reserved Instances;Spot Instances,On-Demand
 M2-15. What is the key factor to consider when setting up AWS Organizations for billing?,SLA terms;Account visibility;API security;Data encryption,Account visibility
+M2-16. Which AWS service provides infrastructure security optimization recommendations?,AWS Price List Application Programming Interface (API);Reserved Instances;AWS Trusted Advisor;Amazon Elastic Compute Cloud (Amazon EC2) Spot Fleet,AWS Trusted Advisor
 M3-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon Virtual Private Cloud (Amazon VPC),AWS edge locations​
 M3-2. What is an AWS Region?,An Availability Zone&c Data Center;An Edge Location;A geographical area with multiple Availability Zones,A geographical area with multiple Availability Zones
 M3-3. What are Availability Zones designed for?,High latency&c Data replication;Fault isolation;Data compression,Fault isolation
