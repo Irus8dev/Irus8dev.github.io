@@ -14,23 +14,22 @@ M1-13. Which of these cloud service models abstracts infrastructure to focus on 
 M1-14. What is a primary benefit of the AWS Cloud Adoption Framework?,Scalability;Cost management;Strategic alignment;Database security,Strategic alignment
 M1-15. Which type of cloud computing model allows full control over hardware?,IaaS;On-premises;Hybrid;SaaS,On-premises
 M1-16. Which framework does AWS provide to assist with cloud migration?,AWS S3;AWS CAF;AWS EC2;AWS Lambda,AWS CAF
-M2-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon VPC,AWS edge locations​(Week3).
-M2-2. What is the primary advantage of AWS's pay-as-you-go pricing?,Low cost for large businesses;More predictable costs;No upfront expense;More hardware control,No upfront expense
-M2-3. Which pricing model offers the biggest savings for long-term use?,On-Demand;Spot Instances;Reserved Instances;Free Tier,Reserved Instances
-M2-4. Which type of discount increases as usage increases?,Volume-based;Reserved instance;Free Tier;Usage-based,Volume-based
-M2-5. Which tool helps users estimate their AWS costs?,AWS Lambda;AWS CloudWatch;AWS Pricing Calculator;AWS IAM,AWS Pricing Calculator
-M2-6. What is a key benefit of reserved instances?,Reduced scalability;Higher up-front costs;Cost savings;On-demand use,Cost savings
-M2-7. How is outbound data transfer charged?,Per instance;Per region;Per GB;Per hour,Per GB
-M2-8. What is the fundamental pricing driver for compute resources?,Compute per hour/second&c instance type;Data transfer;Memory usage;Storage capacity,Compute per hour/second&c instance type
-M2-9. What type of report provides daily usage insights for AWS resources?,AWS Cost Explorer;AWS Pricing Calculator;AWS Cost and Usage Report;AWS IAM,AWS Cost and Usage Report
-M2-10. What AWS feature helps track and manage budgets?,AWS CloudTrail;AWS Billing Dashboard;AWS Budgets;AWS Lambda,AWS Budgets
-M2-11. How do savings increase when using more of certain AWS services?,Flat-rate pricing;Volume-based discounts;No additional discounts;One-time discounts,Volume-based discounts
-M2-12. Which AWS service helps analyze and visualize cost data?,AWS IAM;AWS EC2;AWS CloudWatch;AWS Cost Explorer,AWS Cost Explorer
-M2-13. What type of AWS pricing gives you the flexibility to pay less by using more?,Volume-based;Reserved Instances;On-Demand;Savings Plans,Volume-based
-M2-14. What AWS tool provides a detailed breakdown of costs by service?,AWS CloudWatch;AWS Budgets;AWS Cost and Usage Report;AWS Lambda,AWS Cost and Usage Report
-M2-15. Which AWS pricing model is best suited for short-term workloads?,On-Demand;Savings Plans;Reserved Instances;Spot Instances,On-Demand
-M2-16. What is the key factor to consider when setting up AWS Organizations for billing?,SLA terms;Account visibility;API security;Data encryption,Account visibility
-M3-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon Virtual Private Cloud (Amazon VPC),AWS edge locations​(AcademyCloudFoundations…)​(AcademyCloudFoundations…).
+M2-1. What is the primary advantage of AWS's pay-as-you-go pricing?,Low cost for large businesses;More predictable costs;No upfront expense;More hardware control,No upfront expense
+M2-2. Which pricing model offers the biggest savings for long-term use?,On-Demand;Spot Instances;Reserved Instances;Free Tier,Reserved Instances
+M2-3. Which type of discount increases as usage increases?,Volume-based;Reserved instance;Free Tier;Usage-based,Volume-based
+M2-4. Which tool helps users estimate their AWS costs?,AWS Lambda;AWS CloudWatch;AWS Pricing Calculator;AWS IAM,AWS Pricing Calculator
+M2-5. What is a key benefit of reserved instances?,Reduced scalability;Higher up-front costs;Cost savings;On-demand use,Cost savings
+M2-6. How is outbound data transfer charged?,Per instance;Per region;Per GB;Per hour,Per GB
+M2-7. What is the fundamental pricing driver for compute resources?,Compute per hour/second&c instance type;Data transfer;Memory usage;Storage capacity,Compute per hour/second&c instance type
+M2-8. What type of report provides daily usage insights for AWS resources?,AWS Cost Explorer;AWS Pricing Calculator;AWS Cost and Usage Report;AWS IAM,AWS Cost and Usage Report
+M2-8. What AWS feature helps track and manage budgets?,AWS CloudTrail;AWS Billing Dashboard;AWS Budgets;AWS Lambda,AWS Budgets
+M2-10. How do savings increase when using more of certain AWS services?,Flat-rate pricing;Volume-based discounts;No additional discounts;One-time discounts,Volume-based discounts
+M2-11. Which AWS service helps analyze and visualize cost data?,AWS IAM;AWS EC2;AWS CloudWatch;AWS Cost Explorer,AWS Cost Explorer
+M2-12. What type of AWS pricing gives you the flexibility to pay less by using more?,Volume-based;Reserved Instances;On-Demand;Savings Plans,Volume-based
+M2-13. What AWS tool provides a detailed breakdown of costs by service?,AWS CloudWatch;AWS Budgets;AWS Cost and Usage Report;AWS Lambda,AWS Cost and Usage Report
+M2-14. Which AWS pricing model is best suited for short-term workloads?,On-Demand;Savings Plans;Reserved Instances;Spot Instances,On-Demand
+M2-15. What is the key factor to consider when setting up AWS Organizations for billing?,SLA terms;Account visibility;API security;Data encryption,Account visibility
+M3-1. Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency delivery?,AWS Regions;AWS edge locations;AWS Availability Zones;Amazon Virtual Private Cloud (Amazon VPC),AWS edge locations​
 M3-2. What is an AWS Region?,An Availability Zone&c Data Center;An Edge Location;A geographical area with multiple Availability Zones,A geographical area with multiple Availability Zones
 M3-3. What are Availability Zones designed for?,High latency&c Data replication;Fault isolation;Data compression,Fault isolation
 M3-4. What does AWS recommend replicating across Availability Zones?,Cost;Latency;Resources and data;Hardware,Resources and data
