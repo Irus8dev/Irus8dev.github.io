@@ -3,6 +3,7 @@
 
 ### Example:
 https://irus8dev.github.io/FlashCard/index.html?samples=ITE479Final.txt
+http://127.0.0.1:5500/?samples=ITE451.txt
 
 ## Text File Example
  
