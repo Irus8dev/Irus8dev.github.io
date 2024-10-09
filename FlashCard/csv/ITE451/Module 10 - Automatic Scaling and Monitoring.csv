@@ -1,0 +1,20 @@
+1. What is the primary function of Amazon EC2 Auto Scaling?,Distributes application traffic;Monitors IAM roles;Automatically adjusts capacity;Stores application logs,Automatically adjusts capacity
+2. Which service helps you distribute traffic across multiple EC2 instances?,Amazon CloudWatch;Elastic Load Balancing;AWS Auto Scaling;Amazon RDS,Elastic Load Balancing
+3. What is the role of Amazon CloudWatch?,Monitor resources;Set up EC2 instances;Encrypt data;Manage IAM policies,Monitor resources
+4. Which scaling policy would you use to automatically launch instances when CPU usage goes beyond 60%?,Manual scaling;Scheduled scaling;Dynamic scaling;Predictive scaling,Dynamic scaling
+5. Which AWS service provides monitoring and alarms for AWS resources?,AWS CloudTrail;Amazon CloudWatch;Elastic Load Balancing;Amazon Route 53,Amazon CloudWatch
+6. Which load balancer should you use for HTTPS requests?,Application Load Balancer;Network Load Balancer;Classic Load Balancer;Dynamic Load Balancer,Application Load Balancer
+7. How does Amazon EC2 Auto Scaling maintain application availability?,By storing logs;By creating backups;By adding or removing instances;By routing traffic,By adding or removing instances
+8. What service would you use to set up alarms based on resource utilization?,AWS Trusted Advisor;Amazon CloudWatch;AWS CloudTrail;Amazon S3,Amazon CloudWatch
+9. What is the purpose of an Auto Scaling group?,To group IAM roles;To automatically adjust resource size;To manage VPC subnets;To balance application loads,To automatically adjust resource size
+10. Which feature of Amazon CloudWatch helps you respond to events?,CloudWatch Events;Trusted Advisor Reports;CloudFront Alerts;CloudTrail Logs,CloudWatch Events
+11. Which scaling option allows you to set specific times for scaling operations?,Dynamic scaling;Scheduled scaling;Predictive scaling;Manual scaling,Scheduled scaling
+12. What service provides an alert if the number of healthy hosts is below a certain threshold?,AWS CloudTrail;Amazon CloudWatch;Amazon EC2 Auto Scaling;Elastic Load Balancing,Elastic Load Balancing
+13. Which of the following uses static thresholds to create alarms?,Amazon S3;AWS CloudTrail;Amazon CloudWatch;AWS Trusted Advisor,Amazon CloudWatch
+14. What scaling option is best for handling predictable traffic patterns?,Dynamic scaling;Scheduled scaling;Manual scaling;Predictive scaling,Scheduled scaling
+15. Which service allows for collection and tracking of custom metrics?,Amazon EC2;AWS Lambda;Amazon CloudWatch;Amazon RDS,Amazon CloudWatch
+16. Which component of Auto Scaling defines the resource configurations for new instances?,CloudWatch Alarm;VPC Endpoint;Launch Configuration;Security Group,Launch Configuration
+17. Which AWS service provides real-time performance metrics for monitoring your architecture?,Amazon CloudWatch;AWS Trusted Advisor;Amazon Route 53;AWS Lambda,Amazon CloudWatch
+18. What is the main benefit of using predictive scaling?,Enables custom metric monitoring;Plans capacity based on historical usage;Responds immediately to traffic changes;Sets fixed scaling intervals,Plans capacity based on historical usage
+19. Which service helps in routing traffic only to healthy instances?,AWS Trusted Advisor;AWS CloudTrail;Elastic Load Balancing;Amazon CloudWatch,Elastic Load Balancing
+20. Which of the following is not a feature of Elastic Load Balancing?,Distributes incoming application traffic;Performs health checks;Encrypts data in transit;Manages IAM policies,Manages IAM policies
