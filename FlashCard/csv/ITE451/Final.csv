@@ -1,0 +1,50 @@
+1. What is a VPC used for in AWS?,Managing databases;Launching a serverless function;Creating a logically isolated network;Distributing content,Creating a logically isolated network
+2. Which AWS service resolves domain names to IP addresses?,AWS CloudFront;Amazon Route 53;AWS Lambda;Amazon VPC,Amazon Route 53
+3. What is the maximum size of an IPv4 CIDR block in a VPC?,/16;/24;/32;/28,/16
+4. Which component is **not** required to launch an EC2 instance?,AMI;Security Group;Instance Type;IAM User,IAM User
+5. What type of load balancer should be used for handling HTTPS traffic?,Classic Load Balancer;Network Load Balancer;Application Load Balancer;Elastic Load Balancer,Application Load Balancer
+6. Which service automatically scales EC2 instances based on demand?,Amazon S3;AWS Lambda;Elastic Load Balancing;Amazon EC2 Auto Scaling,Amazon EC2 Auto Scaling
+7. What is Amazon CloudWatch primarily used for?,Storing data;Scaling resources;Monitoring AWS resources;Distributing traffic,Monitoring AWS resources
+8. Which of the following does **not** provide monitoring capabilities?,Amazon CloudWatch;AWS Trusted Advisor;AWS CloudTrail;AWS Direct Connect,AWS Direct Connect
+9. Which storage option is designed for long-term&c low-cost data archiving?,Amazon S3 Standard;Amazon Glacier;Amazon EFS;Amazon EBS,Amazon Glacier
+10. What type of storage is provided by Amazon EBS?,File storage;Object storage;Block storage;Tape storage,Block storage
+11. Which AWS service is optimized for low-latency access to frequently accessed data?,Amazon S3 Glacier;Amazon EFS;Amazon DynamoDB;Amazon CloudFront,Amazon CloudFront
+12. How does Amazon CloudFront improve latency?,Caching content closer to users;Using S3 for storage;Encrypting all data;Reducing VPC sizes,Caching content closer to users
+13. Which of the following is **not** a feature of Amazon CloudFront?,Improved latency;SSL/TLS support;Data warehousing;Global edge locations,Data warehousing
+14. What AWS service supports data warehousing for large datasets?,Amazon RDS;Amazon DynamoDB;Amazon S3;Amazon Redshift,Amazon Redshift
+15. Which Amazon S3 storage class is suitable for infrequent access but needs immediate retrieval?,S3 Glacier;S3 Intelligent-Tiering;S3 Standard-IA;S3 Deep Archive,S3 Standard-IA
+16. Which database is best for mobile and web applications requiring low-latency reads and writes?,Amazon Redshift;Amazon DynamoDB;Amazon RDS;Amazon Aurora,Amazon DynamoDB
+17. Which AWS tool assists in designing secure&c resilient cloud architectures?,AWS CloudWatch;AWS Trusted Advisor;AWS Config;AWS Well-Architected Tool,AWS Well-Architected Tool
+18. Which scaling option enables EC2 instances to launch at specific times?,Dynamic scaling;Scheduled scaling;Manual scaling;Predictive scaling,Scheduled scaling
+19. What service would you use to collect and track custom metrics in AWS?,AWS CloudTrail;AWS Lambda;Amazon CloudWatch;Amazon Route 53,Amazon CloudWatch
+20. Which of these is **not** a type of load balancer in AWS?,Application Load Balancer;Network Load Balancer;Classic Load Balancer;Container Load Balancer,Container Load Balancer
+21. What is the primary advantage of Amazon RDS over a traditional on-premises database?,Requires more hardware;Is less scalable;Requires no manual database management;Has higher latency,Requires no manual database management
+22. Which Amazon S3 feature moves data automatically between storage classes based on policies?,Versioning;Lifecycle policies;Replication;Encryption,Lifecycle policies
+23. What is Amazon DynamoDB optimized for?,SQL queries;Complex transactions;Key-value access;Relational data,Key-value access
+24. Which AWS database service supports multiple availability zones for automatic failover?,Amazon Redshift;Amazon DynamoDB;Amazon RDS;Amazon Aurora,Amazon RDS
+25. Which Amazon CloudWatch feature triggers actions based on a threshold being exceeded?,AWS CloudTrail;Logs;Events;Alarms,Alarms
+26. Which AWS storage service supports file system storage and file sharing?,Amazon S3;Amazon EBS;Amazon EFS;Amazon Glacier,Amazon EFS
+27. Which load balancer supports containerized applications?,Classic Load Balancer;Application Load Balancer;Network Load Balancer;None,Application Load Balancer
+28. What does Amazon EC2 Auto Scaling **not** help with?,Automating instance creation;Monitoring CPU utilization;Balancing application traffic;Encrypting data,Encrypting data
+29. Which AWS service is recommended for hosting containerized applications?,Amazon EC2;Amazon ECS;AWS Lambda;Amazon RDS,Amazon ECS
+30. Which type of database is Amazon Aurora classified as?,Document database;Relational database;Graph database;Key-value database,Relational database
+31. What is Amazon CloudWatch used for?,Monitoring AWS resources;Encrypting data;Scaling databases;Managing IAM policies,Monitoring AWS resources
+32. Which AWS service allows for fault-tolerant&c secure communication between VPCs?,AWS Direct Connect;VPC Peering;AWS VPN;AWS Shield,VPC Peering
+33. Which of the following services is **not** suitable for auto-scaling?,Amazon EC2;AWS Lambda;Amazon RDS;Amazon CloudFront,Amazon CloudFront
+34. What type of scaling adjusts resource levels based on past usage patterns?,Dynamic scaling;Predictive scaling;Manual scaling;Scheduled scaling,Predictive scaling
+35. What storage solution would you use for high-performance computing requiring block storage?,Amazon EFS;Amazon S3;Amazon Glacier;Amazon EBS,Amazon EBS
+36. Which service supports real-time notifications and alerts based on resource performance?,AWS CloudTrail;Amazon CloudWatch;AWS Lambda;Amazon RDS,Amazon CloudWatch
+37. What is a key feature of Amazon EFS?,Object storage;Supports NFS protocols;High latency;Supports long-term archiving,Supports NFS protocols
+38. Which Amazon S3 storage class is the lowest cost option for long-term data archiving?,S3 Glacier Deep Archive;S3 Standard-IA;S3 Intelligent-Tiering;S3 Deep Archive,S3 Glacier Deep Archive
+39. Which scaling strategy uses alarms to adjust EC2 instance counts dynamically?,Manual scaling;Scheduled scaling;Dynamic scaling;Predictive scaling,Dynamic scaling
+40. What AWS service provides a managed environment for running Docker containers?,AWS Lambda;AWS Fargate;Amazon EC2;Amazon ECR,AWS Fargate
+41. Which load balancer supports handling spiky and unpredictable TCP traffic?,Application Load Balancer;Network Load Balancer;Classic Load Balancer;Elastic Load Balancer,Network Load Balancer
+42. What does Amazon CloudWatch **not** monitor?,AWS EC2 instances;Custom metrics;User logins;Elastic Load Balancers,User logins
+43. Which AWS service is recommended for setting up alarms when resource thresholds are crossed?,Amazon Route 53;AWS CloudTrail;AWS CloudWatch;Amazon EC2,AWS CloudWatch
+44. Which AWS storage service allows for direct integration with Amazon S3 for long-term archiving?,Amazon EBS;Amazon DynamoDB;Amazon Glacier;Amazon EFS,Amazon Glacier
+45. What is the main function of AWS Elastic Load Balancing?,Monitoring user activity;Encrypting application data;Distributing incoming traffic;Managing IAM policies,Distributing incoming traffic
+46. Which AWS service can route traffic based on the location of users?,AWS CloudFront;Amazon S3;AWS Direct Connect;Amazon Route 53,Amazon Route 53
+47. What service is best for automatically balancing traffic across EC2 instances?,AWS Lambda;AWS Auto Scaling;Amazon CloudFront;Elastic Load Balancing,Elastic Load Balancing
+48. Which feature of Amazon CloudWatch can initiate auto-scaling actions?,Logs;Events;Alarms;Snapshots,Alarms
+49. Which AWS service should you use for a database that supports petabyte-scale data warehousing?,Amazon RDS;Amazon Redshift;Amazon S3;Amazon DynamoDB,Amazon Redshift
+50. Which AWS service is designed to automatically manage compute resources based on rules and alarms?,Amazon S3;Amazon RDS;Amazon EC2 Auto Scaling;AWS Shield,Amazon EC2 Auto Scaling

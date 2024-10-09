@@ -1,0 +1,20 @@
+1. What type of database is Amazon RDS?,NoSQL;Document;Relational;Graph,Relational
+2. Which AWS service is a fully managed NoSQL database?,Amazon Aurora;Amazon DynamoDB;Amazon RDS;Amazon Redshift,Amazon DynamoDB
+3. What is the main purpose of Amazon Redshift?,Data archiving;Data warehousing;Application hosting;Real-time processing,Data warehousing
+4. Which database service supports MySQL and PostgreSQL compatibility?,Amazon RDS;Amazon Aurora;Amazon DynamoDB;Amazon Redshift,Amazon Aurora
+5. What is the advantage of using Amazon DynamoDB?,Supports SQL queries;Auto-scales for high availability;Optimized for massive read/write rates;Both B and C,Both B and C
+6. Which storage type is supported by Amazon RDS?,Object storage;File storage;Block storage;Document storage,Block storage
+7. When should you choose Amazon Aurora over other RDS engines?,When you need high scalability and availability;When you need a NoSQL database;For small-scale applications;When using legacy Oracle databases,When you need high scalability and availability
+8. Which service provides asynchronous replication in Amazon RDS?,Read replicas;Multi-AZ deployment;DynamoDB Streams;Cross-Region Replication,Read replicas
+9. What is the main use case for Amazon DynamoDB?,Mobile applications;Web and gaming applications;Adtech applications;All of the above,All of the above
+10. Which type of database should be used for complex queries and transactions?,Amazon DynamoDB;Amazon RDS;Amazon S3;Amazon Redshift,Amazon RDS
+11. How does Amazon Redshift ensure fast query performance?,Uses parallel processing;Uses NoSQL architecture;Uses EBS volumes;Relies on third-party integrations,Uses parallel processing
+12. What is an advantage of using Amazon Aurora?,Compatible with multiple database engines;Requires manual backups;No automatic scaling;Works only with PostgreSQL,Compatible with multiple database engines
+13. Which AWS database service is best for high-volume online transaction processing (OLTP)?,Amazon Aurora;Amazon DynamoDB;Amazon Redshift;Amazon RDS,Amazon Aurora
+14. What is the advantage of Amazon DynamoDB's SSD storage?,Increased latency;Faster read and write operations;Reduced cost;Limited scalability,Faster read and write operations
+15. Which AWS service is recommended for enterprise data warehousing?,Amazon RDS;Amazon S3;Amazon Redshift;Amazon EC2,Amazon Redshift
+16. Which service is best for storing unstructured metadata that scales automatically?,Amazon RDS;Amazon S3;Amazon DynamoDB;Amazon Glacier,Amazon DynamoDB
+17. What type of replication is used in Amazon RDS Multi-AZ deployment?,Asynchronous;Synchronous;Block-level replication;Object-level replication,Synchronous
+18. What is Amazon Redshift optimized for?,Relational data;Data warehousing;Real-time processing;Document storage,Data warehousing
+19. Which AWS service allows for rapid&c automatic scaling of read and write operations?,Amazon Redshift;Amazon DynamoDB;Amazon Aurora;Amazon EC2,Amazon DynamoDB
+20. Which type of database does Amazon Aurora support?,Key-value;Document;Relational;Graph,Relational

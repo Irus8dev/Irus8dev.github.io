@@ -1,0 +1,7 @@
+csv/ITE451/Module 5 - Networking and Content Delivery.csv
+csv/ITE451/Module 6 - Compute.csv
+csv/ITE451/Module 7 - Storage.csv
+csv/ITE451/Module 8 - Databases.csv
+csv/ITE451/Module 9 - Cloud Architect.csv
+csv/ITE451/Module 10 - Automatic Scaling and Monitoring.csv
+csv/ITE451/Final.csv

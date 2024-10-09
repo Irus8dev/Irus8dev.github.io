@@ -1,0 +1,20 @@
+1. What is Amazon EBS primarily used for?,Object storage;File storage;Block storage;Data archiving,Block storage
+2. Which AWS service provides unlimited object storage in buckets?,Amazon S3;Amazon EBS;Amazon RDS;Amazon EFS,Amazon S3
+3. What storage service is best for long-term data archiving?,Amazon S3;Amazon Glacier;Amazon EBS;Amazon DynamoDB,Amazon Glacier
+4. What is the maximum object size allowed in Amazon S3?,1 TB;2 TB;5 TB;10 TB,5 TB
+5. Which of the following is **not** a storage class offered by Amazon S3?,S3 Standard-IA;S3 Intelligent-Tiering;S3 Deep Archive;S3 Infrequent-Access Zone,S3 Infrequent-Access Zone
+6. What type of storage does Amazon EFS provide?,Block storage;Object storage;File storage;Tape storage,File storage
+7. Which AWS storage service supports file sharing across multiple instances?,Amazon S3 Glacier;Amazon EFS;Amazon EBS;AWS Snowball,Amazon EFS
+8. Which storage option is designed for low-cost&c long-term backup?,Amazon S3 Glacier;Amazon EBS;Amazon S3 Standard;Amazon EFS,Amazon S3 Glacier
+9. What type of encryption is used by Amazon S3 Glacier to secure data?,AES-128;RSA;AES-256;SHA-256,AES-256
+10. Which storage service allows you to set lifecycle policies to move data automatically between storage classes?,Amazon S3;Amazon EBS;Amazon Glacier;Amazon DynamoDB,Amazon S3
+11. What is the main difference between Amazon EBS and Amazon S3?,EBS is for block storage;S3 is only for file storage;EBS supports object storage;S3 can’t be accessed via the internet,EBS is for block storage
+12. Which Amazon S3 storage class is best for data that is accessed infrequently but needs rapid access when requested?,S3 Standard;S3 Glacier;S3 Standard-IA;S3 Intelligent-Tiering,S3 Standard-IA
+13. How does Amazon S3 store data for durability?,Replicates data across regions;Replicates data across Availability Zones;Stores data in a single data center;Does not replicate data,Replicates data across Availability Zones
+14. Which type of storage provides the lowest latency for high-performance workloads?,Amazon EFS;Amazon S3;Amazon S3 Glacier;Amazon EBS,Amazon EBS
+15. What does Amazon EFS primarily support?,Windows file systems;Network File System (NFS) protocols;Object storage protocols;SFTP only,Network File System (NFS) protocols
+16. What is the key feature of Amazon S3 Intelligent-Tiering?,Automatically adjusts pricing based on access patterns;Provides the highest durability guarantee;Stores data in a single Availability Zone;Only for data archival,Automatically adjusts pricing based on access patterns
+17. Which storage service supports automated snapshots?,Amazon S3 Glacier;Amazon DynamoDB;Amazon EBS;Amazon EFS,Amazon EBS
+18. Which AWS storage service is optimized for media processing and web serving?,Amazon Glacier;Amazon S3;Amazon EFS;AWS Snowball,Amazon EFS
+19. Which AWS storage option supports virtually unlimited objects?,Amazon EFS;Amazon EBS;Amazon S3;AWS Snowball,Amazon S3
+20. Which Amazon S3 storage class provides the lowest cost for archival?,S3 Standard-IA;S3 Intelligent-Tiering;S3 Glacier Deep Archive;S3 Glacier,S3 Glacier Deep Archive

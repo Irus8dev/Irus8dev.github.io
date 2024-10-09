@@ -1,0 +1,20 @@
+1. What is the purpose of the AWS Well-Architected Framework?,To manage user identities;To design secure&c high-performing&c resilient architectures;To create databases;To automate application deployment,To design secure&c high-performing&c resilient architectures
+2. Which pillar focuses on optimizing costs in the AWS Well-Architected Framework?,Performance Efficiency;Reliability;Cost Optimization;Security,Cost Optimization
+3. What is AWS Trusted Advisor used for?,Data backup;Monitoring costs;Designing architectures;Accessing cloud consoles,Monitoring costs
+4. Which of the following is **not** a pillar of the AWS Well-Architected Framework?,Security;Performance Efficiency;Fault Isolation;Operational Excellence,Fault Isolation
+5. What does the **Reliability** pillar of the AWS Well-Architected Framework focus on?,Scaling applications efficiently;Designing systems that recover from failures;Reducing costs;Implementing security,Designing systems that recover from failures
+6. Which AWS service provides real-time guidance for following best practices?,AWS CloudTrail;AWS Trusted Advisor;Amazon CloudWatch;AWS Lambda,AWS Trusted Advisor
+7. Which AWS service is used for implementing high availability and fault tolerance?,AWS Trusted Advisor;Elastic Load Balancing;Amazon S3;Amazon CloudFront,Elastic Load Balancing
+8. What is the best approach for securing data in transit and at rest?,Encrypt using AES-256;Store in S3 Glacier;Use NAT Gateway;None of the above,Encrypt using AES-256
+9. Which pillar of the AWS Well-Architected Framework deals with improving performance efficiency?,Security;Cost Optimization;Performance Efficiency;Reliability,Performance Efficiency
+10. How does AWS Trusted Advisor enhance security?,By providing monitoring logs;By setting up VPCs;By identifying vulnerabilities like open ports;By encrypting data,By identifying vulnerabilities like open ports
+11. What is a key benefit of using the AWS Well-Architected Tool?,Accessing third-party APIs;Designing custom dashboards;Evaluating cloud architectures;Optimizing database performance,Evaluating cloud architectures
+12. What does the Operational Excellence pillar emphasize?,Scaling applications efficiently;Automating operations;Minimizing costs;Managing AWS identities,Automating operations
+13. Which AWS tool can automatically recommend optimizations based on your usage patterns?,AWS CloudWatch;AWS Trusted Advisor;AWS Config;AWS Systems Manager,AWS Trusted Advisor
+14. Which AWS service can perform real-time health checks on your resources?,Amazon CloudWatch;AWS Trusted Advisor;AWS CloudTrail;Amazon Inspector,Amazon CloudWatch
+15. What does the **Security** pillar of the AWS Well-Architected Framework emphasize?,Operational monitoring;Implementing traceability;Managing costs;Application deployment,Implementing traceability
+16. Which of the following is a primary goal of the AWS Well-Architected Framework?,Ensure compliance with GDPR;Improve system uptime;Optimize costs;Build a unified cloud management system,Improve system uptime
+17. How does AWS Trusted Advisor monitor security?,By analyzing IAM policies;By checking security groups for open access;By encrypting logs;By configuring load balancers,By checking security groups for open access
+18. What is meant by “Fault Tolerance” in AWS architecture?,Ability to scale automatically;Ability to withstand component failures without service interruption;Encrypting all network traffic;Reducing costs,Ability to withstand component failures without service interruption
+19. Which pillar involves selecting the right resource sizes based on workload requirements?,Performance Efficiency;Cost Optimization;Reliability;Operational Excellence,Performance Efficiency
+20. What is an example of a Trusted Advisor recommendation?,Encrypting data in S3;Adding a firewall;Enabling MFA on the root account;Installing EC2 instances,Enabling MFA on the root account
