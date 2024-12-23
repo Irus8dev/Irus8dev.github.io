@@ -1,0 +1,20 @@
+1. What does an operating system act as?,Interface;Hardware;Application;Kernel,Interface
+2. Which is NOT a primary goal of an OS?,Control execution;Make the system convenient;Solve user problems;Build hardware,Solve user problems
+3. What is the term for the OS providing facilities for program creation?,Services;Processes;Commands;Utilities,Services
+4. Which of these is NOT a service provided by the OS?,Loading programs;Managing I/O devices;Powering hardware;File access,Powering hardware
+5. What is the central component of an operating system?,Kernel;CLI;Shell;Hardware,Kernel
+6. Which view of an OS describes it as managing and allocating resources?,Resource Manager;Command Executer;Virtual Machine;Control Program,Resource Manager
+7. What does CLI stand for?,Command Line Interpreter;Computer Line Interface;Command Link Integration;Controller Line Interface,Command Line Interpreter
+8. Which is NOT a layer in the hierarchical view of a computer system?,Hardware;Kernel;Application Programs;Virtual Memory,Virtual Memory
+9. What is the primary goal of the Control Program view of the OS?,Execute commands;Protect resources;Create programs;Store data,Protect resources
+10. What is an alternative modern view of the OS?,Resource Controller;Virtual Machine;Dynamic Interface;Utility Manager,Virtual Machine
+11. In a dynamic system component view&c which layer is closest to hardware?,Kernel;Shell;Utilities;Applications,Kernel
+12. What is the kernel responsible for?,Peripheral installation;Core OS functions;Shell management;User program execution,Core OS functions
+13. Which shell is mentioned as a simplified shell?,UNIX;Bourne Shell;Dynamic Shell;Application Shell,Bourne Shell
+14. What system is described as the first "user interface"?,Hardware;CLI;Kernel;Shell,CLI
+15. Which of these is NOT a UNIX shell?,sh;bsh;ksh;DOS,DOS
+16. What type of system programs often ship with an OS?,Utility programs;Executable files;Third-party software;Firmware,Utility programs
+17. Which operating system view focuses on command execution?,Resource Manager;Control Program;Command Executer;Virtual Machine,Command Executer
+18. What is the key role of the OS kernel?,Hardware communication;CLI customization;Managing shells;Debugging,Hardware communication
+19. Which system type prioritizes usability and battery life?,Mainframe;Handheld;Minicomputer;Server,Handheld
+20. What term refers to the OS creating higher-level resources from physical resources?,Layering;Virtualization;Management;Integration,Virtualization

@@ -1,2 +1,6 @@
 csv/ITE201/U1 - IT Help Desk and Incident Management.csv
 csv/ITE201/U1 - IT Service Management.csv
+csv/ITE201/U1 - Operating System.csv
+csv/ITE201/U2 - Hardware and Troubleshooting and SLA.csv
+csv/ITE201/W4 - Help Desk.csv
+csv/ITE201/W4 - Service Operation.csv

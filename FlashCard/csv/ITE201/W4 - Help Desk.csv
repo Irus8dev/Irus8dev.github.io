@@ -1,0 +1,20 @@
+1. What is a key responsibility of the Help Desk?, Technical assistance for IT issues;Installing hardware;Programming;Creating user interfaces, Technical assistance for IT issues
+2. Which is NOT an alternative name for the Help Desk?, Customer Support Center;Resource Center;Peripheral Help Center;Technical Support Center, Peripheral Help Center
+3. What is the primary difference between a Help Desk and an FAQ page?, Help Desk is static;Help Desk responds interactively;FAQ uses real-time responses;FAQ handles inbound inquiries, Help Desk responds interactively
+4. What is the key characteristic of a workgroup network?, Centralized management;Peer-to-peer sharing;Enhanced security;Domain management, Peer-to-peer sharing
+5. What does the `ipconfig /renew` command do?, Displays IP configuration;Renews DHCP lease;Releases DHCP lease;Displays all compartments, Renews DHCP lease
+6. Which command can be used to query DNS servers?, `ping`;`nslookup`;`ipconfig`;`tracert`, `nslookup`
+7. Which virtualization software is commonly used?, Notepad;VirtualBox;Photoshop;Excel, VirtualBox
+8. What does a CRM help manage?, Virtual machines;Customer data;IP addresses;System domains, Customer data
+9. What is NOT a benefit of using a CRM for the Help Desk?, Improves customer service;Organizes customer information;Tracks IP addresses;Facilitates communication, Tracks IP addresses
+10. What is the ITIL framework focused on?, Managing hardware;Standardizing IT service management;Writing FAQs;Managing public IPs, Standardizing IT service management
+11. What is an important principle in customer service?, Ignoring user feedback;Escalating all tickets;Active listening;Being overly technical, Active listening
+12. Which address range belongs to Class A private IP addresses?, 192.168.0.0 – 192.168.255.255;172.16.0.0 – 172.31.255.255;10.0.0.0 – 10.255.255.255;224.0.0.0 – 239.255.255.255, 10.0.0.0 – 10.255.255.255
+13. What is the subnet mask for a Class C network?, 255.0.0.0;255.255.255.0;255.255.0.0;255.255.255.255, 255.255.255.0
+14. What type of address is 127.0.0.1?, Public IP;Multicast;Loopback;APIPA, Loopback
+15. What does APIPA stand for?, Automatic Private IP Addressing;Assigned Private IP Addressing;Access Protocol for IP Assignment;Automated Protocol IP Addressing, Automatic Private IP Addressing
+16. Which IP range is used for broadcasting?, First IP address;All IPs in a network;Last IP address;Any public IP, Last IP address
+17. What is a network address?, First IP in a network;Last IP in a network;Middle IP in a network;Random IP in a network, First IP in a network
+18. What is the key purpose of software like Ninite?, Creating VMs;Installing software in bulk;Querying DNS;Managing domains, Installing software in bulk
+19. Which command helps release a DHCP lease?, `ipconfig /renew`;`ipconfig /release`;`ipconfig /all`;`nslookup`, `ipconfig /release`
+20. What is the role of a Managed Services Provider (MSP) Help Desk?, Resolves software issues;Handles internet issues;Provides outsourced IT services;Manages peer-to-peer networks, Provides outsourced IT services

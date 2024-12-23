@@ -1,0 +1,20 @@
+1. What is the main circuit board of a computer called?,Motherboard;Processor;RAM;Hard drive,Motherboard
+2. Which component serves as the computer’s workspace?,ROM;RAM;Hard drive;BIOS,RAM
+3. What does BIOS stand for?,Basic Input/Output System;Binary Input/Output System;Basic Integrated Operating System;Binary Integrated Operating System,Basic Input/Output System
+4. What type of memory is volatile?,RAM;ROM;Flash memory;Hard drive,RAM
+5. What is the speed of a processor measured in?,Bytes;Hertz;Ohms;Volts,Hertz
+6. Which of the following is NOT a type of RAM?,DRAM;SRAM;BIOS;SDRAM,BIOS
+7. Which component contains permanently written data and is non-volatile?,RAM;ROM;Cache memory;Virtual memory,ROM
+8. What port transmits data one bit at a time?,Serial port;Parallel port;USB port;FireWire,Serial port
+9. Which device is considered an external non-volatile storage option?,RAM;ROM;External hard drive;Processor,External hard drive
+10. What do expansion cards plug into on the motherboard?,Expansion slots;Ports;Bays;Connectors,Expansion slots
+11. Which of these is NOT a function of the CPU?,Data storage;Instruction processing;Control unit operation;Arithmetic calculations,Data storage
+12. What is the primary bus connecting components on a motherboard called?,System Bus;Expansion Bus;Data Bus;Control Bus,System Bus
+13. What is virtual memory used for?,Expanding hard disk space;Supplementing RAM;Running BIOS;Formatting ROM,Supplementing RAM
+14. What unit is data in RAM measured in?,Hertz;Volts;Bytes;Watts,Bytes
+15. What type of port is IEEE 1394 also known as?,USB;FireWire;PCI;AGP,FireWire
+16. What is the term for inserting a circuit board into the motherboard to add functionality?,Expansion;Plug-in;Porting;Docking,Expansion
+17. Which storage device typically has the largest capacity?,Floppy disk;CD-ROM;Hard drive;ZIP disk,Hard drive
+18. What is the purpose of the paging file?,Store BIOS instructions;Supplement RAM;Run programs;Connect to the internet,Supplement RAM
+19. Which connector type is used for high-speed video transfer?,USB;FireWire;HDMI;Ethernet,HDMI
+20. What does the term "hot plugging" refer to?,Adding memory without turning off the system;Removing components from RAM;Rewriting ROM data;Running BIOS setup,Adding memory without turning off the system
