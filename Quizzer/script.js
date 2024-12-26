@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Get the sample file list from the URL parameter
   const params = new URLSearchParams(window.location.search);
-  var sampleFileName = params.get('samples') || '../samplelist.txt';
+  var sampleFileName = params.get('samples') || 'samplelist.txt';
 
   //-- append the csv path "csv/samplefiles.txt"
   // sampleFileList = "csv/" + samplelist;

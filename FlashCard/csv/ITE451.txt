@@ -1,2 +1,0 @@
-csv/ITE451/Midterm.csv
-csv/ITE451/Module5.csv

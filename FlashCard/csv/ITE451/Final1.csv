@@ -1,0 +1,50 @@
+1. What is the main purpose of Amazon VPC?,Create isolated networks;Store encrypted data;Scale EC2 instances;Manage user permissions,Create isolated networks
+2. Which service helps distribute incoming traffic across multiple targets?,Amazon Route 53;AWS Lambda;Elastic Load Balancing;Amazon S3,Elastic Load Balancing
+3. Which AWS service monitors resources and applications in real time?,AWS CloudTrail;Amazon EC2;Amazon CloudWatch;AWS Trusted Advisor,Amazon CloudWatch
+4. What type of storage does Amazon EBS provide?,File storage;Object storage;Block storage;Tape storage,Block storage
+5. How does Amazon S3 differ from Amazon EBS?,S3 supports object storage;EBS supports object storage;S3 is block storage;EBS is file storage,S3 supports object storage
+6. Which Amazon S3 storage class is best for infrequently accessed data?,S3 Standard-IA;S3 Standard;S3 Glacier;S3 Intelligent-Tiering,S3 Standard-IA
+7. What is the purpose of Amazon CloudFront?,Run compute instances;Distribute content globally;Store databases;Encrypt files,Distribute content globally
+8. How does a NAT Gateway function in a VPC?,Encrypts data in transit;Provides internet access for private instances;Balances incoming traffic;Distributes content,Provides internet access for private instances
+9. Which AWS service provides managed NoSQL databases?,Amazon RDS;Amazon Redshift;Amazon DynamoDB;Amazon Aurora,Amazon DynamoDB
+10. Which scaling method is used for predictable traffic patterns?,Dynamic scaling;Manual scaling;Scheduled scaling;Predictive scaling,Scheduled scaling
+11. Which service allows you to scale EC2 instances automatically?,AWS Auto Scaling;AWS Trusted Advisor;Amazon CloudFront;Amazon Route 53,AWS Auto Scaling
+12. What does the "Reliability" pillar of the AWS Well-Architected Framework focus on?,Managing user permissions;Ensuring resources scale;Designing for failure recovery;Reducing costs,Designing for failure recovery
+13. Which load balancer supports HTTPS traffic?,Classic Load Balancer;Application Load Balancer;Network Load Balancer;Lambda Load Balancer,Application Load Balancer
+14. What AWS service can automate backups of databases?,Amazon S3;AWS Backup;AWS Lambda;Amazon Redshift,AWS Backup
+15. How does Amazon Route 53 route traffic based on latency?,Uses latency-based routing;Uses geolocation routing;Uses failover routing;Uses simple routing,Uses latency-based routing
+16. What is Amazon EFS best used for?,Storing objects;Sharing files across EC2 instances;Archiving data;Caching content,Sharing files across EC2 instances
+17. Which storage service is designed for long-term archival?,Amazon Glacier;Amazon S3;Amazon EBS;Amazon RDS,Amazon Glacier
+18. What is the main use of Amazon Redshift?,Compute processing;Data warehousing;File storage;Content delivery,Data warehousing
+19. What is an Auto Scaling group?,A collection of EC2 instances managed as a group;A group of IAM users;A database schema;A collection of S3 buckets,A collection of EC2 instances managed as a group
+20. What service allows monitoring of custom metrics in AWS?,AWS Lambda;Amazon CloudWatch;AWS Auto Scaling;Amazon RDS,Amazon CloudWatch
+21. What is the purpose of an Amazon CloudWatch alarm?,Encrypting data;Triggering an action based on metrics;Scaling database instances;Creating new VPCs,Triggering an action based on metrics
+22. Which AWS service is ideal for real-time event-driven compute functions?,Amazon EC2;AWS Lambda;Amazon DynamoDB;Amazon S3,AWS Lambda
+23. How does Amazon Aurora enhance MySQL performance?,Increases latency;Uses parallel processing;Replicates data across Availability Zones;Stores data in Glacier,Replicates data across Availability Zones
+24. Which database service supports NoSQL workloads?,Amazon Aurora;Amazon RDS;Amazon DynamoDB;Amazon Redshift,Amazon DynamoDB
+25. What type of encryption is used by Amazon S3 for data at rest?,RSA;AES-128;AES-256;SHA-256,AES-256
+26. How does Elastic Load Balancing improve application availability?,Encrypts all data;Replicates storage;Distributes traffic across instances;Creates backups,Distributes traffic across instances
+27. What is the role of a security group in a VPC?,Store logs;Encrypt data;Control inbound and outbound traffic;Distribute content,Control inbound and outbound traffic
+28. Which AWS service automatically adjusts capacity based on demand?,Amazon RDS;AWS Auto Scaling;Amazon S3;AWS Lambda,AWS Auto Scaling
+29. What type of database is Amazon RDS?,Document;Graph;Relational;Key-value,Relational
+30. What is the purpose of Amazon CloudWatch Events?,Stores application logs;Encrypts S3 objects;Routes traffic to healthy instances;Responds to changes in your AWS environment,Responds to changes in your AWS environment
+31. Which Amazon S3 storage class is most cost-effective for archival storage?,S3 Standard;S3 Standard-IA;S3 Glacier Deep Archive;S3 Intelligent-Tiering,S3 Glacier Deep Archive
+32. How does Amazon EC2 Auto Scaling maintain application availability?,Stores logs;Adds or removes EC2 instances;Manages IAM policies;Routes traffic,Adds or removes EC2 instances
+33. Which Amazon Route 53 policy is used to route traffic to the nearest endpoint?,Simple Routing;Latency-based Routing;Geolocation Routing;Failover Routing,Latency-based Routing
+34. Which AWS service can alert you when certain thresholds are met?,AWS CloudTrail;AWS Lambda;Amazon CloudWatch;AWS Trusted Advisor,Amazon CloudWatch
+35. What is a shard in the context of databases?,A single record;A partition of a database;An EC2 instance;An IAM policy,A partition of a database
+36. Which storage type does Amazon EFS provide?,Block;Object;File;Database,File
+37. How does AWS Trusted Advisor help improve security?,Encrypts data;Monitors user activity;Identifies vulnerabilities;Manages database connections,Identifies vulnerabilities
+38. Which scaling method uses historical data to anticipate future capacity needs?,Dynamic scaling;Manual scaling;Scheduled scaling;Predictive scaling,Predictive scaling
+39. Which Amazon S3 feature allows automatic movement of objects between storage classes?,Encryption policies;Lifecycle policies;Replication policies;Access control policies,Lifecycle policies
+40. How does Amazon DynamoDB handle data consistency?,Asynchronous replication;Synchronous replication;Immediate consistency;Eventual consistency,Eventual consistency
+41. What type of data is best suited for Amazon S3?,Unstructured objects;Relational records;File system data;Archived logs,Unstructured objects
+42. Which AWS service is designed for fast processing of large datasets?,AWS Lambda;Amazon RDS;Amazon EC2;Amazon Redshift,Amazon Redshift
+43. What is the purpose of a launch configuration in Auto Scaling?,Stores database connections;Defines EC2 instance settings;Manages IAM roles;Encrypts data,Defines EC2 instance settings
+44. Which load balancer type is optimized for TCP traffic?,Classic Load Balancer;Application Load Balancer;Network Load Balancer;Lambda Load Balancer,Network Load Balancer
+45. Which AWS database service supports online transaction processing (OLTP)?,Amazon Redshift;Amazon Aurora;Amazon DynamoDB;AWS Glue,Amazon Aurora
+46. What feature of Amazon CloudWatch helps automate actions based on metric thresholds?,Log groups;Alarms;Access controls;Data encryption,Alarms
+47. Which AWS service helps you create highly available and scalable databases?,Amazon S3;Amazon RDS;Amazon DynamoDB;Amazon EFS,Amazon RDS
+48. What does Amazon EBS primarily store?,Objects;Databases;Blocks;Files,Blocks
+49. What does a subnet in a VPC define?,A specific storage location;A segment of an IP address range;A user role policy;A data encryption key,A segment of an IP address range
+50. Which AWS service can balance traffic across multiple AZs for fault tolerance?,Amazon CloudFront;Elastic Load Balancing;AWS Auto Scaling;Amazon VPC,Elastic Load Balancing

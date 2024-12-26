@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irus8 Time Tracking</title>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <div class="app-container">
+    <h1>Time Tracking App</h1>
+    <div class="form">
+      <input type="text" id="project" placeholder="Project">
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>      
+    </div>
+    <div id="startMessage"></div>      
+    <div class="sessions">
+      <ul id="sessionList"></ul>
+    </div>
+    <div class="totals">
+      <h2>Project Totals</h2>
+      <ul id="totalsList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

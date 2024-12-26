@@ -1,0 +1,20 @@
+1. What does an operating system act as?, Hardware manager;Interface between user and hardware;User program;Peripheral device, Interface between user and hardware
+2. Which of the following is NOT a main goal of an OS?, Execute user programs;Increase hardware complexity;Make system easy to use;Use hardware efficiently, Increase hardware complexity
+3. What are the basic components of a modern computer?, CPU&c memory&c I/O devices;Compilers&c Linkers&c Debuggers;Applications&c Utilities;Users&c System programs, CPU&c memory&c I/O devices
+4. Which is a key function of the OS?, Compiling code;Managing I/O devices;Designing software;Creating computer hardware, Managing I/O devices
+5. Which of these is NOT a service provided by an OS?, File initialization;Program debugging;Memory design;System access, Memory design
+6. What does the OS use to resolve conflicts for resource contention?, Deadlock management;Resource allocation;Command Execution;System error logging, Resource allocation
+7. Which computing system type is optimized for battery life?, Mainframe;Desktop;Handheld computer;Server, Handheld computer
+8. What does the resource manager in an OS do?, Hides hardware details;Allocates and protects resources;Interprets user commands;Manages battery life, Allocates and protects resources
+9. What is another name for the Command Language Interface (CLI)?, Kernel;Shell;Application;Virtual Machine, Shell
+10. Which shell is an example of a UNIX shell?, cmd.exe;bash;CLI;csh, bash
+11. Which component is known as "the one program running at all times"?, Utility;Kernel;Driver;CLI, Kernel
+12. What does the OS Virtual Machine concept focus on?, Interpreting commands;Creating a high-level programming environment;Managing external devices;Debugging programs, Creating a high-level programming environment
+13. Which is NOT a view of an operating system?, Resource manager;Control program;Peripheral assembler;Command executer, Peripheral assembler
+14. What is a key benefit of separating the shell from the kernel?, Better security;Ease of debugging;Reduced complexity;Automatic updates, Ease of debugging
+15. Which layer is closest to hardware in a computer system?, Applications;Utilities;Kernel;User interface, Kernel
+16. What system role combines data structures and algorithms?, Resource manager;Virtual machine;System design;Control program, Resource manager
+17. Which of these is NOT part of the hierarchical view of a computer system?, Application programs;Users;Operating-System designer;Peripheral devices, Peripheral devices
+18. What type of system frequently uses shared resources from servers?, Workstations;Embedded computers;Mainframes;Handhelds, Workstations
+19. What service does an OS provide for program creation?, I/O handling;Access management;Compilers and linkers;Virtual machines, Compilers and linkers
+20. Which of these is NOT a classical view of an OS?, Virtual machine;Command executer;Control program;Resource manager, Virtual machine
