@@ -11,9 +11,9 @@ footer {
 }
 
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: small;
-  background: linear-gradient(to bottom, #f5f7fa, #e6e9f0);
+  background: #e6e9f0;
   color: #333;
   margin: 0;
   text-align: center;
@@ -47,9 +47,8 @@ a:hover {
 
 .container {
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   max-width: 600px;
   width: 100%;
 }
@@ -57,14 +56,13 @@ a:hover {
 .control-container {
   padding: 5px;
   border-radius: 10px;
-  background-color: #f9f9f9;
 }
 
 .quiz-container {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
   min-height: 150px;
   margin-bottom: 5px;
@@ -72,10 +70,10 @@ a:hover {
 
 /** Displays the question on the screen.**/
 .quiz-question {
-  font-size: 18px;
-  min-height: 54px;
+  font-size: 16px;
+  min-height: 48px;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .quiz-selection {
@@ -143,6 +141,7 @@ a:hover {
   resize: vertical;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-height: 120px;
 }
 
 .buy-coffee-button img {
