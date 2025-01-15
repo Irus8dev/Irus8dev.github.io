@@ -1,0 +1,240 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>seastar-reservation: Data_Types</title>
+</head>
+<body>
+<H4><a href="index.html">Home</a></H4>
+<H2>Data Types</H2>
+<div class="sep"></div>
+<H4><span id=".user." class="data">User</span></H4>
+<ul>
+<li>Team : <a href="#.tourteam." class="elem">TourTeam</a></li>
+</ul>
+<H4><span id=".locking." class="data">TourLock</span></H4>
+<ul>
+<li>Lock : Date</li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+</ul>
+<H4><span id=".tourteam." class="data">TourTeam</span></H4>
+<ul>
+<li>Name : Text</li>
+<li>Login : Text</li>
+<li>Remarks : Text</li>
+<li>AccessLevel : Number</li>
+<li>Position : <a href="#.teamposition." class="elem">OptPosition</a></li>
+<li>AssignedTrans : <a href="#.tourtransport." class="elem">TourTransport</a></li>
+</ul>
+<H4><span id=".touragent." class="data">TourAgent</span></H4>
+<ul>
+<li>Code : Text</li>
+<li>Name : Text</li>
+<li>Email : Text</li>
+<li>Phone : Text</li>
+<li>Address : Text</li>
+<li>Remarks : Text</li>
+<li>TaxID : Text</li>
+<li>Inactive : boolean</li>
+</ul>
+<H4><span id=".tourhotel." class="data">TourHotel</span></H4>
+<ul>
+<li>Name : Text</li>
+<li>Zone : Text</li>
+<li>Phone : Text</li>
+<li>Remarks : Text</li>
+<li>Address : Text</li>
+<li>Website : Text</li>
+<li>PickupTime : Text</li>
+</ul>
+<H4><span id=".tourticket." class="data">TourTicket</span></H4>
+<ul>
+<li>Room : Text</li>
+<li>Group : Text</li>
+<li>Remarks : Text</li>
+<li>BookDate : Date</li>
+<li>Number : Number</li>
+<li>TripDate : Date</li>
+<li>TripTime : Date</li>
+<li>VCNumber : Text</li>
+<li>GuestName : Text</li>
+<li>HotelZone : Text</li>
+<li>Allotted : Number</li>
+<li>NumGuest : Number</li>
+<li>ReturnDate : Date</li>
+<li>ReturnTime : Date</li>
+<li>NumCheckIn : Number</li>
+<li>ActualNumGuest : Number</li>
+<li>Attachments : list.file</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>Hotel : <a href="#.tourhotel." class="elem">TourHotel</a></li>
+<li>COTAmount : Number</li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+<li>Language : <a href="#.optlanguage." class="elem">OptLanguage</a></li>
+<li>Status : <a href="#.optticketstatus." class="elem">OptTicketStatus</a></li>
+</ul>
+<H4><span id=".tourpackage." class="data">TourProgram</span></H4>
+<ul>
+<li>Name : Text</li>
+<li>Image : Image</li>
+<li>Prefix : Text</li>
+<li>Remarks : Text</li>
+<li>TripTime : Date</li>
+<li>Capacity : Number</li>
+<li>Duration : Number</li>
+<li>ReturnTime : Date</li>
+<li>ProgDesc : Text</li>
+<li>Pier : <a href="#.optpiers." class="elem">OptPier</a></li>
+<li>NoBoat : boolean</li>
+<li>Type : <a href="#.programtype." class="elem">OptProgramType</a></li>
+</ul>
+<H4><span id=".tourschedule." class="data">TourTicketSchd</span></H4>
+<ul>
+<li>SchdDate : Date</li>
+<li>_SortGroup : Text</li>
+<li>NumGuest : Number</li>
+<li>EstVanArrival : Text</li>
+<li>_SortTransType : Text</li>
+<li>_SortTransName : Text</li>
+<li>NumCheckIn : Number</li>
+<li>_SortTicketNo : Number</li>
+<li>Ticket : <a href="#.tourticket." class="elem">TourTicket</a></li>
+<li>Type : <a href="#.tourscheduletype." class="elem">OptScheduleType</a></li>
+<li>Transport : <a href="#.tourtransport." class="elem">TourTransport</a></li>
+<li>Status : <a href="#.optschedulestatus." class="elem">OptScheduleStatus</a></li>
+</ul>
+<H4><span id=".toursettings." class="data">TourCompany</span></H4>
+<ul>
+<li>Name : Text</li>
+<li>EMail : Text</li>
+<li>Address : Text</li>
+<li>Website : Text</li>
+<li>Telephone : Text</li>
+<li>Operations : Text</li>
+<li>Fax : Text</li>
+<li>StartGroup : Number</li>
+<li>AllotExpire : Date</li>
+<li>StartTicket : Number</li>
+<li>StartGroupEdited : Date</li>
+<li>StartReceipt : Number</li>
+</ul>
+<H4><span id=".tourallotment." class="data">TourAllotment</span></H4>
+<ul>
+<li>Reserve : Number</li>
+<li>_SortProgram : Text</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+</ul>
+<H4><span id=".tourguestrate." class="data">TourRate</span></H4>
+<ul>
+<li>Rate : Number</li>
+<li>_SortDesc : Text</li>
+<li>_SortProgram : Text</li>
+<li>AcctCode : Number</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>RateType : <a href="#.optratetype." class="elem">OptRateType</a></li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+<li>TourRateType : <a href="#.tourguestratetype." class="elem">TourRateType</a></li>
+</ul>
+<H4><span id=".tourtransport." class="data">TourTransport</span></H4>
+<ul>
+<li>Code : Text</li>
+<li>Name : Text</li>
+<li>TransType : Text</li>
+<li>Zone : Text</li>
+<li>Phone : Text</li>
+<li>License : Text</li>
+<li>Remarks : Text</li>
+<li>Capacity : Number</li>
+<li>OfficialName : Text</li>
+<li>Pier : <a href="#.optpiers." class="elem">OptPier</a></li>
+<li>Operator : <a href="#.tourteam." class="elem">TourTeam</a></li>
+</ul>
+<H4><span id=".tourreportslip." class="data">TourReportSlip</span></H4>
+<ul>
+<li>Group : Text</li>
+<li>_SortVCNum : Text</li>
+<li>_ManifestIndex : Number</li>
+<li>VanName : Text</li>
+<li>BoatName : Text</li>
+<li>SchdDate : Date</li>
+<li>Remarks : Text</li>
+<li>PickUpTime : Text</li>
+<li>NumCheckIn : Number</li>
+<li>NumPassenger : Number</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>Ticket : <a href="#.tourticket." class="elem">TourTicket</a></li>
+<li>SchdType : <a href="#.tourscheduletype." class="elem">OptScheduleType</a></li>
+</ul>
+<H4><span id=".tourticketfees." class="data">TourTicketDetail</span></H4>
+<ul>
+<li>_Sort : Number</li>
+<li>SubTotal : Number</li>
+<li>TripDate : Date</li>
+<li>AcctCode : Number</li>
+<li>Description : Text</li>
+<li>NumGuest : Number</li>
+<li>_SortTicketNo : Number</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>Ticket : <a href="#.tourticket." class="elem">TourTicket</a></li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+<li>RateType : <a href="#.optratetype." class="elem">OptRateType</a></li>
+<li>PaymentType : <a href="#.optpaymenttype." class="elem">OptPaymentType</a></li>
+</ul>
+<H4><span id=".tourguestratetype." class="data">TourRateType</span></H4>
+<ul>
+<li>AcctCode : Number</li>
+<li>Description : Text</li>
+<li>Type : <a href="#.optratetype." class="elem">OptRateType</a></li>
+</ul>
+<H4><span id=".tourreportbalance." class="data">TourReportBalance</span></H4>
+<ul>
+<li>Date : Date</li>
+<li>COT : Number</li>
+<li>Fee : Number</li>
+<li>Rate : Number</li>
+<li>_SortAgent : Text</li>
+<li>Discount : Number</li>
+<li>Wholesale : Number</li>
+<li>Balance : Number</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+</ul>
+<H4><span id=".tourticketmanifest." class="data">TourTicketManifest</span></H4>
+<ul>
+<li>DOB : Date</li>
+<li>Name : Text</li>
+<li>Age : Number</li>
+<li>_SortGroup : Text</li>
+<li>PassportNum : Text</li>
+<li>Nationality : Text</li>
+<li>Sex : <a href="#.optsex." class="elem">OptSex</a></li>
+<li>_SortTicketNo : Number</li>
+<li>_SortTripdate : Date</li>
+<li>Ticket : <a href="#.tourticket." class="elem">TourTicket</a></li>
+</ul>
+<H4><span id=".tourticketmanifest2." class="data">TourReportManifest</span></H4>
+<ul>
+<li>DOB : Date</li>
+<li>Name : Text</li>
+<li>Age : Number</li>
+<li>VCNum : Text</li>
+<li>TransName : Text</li>
+<li>PassportNum : Text</li>
+<li>Nationality : Text</li>
+<li>TicketNum : Number</li>
+<li>Sex : <a href="#.optsex." class="elem">OptSex</a></li>
+<li>Tripdate : Date</li>
+<li>TripType : <a href="#.tourscheduletype." class="elem">OptScheduleType</a></li>
+</ul>
+<H4><span id=".touragentoverallotted." class="data">TourAgentOverAllotted</span></H4>
+<ul>
+<li>Count : Number</li>
+<li>TripDate : Date</li>
+<li>Agent : <a href="#.touragent." class="elem">TourAgent</a></li>
+<li>Program : <a href="#.tourpackage." class="elem">TourProgram</a></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

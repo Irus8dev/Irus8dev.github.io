@@ -1,0 +1,165 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: agent</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>agent - Page</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTHGj." class="elem">FloatingGroup: Backdrop Flt</span>
+<ul>
+<li>◆ <span id=".bTHHH." class="elem">HTML: HTML A</span></li>
+</ul></li>
+<li>◆ <span id=".bTHGt." class="elem">CustomElement: Header Flt</span></li>
+<li>◆ <span id=".bTIIg." class="elem">CustomElement: Pop AddAgentDiscount A</span></li>
+<li>◆ <span id=".bTIkY." class="elem">CustomElement: Pop AgentAdd A</span></li>
+<li>◆ <span id=".bTIpX." class="elem">CustomElement: Pop AgentBenefits A</span></li>
+<li>◆ <span id=".bTJsH." class="elem">Group: Agent Grp</span>
+<ul>
+<li>◆ <span id=".bTHjK." class="elem">Repeating group: Agent Rpg List</span>
+<ul>
+<li>◆ <span id=".bTHjN." class="elem">Text: Agent Txt Name</span>
+<ul>
+<li>Text = Current cell&#39;s Name</li>
+</ul></li>
+<li>◆ <span id=".bTHjk." class="elem">Text: LblSpecialDiscount</span>
+<ul>
+<li>Text = Special Discount</li>
+</ul></li>
+<li>◆ <span id=".bTHjq." class="elem">Repeating group: Rpt Allotments</span>
+<ul>
+<li>◆ <span id=".bTHjv." class="elem">Text: TxtManageAgentAllotmentReserve</span>
+<ul>
+<li>Text = Current cell&#39;s Reserve</li>
+</ul></li>
+<li>◆ <span id=".bTJKX." class="elem">Text: TxtManageAgentAllotmentPackage</span>
+<ul>
+<li>Text = Current cell&#39;s Program name text</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTHjt." class="elem">Text: LblAllotment</span>
+<ul>
+<li>Text = Allotment</li>
+</ul></li>
+<li>◆ <span id=".bTIbm." class="elem">Shape: List Shp</span>
+<ul>
+<li>disp = default</li>
+</ul></li>
+<li>◆ <span id=".bTIkm." class="elem">Icon: Agent Ico Edit</span>
+<ul>
+<li>Icon = material outlined edit</li>
+</ul></li>
+<li>◆ <span id=".bTImE." class="elem">Text: Agent Txt Address</span>
+<ul>
+<li>Text = [b]Agent Code: [/b]Current cell&#39;s Code</li>
+</ul></li>
+<li>◆ <span id=".bTIpK." class="elem">Icon: Agent Ico Edit Benefits</span>
+<ul>
+<li>Icon = material outlined diamond
+<ul>
+<li>Change: Disabled = true</li>
+<li>Tooltip text = No access</li>
+<li>Opacity = 60</li>
+<li>When: Current User&#39;s Team accesslevel number &gt; 1</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTKVA." class="elem">Repeating group: Rpt Discounts</span>
+<ul>
+<li>◆ <span id=".bTKVF." class="elem">Text: TxtCommRate copy</span>
+<ul>
+<li>Text = Current cell&#39;s Rate:formatted as 1,024</li>
+</ul></li>
+<li>◆ <span id=".bTKVG." class="elem">Text: TxtCommPackage</span>
+<ul>
+<li>Text = Current cell&#39;s Program name text</li>
+</ul></li>
+<li>◆ <span id=".bTNYu." class="elem">Text: TxtCommRate</span>
+<ul>
+<li>Text = Current cell&#39;s TourRateType description text</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTTBI." class="elem">Text: Txt Inactive</span>  👓
+<ul>
+<li>Text = Inactive
+<ul>
+<li>Change: Visible = true</li>
+<li>When: Current cell&#39;s Inactive is true</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTHkC." class="elem">Group: Grp Top</span>
+<ul>
+<li>Min height css = 46px</li>
+<li>◆ <span id=".bTHkF." class="elem">Button: BtnManageAgentAdd</span>
+<ul>
+<li>Text = Add Agent</li>
+</ul></li>
+<li>◆ <span id=".bTKUz." class="elem">Input: Agent Inp Search Agent</span>
+<ul>
+<li>Placeholder = Search Agent</li>
+</ul></li>
+<li>◆ <span id=".bTTBO." class="elem">Input: Inp Search Code</span>
+<ul>
+<li>Placeholder = Search Code</li>
+</ul></li>
+<li>◆ <span id=".bTTBY." class="elem">Icon: Ico Reset Inputs</span>
+<ul>
+<li>Icon = material outlined replay</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJzP." class="elem">CustomElement: Flt Footer A</span></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTHkF." class="elem">BtnManageAgentAdd</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Set custom state of Pop AgentAdd A - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttMode = <a href="#.bTJlq." class="elem">Add</a></li>
+</ul></li>
+<li>2. Reset <a href="#.bTIkY." class="elem">Pop AgentAdd A</a> - &quot;Reset&quot;</li>
+<li>3. Show <a href="#.bTIkY." class="elem">Pop AgentAdd A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIkm." class="elem">Agent Ico Edit</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Set custom state of Pop AgentAdd A - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttMode = <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+<li>2. Display data in <a href="#.bTIkY." class="elem">Pop AgentAdd A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>3. Show <a href="#.bTIkY." class="elem">Pop AgentAdd A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIpK." class="elem">Agent Ico Edit Benefits</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Display data in <a href="#.bTIpX." class="elem">Pop AgentBenefits A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>2. Show <a href="#.bTIpX." class="elem">Pop AgentBenefits A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ User is logged in - &quot;User is logged in - Check User Access Level&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRtg." class="elem">noaccess</a> - &quot;Go to page&quot;
+<ul>
+<li>When: Current User&#39;s Team accesslevel number &gt; 2</li>
+</ul></li>
+</ul></li>
+<li>◆ User is logged out - &quot;User is logged out&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRjj." class="elem">login</a> - &quot;Go to login if logged out&quot;
+<ul>
+<li>page = agent</li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTTBY." class="elem">Ico Reset Inputs</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Reset <a href="#.bTHkC." class="elem">Grp Top</a> - &quot;Reset&quot;</li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

@@ -1,0 +1,279 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: Pop Team</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>Pop Team - CustomDefinition</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTIbB." class="elem">Button: Team btn Save</span>
+<ul>
+<li>Text = Save
+<ul>
+<li>Change: Disabled = true</li>
+<li>Tooltip text = Log in is required for Super User</li>
+<li>When: <a href="#.bTRyj." class="elem">Drp Level</a>&#39;s value equals 1 and <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value is empty</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIbH." class="elem">Text: Team Lbl Name</span>
+<ul>
+<li>Text = Full Name</li>
+</ul></li>
+<li>◆ <span id=".bTIbN." class="elem">Input: Team Inp Name</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Name</li>
+</ul></li>
+<li>◆ <span id=".bTJHW." class="elem">TabFix: TabFix A</span>
+<ul>
+<li>Use custom order = true</li>
+<li>Tab orders = A1,A2,A3,A4,A5,A6,A7,A8,A9,A10</li>
+</ul></li>
+<li>◆ <span id=".bTJHc." class="elem">Text: Team Txt Delete</span>  👓
+<ul>
+<li>Text = Delete
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJHd." class="elem">Icon: Team Ico Close</span>
+<ul>
+<li>Icon = material outlined close</li>
+</ul></li>
+<li>◆ <span id=".bTJHe." class="elem">Text: Team Txt Caption</span>
+<ul>
+<li>Text = <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttMode&#39;s Display Team</li>
+</ul></li>
+<li>◆ <span id=".bTJII." class="elem">Text: Team Lbl Position</span>
+<ul>
+<li>Text = Position</li>
+</ul></li>
+<li>◆ <span id=".bTJIg." class="elem">Text: Team Lbl Remarks</span>
+<ul>
+<li>Text = Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJIm." class="elem">Multiline input: Team Inp Remarks</span>
+<ul>
+<li>Initial content = Parent group&#39;s Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJNe." class="elem">Alert: Alt Warning</span>
+<ul>
+<li>Position at the top = true</li>
+</ul></li>
+<li>◆ <span id=".bTJUr." class="elem">Dropdown: Drp Position</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Default value = <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>&#39;s Position</li>
+<li>Placeholder = Choose the position</li>
+<li>Dynamic type = <a href="#.teamposition." class="elem">OptPosition</a></li>
+</ul></li>
+<li>◆ <span id=".bTRyX." class="elem">Text: Lbl D</span>
+<ul>
+<li>Text = Access Level (1 = Highest)</li>
+</ul></li>
+<li>◆ <span id=".bTRyj." class="elem">Dropdown: Drp Level</span>
+<ul>
+<li>Static Choices = 1</br>2</br>3</li>
+<li>Default value = <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>&#39;s AccessLevel</li>
+<li>Placeholder = Access Level</li>
+</ul></li>
+<li>◆ <span id=".bTRzB." class="elem">Input: Inp Login</span>
+<ul>
+<li>Placeholder = login name...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Login
+<ul>
+<li>Change: Required = true</li>
+<li>When: <a href="#.bTRyj." class="elem">Drp Level</a>&#39;s value equals 1 and <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value is empty</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRzH." class="elem">Text: Lbl C</span>
+<ul>
+<li>Text =  Login Name (Blank for no access)</li>
+</ul></li>
+<li>◆ <span id=".bTTAW." class="elem">Text: Text F</span>
+<ul>
+<li>Text = 1 = Super Admin</br>2 = Admin</br>3 = Booking</li>
+</ul></li>
+<li>◆ <span id=".bTUXM." class="elem">CustomElement: Pop Confirm Delete</span></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTJHd." class="elem">Team Ico Close</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Hide <a href="#.bTJZM." class="elem">Pop Team</a> - &quot;Hide&quot;</li>
+<li>2. Reset <a href="#.bTJZM." class="elem">Pop Team</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJZM." class="elem">Pop Team</a> is opened - &quot;is opened&quot;
+<ul>
+<li>1. Set focus to <a href="#.bTIbN." class="elem">Team Inp Name</a> - &quot;Set focus to&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Team Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourtransport." class="data">TourTransport</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourtransport." class="data">TourTransport</a></li>
+<li><a href="#.operator_custom_tourteam." class="elem">Operator</a> = <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+</ul></li>
+<li>1. Show alert <a href="#.bTJNe." class="elem">Alt Warning</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Team Member is in used!</li>
+</ul></li>
+</ul></li>
+<li>◆ Evt Add Edit - &quot;Custom&quot;
+<ul>
+<li>1. Set custom state of Pop Team - &quot;Init Custom States&quot;
+<ul>
+<li>▪ SttNameExists = false</li>
+<li>▪ SttLoginExists = false</li>
+</ul></li>
+<li>2. Set custom state of Pop Team - &quot;See if Login already exists&quot;
+<ul>
+<li>▪ SttLoginExists = [Search for <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+<li><a href="#.login_text." class="elem">Login</a> = <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value:trimmed</li>
+<li>Unique id &lt;&gt; <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>&#39;s unique id</li>
+<li>Ignore empty contraints=true</li>
+</ul></li>
+<li>When: <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value is not empty</li>
+</ul></li>
+<li>3. Set custom state of Pop Team - &quot;See if Name already exists&quot;
+<ul>
+<li>▪ SttNameExists = [Search for <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Team Inp Name</a>&#39;s value:trimmed</li>
+<li>Unique id &lt;&gt; <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>&#39;s unique id</li>
+<li>Ignore empty contraints=true</li>
+</ul></li>
+</ul></li>
+<li>4. Show alert <a href="#.bTJNe." class="elem">Alt Warning</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Team member or Login already exists</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttNameExists is true or <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLoginExists is true</li>
+</ul></li>
+<li>5. Terminate this workflow. - &quot;Terminate this workflow&quot;
+<ul>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttNameExists is true or <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLoginExists is true</li>
+</ul></li>
+<li>6. Make changes to <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a> - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Team Inp Name</a>&#39;s value</li>
+<li><a href="#.remarks_text." class="elem">Remarks</a> = <a href="#.bTJIm." class="elem">Team Inp Remarks</a>&#39;s value</li>
+<li><a href="#.position_option_teamposition." class="elem">Position</a> = <a href="#.bTJUr." class="elem">Drp Position</a>&#39;s value</li>
+<li><a href="#.accesslevel_number." class="elem">AccessLevel</a> = <a href="#.bTRyj." class="elem">Drp Level</a>&#39;s value</li>
+<li><a href="#.login_text." class="elem">Login</a> = <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+<li>7. Create a new <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a> - &quot;Create a new&quot;
+<ul>
+<li>Name = <a href="#.bTIbN." class="elem">Team Inp Name</a>&#39;s value</li>
+<li>Remarks = <a href="#.bTJIm." class="elem">Team Inp Remarks</a>&#39;s value</li>
+<li>Position = <a href="#.bTJUr." class="elem">Drp Position</a>&#39;s value</li>
+<li>AccessLevel = <a href="#.bTRyj." class="elem">Drp Level</a>&#39;s value</li>
+<li>Login = <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttMode equals <a href="#.bTJlq." class="elem">Add</a></li>
+</ul></li>
+<li>8. Delete a list of <a href="..\Data_Types.html#.user." class="data">User</a> - &quot;Delete user if login blank&quot;
+<ul>
+<li>[Search for <a href="..\Data_Types.html#.user." class="data">User</a>]
+<ul>
+<li>● <a href="..\Data_Types.html#.user." class="data">User</a></li>
+<li><a href="#.team_custom_tourteam." class="elem">Team</a> = Result of step 6(Make chang...)</li>
+</ul></li>
+<li>When: <a href="#.bTRzB." class="elem">Inp Login</a>&#39;s value is empty</li>
+</ul></li>
+<li>9. Hide <a href="#.bTJZM." class="elem">Pop Team</a> - &quot;Hide&quot;</li>
+<li>10. Reset <a href="#.bTJZM." class="elem">Pop Team</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIbB." class="elem">Team btn Save</a> is clicked - &quot;Team btn Save is clicked&quot;
+<ul>
+<li>1. Set custom state of Pop Team - &quot;Reset SttLastSuperUser&quot;
+<ul>
+<li>▪ SttLastSuperUser = false</li>
+</ul></li>
+<li>2. Set custom state of Pop Team - &quot;See if this is the last super-user&quot;
+<ul>
+<li>▪ SttLastSuperUser = true</li>
+<li>When: Parent group&#39;s AccessLevel equals 1 and <a href="#.bTRyj." class="elem">Drp Level</a>&#39;s value not equals 1 and [Search for <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>]:count &lt;= 1
+<ul>
+<li>● <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+<li><a href="#.accesslevel_number." class="elem">AccessLevel</a> = 1</li>
+</ul></li>
+</ul></li>
+<li>3. Show alert <a href="#.bTJNe." class="elem">Alt Warning</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = One Super User is required!</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLastSuperUser is true</li>
+</ul></li>
+<li>4. Trigger Evt Add Edit - &quot;Trigger&quot;
+<ul>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLastSuperUser is false</li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTUXM." class="elem">Pop Confirm Delete</a> is closed - &quot;is closed&quot;
+<ul>
+<li>When: Pop Confirm Delete&#39;s SttResult is true</li>
+<li>1. Delete a list of <a href="..\Data_Types.html#.user." class="data">User</a> - &quot;Delete the login user as well&quot;
+<ul>
+<li>[Search for <a href="..\Data_Types.html#.user." class="data">User</a>]
+<ul>
+<li>● <a href="..\Data_Types.html#.user." class="data">User</a></li>
+<li><a href="#.team_custom_tourteam." class="elem">Team</a> = Parent group</li>
+</ul></li>
+</ul></li>
+<li>2. Delete Parent group - &quot;Delete from TourTeam...&quot;</li>
+<li>3. Hide <a href="#.bTJZM." class="elem">Pop Team</a> - &quot;Hide&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Team Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourtransport." class="data">TourTransport</a>]:count &lt;= 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourtransport." class="data">TourTransport</a></li>
+<li><a href="#.operator_custom_tourteam." class="elem">Operator</a> = <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+</ul></li>
+<li>1. Set custom state of Pop Team - &quot;Reset SttLastSuperUser&quot;
+<ul>
+<li>▪ SttLastSuperUser = false</li>
+</ul></li>
+<li>2. Set custom state of Pop Team - &quot;See if SttLastSuperUser&quot;
+<ul>
+<li>▪ SttLastSuperUser = true</li>
+<li>When: Parent group&#39;s AccessLevel equals 1 and [Search for <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a>]:count &lt;= 1
+<ul>
+<li>● <a href="..\Data_Types.html#.tourteam." class="data">TourTeam</a></li>
+<li><a href="#.accesslevel_number." class="elem">AccessLevel</a> = 1</li>
+</ul></li>
+</ul></li>
+<li>3. Show alert <a href="#.bTJNe." class="elem">Alt Warning</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = One Super User is required!</li>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLastSuperUser is true</li>
+</ul></li>
+<li>4. Terminate this workflow. - &quot;Terminate this workflow&quot;
+<ul>
+<li>When: <a href="#.bTJZM." class="elem">Pop Team</a>&#39;s SttLastSuperUser is true</li>
+</ul></li>
+<li>5. Set custom state of Pop Confirm Delete - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttMessage = Delete, are you sure?</li>
+<li>▪ SttResult = false</li>
+</ul></li>
+<li>6. Show <a href="#.bTUXM." class="elem">Pop Confirm Delete</a> - &quot;Show&quot;</li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

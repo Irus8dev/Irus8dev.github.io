@@ -1,0 +1,404 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: Pop Program</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>Pop Program - CustomDefinition</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTIbB." class="elem">Button: Program btn Save</span>
+<ul>
+<li>Text = Add
+<ul>
+<li>Change: Text = Save</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+<li>Change: Disabled = true</li>
+<li>Opacity = 40</li>
+<li>Text = duration!</li>
+<li>When: <a href="#.bTJIC." class="elem">Drd Type</a>&#39;s value equals <a href="#.bTJHF." class="elem">Overnight Trip</a> and <a href="#.bTJHq." class="elem">Inp Duration</a>&#39;s value &lt;= 1</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIbH." class="elem">Text: Lbl Name</span>
+<ul>
+<li>Text = Name</li>
+</ul></li>
+<li>◆ <span id=".bTIbN." class="elem">Input: Inp Name</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Name
+<ul>
+<li>Change: Initial content = Parent group&#39;s Name - [Search for <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a>]:count:formatted as 1024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+</ul></li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJpN." class="elem">Copy</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIeO." class="elem">Text: Program Lbl TripTime</span>
+<ul>
+<li>Text = Trip Time</li>
+</ul></li>
+<li>◆ <span id=".bTIeU." class="elem">Input: Program Inp TripTime</span>
+<ul>
+<li>Placeholder = Ex. 15, 15:30</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s TripTime:format date(HH:MM)</li>
+</ul></li>
+<li>◆ <span id=".bTJEF." class="elem">Text: Program Lbl ReturnTime</span>
+<ul>
+<li>Text = Return Time</br></li>
+</ul></li>
+<li>◆ <span id=".bTJEL." class="elem">Input: Program Inp ReturnTime</span>
+<ul>
+<li>Placeholder = Ex. 15, 15:30</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s ReturnTime:format date(HH:MM)</li>
+</ul></li>
+<li>◆ <span id=".bTJGu." class="elem">Set Time Of Day: Program Std TripTime</span>
+<ul>
+<li>Date In = Arbitrary date/time(1/1/2000 5:00:00 PM)</li>
+<li>Offset = <a href="#.bTIeU." class="elem">Program Inp TripTime</a>&#39;s value</li>
+</ul></li>
+<li>◆ <span id=".bTJHA." class="elem">Set Time Of Day: Program Std ReturnTime</span>
+<ul>
+<li>Date In = Arbitrary date/time(1/1/2000 5:00:00 PM)</li>
+<li>Offset = <a href="#.bTJEL." class="elem">Program Inp ReturnTime</a>&#39;s value</li>
+</ul></li>
+<li>◆ <span id=".bTJHW." class="elem">TabFix: TabFix A</span>
+<ul>
+<li>Use custom order = true</li>
+<li>Tab orders = a1,a2,a3,a4,a5,a6,a7,a8,a9,g1,a10,a11,a12,a13,a14</li>
+<li>▫ Comment: -It&#39;s best to use custom order and ID each element as 1, 2, 3, 4, ....</li>
+</ul></li>
+<li>◆ <span id=".bTJHc." class="elem">Text: Program Txt Delete</span>  👓
+<ul>
+<li>Text = Delete
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJHd." class="elem">Icon: Program Ico Close</span>
+<ul>
+<li>Icon = material outlined close</li>
+</ul></li>
+<li>◆ <span id=".bTJHe." class="elem">Text: Program Txt Caption</span>
+<ul>
+<li>Text = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode&#39;s Display Program</li>
+</ul></li>
+<li>◆ <span id=".bTJHk." class="elem">Text: Program Lbl Duration</span>
+<ul>
+<li>Text = Duration (Days)</li>
+</ul></li>
+<li>◆ <span id=".bTJHq." class="elem">Input: Inp Duration</span>
+<ul>
+<li>Placeholder = Duration...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Content format = int_number</li>
+<li>Initial content = Parent group&#39;s Duration</li>
+<li>Has number range = true</li>
+<li>Minimum value = 1</li>
+<li>Maximum value = 30
+<ul>
+<li>Change: Border color = var(--color_destructive_default)</li>
+<li>When: <a href="#.bTJIC." class="elem">Drd Type</a>&#39;s value equals <a href="#.bTJHF." class="elem">Overnight Trip</a> and <a href="#.bTJHq." class="elem">Inp Duration</a>&#39;s value &lt;= 1</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJHw." class="elem">Text: Program Lbl Duration copy</span>
+<ul>
+<li>Text = Type</li>
+<li>▫ Comment: -It&#39;s best to use custom order and ID each element as 1, 2, 3, 4, ....</li>
+</ul></li>
+<li>◆ <span id=".bTJIC." class="elem">Dropdown: Drd Type</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Default value = Parent group&#39;s Type</li>
+<li>Placeholder = Type...</li>
+<li>Dynamic type = <a href="#.programtype." class="elem">OptProgramType</a></li>
+</ul></li>
+<li>◆ <span id=".bTJII." class="elem">Text: Lbl Pier</span>
+<ul>
+<li>Text = PIer</li>
+</ul></li>
+<li>◆ <span id=".bTJIU." class="elem">Text: Program Lbl Capacity</span>
+<ul>
+<li>Text = Max Capacity</li>
+</ul></li>
+<li>◆ <span id=".bTJIa." class="elem">Input: Program Inp Capacity</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Content format = int_number</li>
+<li>Initial content = Parent group&#39;s Capacity</li>
+<li>Has number range = true</li>
+<li>Minimum value = 1</li>
+<li>Maximum value = 10000</li>
+</ul></li>
+<li>◆ <span id=".bTJIg." class="elem">Change: Text: Program Lbl Remarks</span>
+<ul>
+<li>Text = Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJIm." class="elem">Multiline input: Program Inp Remarks</span>
+<ul>
+<li>Initial content = Parent group&#39;s Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJNE." class="elem">Popup: Pop Confirm Delete</span>
+<ul>
+<li>disp = default</li>
+<li>◆ <span id=".bTJLU." class="elem">Text: Text Delete, are you sure</span>
+<ul>
+<li>Text = Delete, are you sure?</li>
+</ul></li>
+<li>◆ <span id=".bTJLa." class="elem">Button: Btn Confirm Yes</span>
+<ul>
+<li>Text = Yes</li>
+</ul></li>
+<li>◆ <span id=".bTJLl." class="elem">Button: Btn Confirm No</span>
+<ul>
+<li>Text = No</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJNe." class="elem">Alert: Program Alrt</span>
+<ul>
+<li>Position at the top = true</li>
+</ul></li>
+<li>◆ <span id=".bTKRV." class="elem">Alert: Programt Alrt Added</span>
+<ul>
+<li>Position at the top = true</li>
+</ul></li>
+<li>◆ <span id=".bTKTx." class="elem">Dropdown: Dropdown C</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Default value = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a>&#39;s Pier</li>
+<li>Placeholder = Select Pier...</li>
+<li>Dynamic type = <a href="#.optpiers." class="elem">OptPier</a></li>
+</ul></li>
+<li>◆ <span id=".bTMvk." class="elem">Group: Grp Rates</span>
+<ul>
+<li>Min height css = 319px</li>
+<li>◆ <span id=".bTPIk." class="elem">Repeating group: Rpt Rates</span>
+<ul>
+<li>◆ <span id=".bTKGF." class="elem">Icon: Ico Delete Rate</span>
+<ul>
+<li>Icon = material outlined remove_circle</li>
+</ul></li>
+<li>◆ <span id=".bTKGK." class="elem">Text: Txt Rate</span>
+<ul>
+<li>Text = Current cell&#39;s Rate:formatted as 1,024</li>
+</ul></li>
+<li>◆ <span id=".bTKGL." class="elem">Text: Txt Desc</span>
+<ul>
+<li>Text = Current cell&#39;s TourRateType description text   -   Current cell&#39;s RateType&#39;s Display</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTVTo." class="elem">Group: Group B</span>
+<ul>
+<li>Min height css = 40px</li>
+<li>◆ <span id=".bTVTp." class="elem">Dropdown: Drp Std Rate</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Placeholder = Rate Type...</li>
+<li>Dynamic type = <a href="..\Data_Types.html#.tourguestratetype." class="data">TourRateType</a></li>
+</ul></li>
+<li>◆ <span id=".bTVTq." class="elem">Input: Inp Rate</span>
+<ul>
+<li>Placeholder = Rate...</li>
+<li>Show thousands = true</li>
+<li>Prevent &quot;enter&quot; key = false</li>
+<li>Content format = int_number</li>
+</ul></li>
+<li>◆ <span id=".bTVTu." class="elem">Change: Icon: Ico Add Rate</span>
+<ul>
+<li>Icon = material outlined add_circle
+<ul>
+<li>Change: Disabled = true</li>
+<li>When: <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value is empty or <a href="#.bTVTq." class="elem">Inp Rate</a>&#39;s value is empty</li>
+<li>Change: Disabled = true</li>
+<li>When: <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value is not empty and [Search for <a href="..\Data_Types.html#.tourguestrate." class="data">TourRate</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourguestrate." class="data">TourRate</a></li>
+<li><a href="#.package_custom_tourpackage." class="elem">Program</a> = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+<li><a href="#.agent_custom_touragent." class="elem">Agent</a> is empty</li>
+<li><a href="#.ratetype_custom_tourguestratetype." class="elem">TourRateType</a> = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value</li>
+</ul></li>
+</ul></li>
+<li>▫ Comment: Disabled if </br>-The inputs are empty</br>-Rate already exists in Program&#39;s GuestRate</br>or</br></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTNdI." class="elem">Input: Inp Prefix</span>
+<ul>
+<li>Placeholder = Prefix...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a>&#39;s Prefix</li>
+</ul></li>
+<li>◆ <span id=".bTNdO." class="elem">Text: Lbl E</span>
+<ul>
+<li>Text = Prefix</li>
+</ul></li>
+<li>◆ <span id=".bTVTv." class="elem">Text: Lbl HG</span>
+<ul>
+<li>Text = Program Rates &amp; Fees</li>
+</ul></li>
+<li>◆ <span id=".bTWKa." class="elem">Checkbox: chk NoBoat</span>
+<ul>
+<li>Label = No Boat(s)</li>
+</ul></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTJHd." class="elem">Program Ico Close</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Hide <a href="#.bTJDz." class="elem">Pop Program</a> - &quot;Hide&quot;</li>
+<li>2. Reset <a href="#.bTJDz." class="elem">Pop Program</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIbB." class="elem">Program btn Save</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Trigger Evt Add Edit - &quot;Trigger&quot;</li>
+<li>2. Hide <a href="#.bTJDz." class="elem">Pop Program</a> - &quot;Hide&quot;</li>
+<li>3. Reset <a href="#.bTJDz." class="elem">Pop Program</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Program Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>]:count equals 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li><a href="#.package_custom_tourpackage." class="elem">Program</a> = Parent group</li>
+</ul></li>
+<li>1. Show <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJLa." class="elem">Btn Confirm Yes</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Delete <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a> - &quot;Delete&quot;</li>
+<li>2. Hide <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Hide&quot;</li>
+<li>3. Hide <a href="#.bTJDz." class="elem">Pop Program</a> - &quot;Hide&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJLl." class="elem">Btn Confirm No</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Hide <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Hide&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Program Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li><a href="#.package_custom_tourpackage." class="elem">Program</a> = Parent group</li>
+</ul></li>
+<li>1. Show alert <a href="#.bTJNe." class="elem">Program Alrt</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Program is currently in used</li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTJDz." class="elem">Pop Program</a> is opened - &quot;is opened&quot;
+<ul>
+<li>1. Set focus to <a href="#.bTIbN." class="elem">Inp Name</a> - &quot;Set focus to&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTVTu." class="elem">Ico Add Rate</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlq." class="elem">Add</a></li>
+<li>1. Trigger Evt Add Edit - &quot;Trigger&quot;</li>
+<li>2. Show alert <a href="#.bTKRV." class="elem">Programt Alrt Added</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Program &quot;<a href="#.bTIbN." class="elem">Inp Name</a>&#39;s value append &quot;  append has been added</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttProgramExists is false</li>
+</ul></li>
+<li>3. Create a new <a href="..\Data_Types.html#.tourguestrate." class="data">TourRate</a> - &quot;Create a new TourGuestRate...&quot;
+<ul>
+<li>Program = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="#.tourpackage." class="elem">TourProgram</a></li>
+<li>Rate = <a href="#.bTVTq." class="elem">Inp Rate</a>&#39;s value</li>
+<li>TourRateType = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value</li>
+<li>RateType = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value&#39;s Type</li>
+<li>_SortDesc = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value&#39;s Description</li>
+<li>_SortProgram = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="#.tourpackage." class="elem">TourProgram</a>&#39;s Name</li>
+</ul></li>
+<li>4. Reset relevant inputs. - &quot;Reset relevant inputs&quot;</li>
+<li>5. Set custom state of Pop Program - &quot;Now set the mode to edit&quot;
+<ul>
+<li>▪ SttMode = <a href="#.bTJlu." class="elem">Edit</a></li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttProgramExists is false</li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTKGF." class="elem">Ico Delete Rate</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Delete Current cell - &quot;Delete&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTVTu." class="elem">Ico Add Rate</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+<li>1. Create a new <a href="..\Data_Types.html#.tourguestrate." class="data">TourRate</a> - &quot;Create a new TourGuestRate...&quot;
+<ul>
+<li>Program = <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="#.tourpackage." class="elem">TourProgram</a></li>
+<li>Rate = <a href="#.bTVTq." class="elem">Inp Rate</a>&#39;s value</li>
+<li>TourRateType = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value</li>
+<li>RateType = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value&#39;s Type</li>
+<li>_SortDesc = <a href="#.bTVTp." class="elem">Drp Std Rate</a>&#39;s value&#39;s Description</li>
+<li>_SortProgram = Parent group&#39;s Name</li>
+</ul></li>
+<li>2. Reset relevant inputs. - &quot;Reset relevant inputs&quot;</li>
+</ul></li>
+<li>◆ Evt Add Edit - &quot;Evt Add Edit&quot;
+<ul>
+<li>1. Set custom state of Pop Program - &quot;See if Program Already Exits&quot;
+<ul>
+<li>▪ SttProgramExists = [Search for <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+<li>Unique id &lt;&gt; <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a>&#39;s unique id</li>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Inp Name</a>&#39;s value:trimmed</li>
+<li>Ignore empty contraints=true</li>
+</ul></li>
+</ul></li>
+<li>2. Show alert <a href="#.bTJNe." class="elem">Program Alrt</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Program already exits</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttProgramExists is true</li>
+</ul></li>
+<li>3. Terminate this workflow. - &quot;Terminate this workflow&quot;
+<ul>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttProgramExists is true</li>
+</ul></li>
+<li>4. Create a new <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a> - &quot;Create a new&quot;
+<ul>
+<li>Name = <a href="#.bTIbN." class="elem">Inp Name</a>&#39;s value</li>
+<li>TripTime = <a href="#.bTJGu." class="elem">Program Std TripTime</a>&#39;s Local Date (out)</li>
+<li>ReturnTime = <a href="#.bTJHA." class="elem">Program Std ReturnTime</a>&#39;s Local Date (out)</li>
+<li>Capacity = <a href="#.bTJIa." class="elem">Program Inp Capacity</a>&#39;s value</li>
+<li>Remarks = <a href="#.bTJIm." class="elem">Program Inp Remarks</a>&#39;s value</li>
+<li>Type = <a href="#.bTJIC." class="elem">Drd Type</a>&#39;s value</li>
+<li>Duration = <a href="#.bTJHq." class="elem">Inp Duration</a>&#39;s value</li>
+<li>Pier = <a href="#.bTKTx." class="elem">Dropdown C</a>&#39;s value</li>
+<li>Prefix = <a href="#.bTNdI." class="elem">Inp Prefix</a>&#39;s value</li>
+<li>NoBoat = <a href="#.bTWKa." class="elem">chk NoBoat</a>&#39;s value</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlq." class="elem">Add</a> or <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJpN." class="elem">Copy</a></li>
+</ul></li>
+<li>5. Display data in <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s PreviousStep - &quot;Set TourProgram if just added&quot;
+<ul>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlq." class="elem">Add</a> or <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJpN." class="elem">Copy</a></li>
+</ul></li>
+<li>6. Make changes to <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a> - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Inp Name</a>&#39;s value</li>
+<li><a href="#.triptime_date." class="elem">TripTime</a> = <a href="#.bTJGu." class="elem">Program Std TripTime</a>&#39;s Local Date (out)</li>
+<li><a href="#.returntime_date." class="elem">ReturnTime</a> = <a href="#.bTJHA." class="elem">Program Std ReturnTime</a>&#39;s Local Date (out)</li>
+<li><a href="#.capacity_number." class="elem">Capacity</a> = <a href="#.bTJIa." class="elem">Program Inp Capacity</a>&#39;s value</li>
+<li><a href="#.duration_number." class="elem">Duration</a> = <a href="#.bTJHq." class="elem">Inp Duration</a>&#39;s value</li>
+<li><a href="#.remarks_text." class="elem">Remarks</a> = <a href="#.bTJIm." class="elem">Program Inp Remarks</a>&#39;s value</li>
+<li><a href="#.type_option_programtype." class="elem">Type</a> = <a href="#.bTJIC." class="elem">Drd Type</a>&#39;s value</li>
+<li><a href="#.pier_option_optpiers." class="elem">Pier</a> = <a href="#.bTKTx." class="elem">Dropdown C</a>&#39;s value</li>
+<li><a href="#.prefix_text." class="elem">Prefix</a> = <a href="#.bTNdI." class="elem">Inp Prefix</a>&#39;s value</li>
+<li><a href="#.requireboatschd_boolean." class="elem">NoBoat</a> = <a href="#.bTWKa." class="elem">chk NoBoat</a>&#39;s value</li>
+<li>When: <a href="#.bTJDz." class="elem">Pop Program</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

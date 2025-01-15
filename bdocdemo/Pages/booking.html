@@ -1,0 +1,292 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: booking</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>booking - Page</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTHGj." class="elem">FloatingGroup: Flt Backdrop</span>
+<ul>
+<li>◆ <span id=".bTHHH." class="elem">HTML: HTML A</span></li>
+</ul></li>
+<li>◆ <span id=".bTHGt." class="elem">CustomElement: header A</span></li>
+<li>◆ <span id=".bTJoW." class="elem">CustomElement: Pop Ticket A</span></li>
+<li>◆ <span id=".bTJse." class="elem">Group: Grp Content</span>
+<ul>
+<li>◆ <span id=".bTIUU." class="elem">Group: Grp Booking Top</span>
+<ul>
+<li>Min height css = 48px</li>
+<li>◆ <span id=".bTIUT." class="elem">Date input: Dtp From TripDate</span>
+<ul>
+<li>Date format = custom</li>
+</ul></li>
+<li>◆ <span id=".bTIUV." class="elem">Text: Text L</span>
+<ul>
+<li>Text = Trip Date</li>
+</ul></li>
+<li>◆ <span id=".bTJio." class="elem">SearchBox A: SrhSearchByAgent</span>
+<ul>
+<li>Placeholder = Agent...</li>
+</ul></li>
+<li>◆ <span id=".bTJjC." class="elem">Input: Inp Search Group</span>
+<ul>
+<li>Placeholder = Group...</li>
+</ul></li>
+<li>◆ <span id=".bTLHz." class="elem">Date input: Dtp To TripDate</span>
+<ul>
+<li>Date format = custom</li>
+<li>▫ Comment: # this has a condition to change the date to the match if from date is greater than to date.</br></br># Conditional:  we cannot set the value directly from From Date. We have to do it via:</br></br>Dtp Search From Date&#39;s SttSelectedDate</br></br>This is to prevent Recursion?</li>
+</ul></li>
+<li>◆ <span id=".bTLIS." class="elem">Dropdown: Drp Search Program</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Placeholder = Program...</li>
+<li>Dynamic type = <a href="..\Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+</ul></li>
+<li>◆ <span id=".bTLeU." class="elem">Icon: Ico Reset Inputs</span>
+<ul>
+<li>Icon = material filled replay</li>
+</ul></li>
+<li>◆ <span id=".bTTKT." class="elem">Input: Inp Search Voucher</span>
+<ul>
+<li>Placeholder = Voucher...</li>
+</ul></li>
+<li>◆ <span id=".bTWLi." class="elem">Dropdown: Drp FilterLang</span>
+<ul>
+<li>Choice style = dynamic</li>
+<li>Placeholder = Lang...</li>
+<li>Dynamic type = <a href="#.optlanguage." class="elem">OptLanguage</a></li>
+</ul></li>
+<li>◆ <span id=".bTLPm0." class="elem">Text: Text X</span>
+<ul>
+<li>Text = -</li>
+</ul></li>
+<li>◆ <span id=".bTLPx0." class="elem">Button: BtnAddTicket</span>
+<ul>
+<li>Text = Book</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJpw." class="elem">Text: Txt empty</span>  👓
+<ul>
+<li>Text = empty
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTPvO." class="elem">Rpt Tickets</a>&#39;s List of <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>:count &lt;= 0</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTPvN." class="elem">Group: Grp Ticket Content</span>
+<ul>
+<li>Min height css = 300px
+<ul>
+<li>Change: Visible = false</li>
+<li>When: <a href="#.bTPvO." class="elem">Rpt Tickets</a>&#39;s List of <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>:count &lt;= 0</li>
+</ul></li>
+<li>▫ Comment: Search criterias are built differently depending on the search fields being populated.</br></br>1. When no time specified (default)</br>-query using just from date and to date</br></br>2. When time is specified (conditional)</br>-query using from date and to date, Time.</br></li>
+<li>◆ <span id=".bTPvO." class="elem">Repeating group: Rpt Tickets</span>
+<ul>
+<li>▫ Comment: Search criterias are built differently depending on the search fields being populated.</br></br>1. When no time specified (default)</br>-query using just from date and to date</br></br>2. When time is specified (conditional)</br>-query using from date and to date, Time.</br></li>
+<li>◆ <span id=".bTRVk." class="elem">Group: Grp EachTicket</span>
+<ul>
+<li>◆ <span id=".bTRVl." class="elem">Group: Group F</span>
+<ul>
+<li>▫ Comment: There is a condition to support the old fee calculation (detect when TourTicketFee&#39;s NumGuest  = 0)</li>
+<li>◆ <span id=".bTQWa." class="elem">Text: Txt Ticket Total</span>
+<ul>
+<li>Text = Total: [Search for <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a>]&#39;s SubTotal:sum:formatted as 1,024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li><a href="#.ticket_custom_tourticket." class="elem">Ticket</a> = Parent group</li>
+</ul></li>
+<li>▫ Comment: There is a condition to support the old fee calculation (detect when TourTicketFee&#39;s NumGuest  = 0)</li>
+</ul></li>
+<li>◆ <span id=".bTQWe." class="elem">Text: Txt COT</span>  👓
+<ul>
+<li>Text = COT: Parent group&#39;s COTAmount:formatted as 1,024
+<ul>
+<li>Change: Visible = true</li>
+<li>When: Parent group&#39;s COTAmount &gt; 0</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRVm." class="elem">Repeating group: Rpt RatesFees</span>
+<ul>
+<li>◆ <span id=".bTJpa." class="elem">Text: Ticket Txt Fee Price</span>
+<ul>
+<li>Text = Current cell&#39;s Description  x  Current cell&#39;s NumGuest      Current cell&#39;s SubTotal:formatted as 1,024
+<ul>
+<li>Change: Text = Current cell&#39;s Description     Current cell&#39;s SubTotal:formatted as 1,024
+<ul>
+<li>When: Current cell&#39;s NumGuest &lt;= 0</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRVq." class="elem">Text: TxtAgent</span>
+<ul>
+<li>Text = [b]Program: [/b]Parent group&#39;s Program name text</li>
+</ul></li>
+<li>◆ <span id=".bTRVr." class="elem">Text: TxtAgent</span>
+<ul>
+<li>Text = [b]Agent: [/b]Parent group&#39;s Agent name text</li>
+</ul></li>
+<li>◆ <span id=".bTRVs." class="elem">Text: TxtGuestName</span>
+<ul>
+<li>Text = [b]Guest: [/b]Parent group&#39;s GuestName</li>
+</ul></li>
+<li>◆ <span id=".bTRVw." class="elem">Text: Txt Trip DateTime</span>
+<ul>
+<li>Text = [b]Trip Date: [/b]Parent group&#39;s TripDate:format date(d/m/yy) append   -   append Parent group&#39;s TripTime:format date(HH:MM)</li>
+</ul></li>
+<li>◆ <span id=".bTRVx." class="elem">Text: Txt Return DateTime</span>
+<ul>
+<li>Text = [b]Return Date: [/b]Parent group&#39;s ReturnDate:format date(d/m/yy) append   -   append Parent group&#39;s ReturnTime:format date(HH:MM)</li>
+</ul></li>
+<li>◆ <span id=".bTRVy." class="elem">Text: Txt Hotel</span>
+<ul>
+<li>Text = [b]Hotel: [/b]Parent group&#39;s Hotel name text    [b]Room: [/b]Parent group&#39;s Room</li>
+</ul></li>
+<li>◆ <span id=".bTRWC." class="elem">Text: Txt Booking Room</span>
+<ul>
+<li>Text = Parent group&#39;s Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTRWD." class="elem">Text: Txt NumGuest</span>
+<ul>
+<li>Text = [b]Reserved: [/b]Parent group&#39;s NumGuest:formatted as 1,024    [b]Booked: [/b] Parent group&#39;s ActualNumGuest:formatted as 1,024</li>
+</ul></li>
+<li>◆ <span id=".bTRWE." class="elem">Group: Group E</span>
+<ul>
+<li>◆ <span id=".bTMhc." class="elem">Text: Txt Group</span>
+<ul>
+<li>Text = [b]Group: [/b]Parent group&#39;s Group</li>
+</ul></li>
+<li>◆ <span id=".bTMhm." class="elem">Text: Txt TicketNo</span>
+<ul>
+<li>Text = [b]Ticket No: [/b]Parent group&#39;s Number</li>
+</ul></li>
+<li>◆ <span id=".bTNDk." class="elem">Text: Txt VCNum</span>
+<ul>
+<li>Text = [b]VC No: [/b]Parent group&#39;s VCNumber</li>
+</ul></li>
+<li>◆ <span id=".bTNaD." class="elem">Text: Txt Book Date</span>
+<ul>
+<li>Text = [b]BkDt: [/b]Parent group&#39;s BookDate:format date(d/m/yy HH:MM:ss)</li>
+</ul></li>
+<li>◆ <span id=".bTQGc." class="elem">Icon: Ico Manifest</span>
+<ul>
+<li>Icon = material filled people_alt
+<ul>
+<li>Change: Opacity = 50</li>
+<li>When: [Search for <a href="..\Data_Types.html#.tourticketmanifest." class="data">TourTicketManifest</a>]:count &lt; Parent group&#39;s ActualNumGuest
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketmanifest." class="data">TourTicketManifest</a></li>
+<li><a href="#.ticket_custom_tourticket." class="elem">Ticket</a> = Parent group</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRde." class="elem">Icon: Booking Ico Edit</span>
+<ul>
+<li>Icon = material filled edit
+<ul>
+<li>Change: Disabled = true</li>
+<li>Tooltip text = Access Level Required</li>
+<li>Opacity = 40</li>
+<li>When: Current User&#39;s Team accesslevel number &gt; 2</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTTIn." class="elem">Icon: Ico Remarks</span>
+<ul>
+<li>Icon = material filled insert_comment</li>
+</ul></li>
+<li>◆ <span id=".bTWLW." class="elem">Text: Txt Lang</span>
+<ul>
+<li>Text = [b]Lang.: [/b]Parent group&#39;s Language&#39;s Display</li>
+</ul></li>
+<li>◆ <span id=".bTWLn." class="elem">Icon: Ico Payment</span>  👓
+<ul>
+<li>Icon = fa fa-dollar</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTPvS." class="elem">Group: Grp Totals</span>
+<ul>
+<li>Min height css = 36px</li>
+<li>◆ <span id=".bTJtI." class="elem">Text: Txt TotalTickets</span>
+<ul>
+<li>Text = Total ticket(s) found: <a href="#.bTPvO." class="elem">Rpt Tickets</a>&#39;s List of <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>:count</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJzb." class="elem">CustomElement: Flt Footer A</span></li>
+<li>◆ <span id=".bTQGu." class="elem">CustomElement: Pop Manifest A</span></li>
+<li>◆ <span id=".bTSDK." class="elem">CustomElement: Pop Payment A</span></li>
+<li>◆ <span id=".bTTIz." class="elem">CustomElement: Pop EditTicketRemarks A</span></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTLPx0." class="elem">BtnAddTicket</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Reset <a href="#.bTJoW." class="elem">Pop Ticket A</a> - &quot;Reset&quot;</li>
+<li>2. Set custom state of Pop Ticket A - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttTripDate = <a href="#.bTIUT." class="elem">Dtp From TripDate</a>&#39;s value</li>
+<li>▪ SttMode = <a href="#.bTJlq." class="elem">Add</a></li>
+</ul></li>
+<li>3. Show <a href="#.bTJoW." class="elem">Pop Ticket A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTRde." class="elem">Booking Ico Edit</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Set custom state of Pop Ticket A - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttMode = <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+<li>2. Display data in <a href="#.bTJoW." class="elem">Pop Ticket A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>3. Show <a href="#.bTJoW." class="elem">Pop Ticket A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTLeU." class="elem">Ico Reset Inputs</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Reset <a href="#.bTIUU." class="elem">Grp Booking Top</a> - &quot;Reset&quot;</li>
+<li>2. Reset relevant inputs. - &quot;Reset relevant inputs&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTQGc." class="elem">Ico Manifest</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Display data in <a href="#.bTQGu." class="elem">Pop Manifest A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>2. Show <a href="#.bTQGu." class="elem">Pop Manifest A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ User is logged out - &quot;User is logged out&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRjj." class="elem">login</a> - &quot;Go to login if logged out&quot;
+<ul>
+<li>page = booking</li>
+</ul></li>
+</ul></li>
+<li>◆ User is logged in - &quot;User is logged in - Check User Access Level&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRtg." class="elem">noaccess</a> - &quot;Go to page&quot;
+<ul>
+<li>When: Current User&#39;s Team accesslevel number &gt; 3</li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTTIn." class="elem">Ico Remarks</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Display data in <a href="#.bTTIz." class="elem">Pop EditTicketRemarks A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>2. Show <a href="#.bTTIz." class="elem">Pop EditTicketRemarks A</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTWLn." class="elem">Ico Payment</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Reset <a href="#.bTSDK." class="elem">Pop Payment A</a> - &quot;Reset&quot;</li>
+<li>2. Display data in <a href="#.bTSDK." class="elem">Pop Payment A</a>&#39;s ElementParent - &quot;Display data in&quot;</li>
+<li>3. Show <a href="#.bTSDK." class="elem">Pop Payment A</a> - &quot;Show&quot;</li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

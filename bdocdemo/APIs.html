@@ -1,0 +1,119 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>seastar-reservation: APIs</title>
+</head>
+<body>
+<H4><a href="index.html">Home</a></H4>
+<H2>API Workflows</H2>
+<div class="sep"></div>
+<ul>
+<li>data_ticket_updatetime : API workflow name = ticket_updatetime
+<ul>
+<li>Key = Ticket : <a href="Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li>1. Make changes to Ticket - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.triptime_date." class="elem">TripTime</a> = Ticket&#39;s TripDate change month to 1 change date to 1 change years to 2000 +hours 1</li>
+<li><a href="#.returntime_date." class="elem">ReturnTime</a> = Ticket&#39;s ReturnDate change month to 1 change date to 1 change years to 2000 +hours 1</li>
+</ul></li>
+</ul></li>
+<li>tourguestrate : API workflow name = tourguestrate
+<ul>
+<li>Key = GuestRate : <a href="Data_Types.html#.tourguestrate." class="data">TourRate</a></li>
+<li>1. Make changes to GuestRate - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.acctcode_number." class="elem">AcctCode</a> = 0</li>
+</ul></li>
+</ul></li>
+<li>tourticketdetail : API workflow name = tourticketdetail
+<ul>
+<li>Key = TicketDetail : <a href="Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li>1. Make changes to TicketDetail - &quot;Make changes to&quot;
+<ul>
+<li><a href="#._sortticketno_number." class="elem">_SortTicketNo</a> = This <a href="#.tourticketfees." class="elem">TourTicketDetail</a>&#39;s Ticket number number</li>
+</ul></li>
+</ul></li>
+<li>tourticket : API workflow name = update_tourticket
+<ul>
+<li>Key = Ticket : <a href="Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li>1. Make changes to Ticket - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.hotelzone_text." class="elem">HotelZone</a> = Ticket&#39;s Hotel zone text</li>
+</ul></li>
+</ul></li>
+<li>TourGuestRate Refresh Sort Field : API workflow name = tourguestrate_refresh_sort
+<ul>
+<li>Key = GuestRate : <a href="Data_Types.html#.tourguestrate." class="data">TourRate</a></li>
+<li>1. Make changes to GuestRate - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.descsort_text." class="elem">_SortDesc</a> = This <a href="#.tourguestrate." class="elem">TourRate</a>&#39;s TourRateType description text</li>
+<li><a href="#._sortprog_text." class="elem">_SortProgram</a> = This <a href="#.tourguestrate." class="elem">TourRate</a>&#39;s Program name text</li>
+</ul></li>
+</ul></li>
+<li>Change TourTicket Program : API workflow name = Change_TourTicket_Program
+<ul>
+<li>Key = Ticket : <a href="Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li>Key = ToFind : <a href="Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+<li>Key = ToReplace : <a href="Data_Types.html#.tourpackage." class="data">TourProgram</a></li>
+<li>1. Make changes to Ticket - &quot;Make changes to TourProgram...&quot;
+<ul>
+<li><a href="#.package_custom_tourpackage." class="elem">Program</a> = ToReplace</li>
+<li>When: Ticket&#39;s Program equals ToFind</li>
+</ul></li>
+</ul></li>
+<li>TourRateType : API workflow name = tourratetype
+<ul>
+<li>Key = mRateType : <a href="Data_Types.html#.tourguestratetype." class="data">TourRateType</a></li>
+<li>1. Make changes to mRateType - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.rate_number." class="elem">AcctCode</a> = 0</li>
+</ul></li>
+</ul></li>
+<li>TourTicketSchd : API workflow name = tourticketschd
+<ul>
+<li>Key = mTicketSchd : <a href="Data_Types.html#.tourschedule." class="data">TourTicketSchd</a></li>
+<li>1. Make changes to a list of [Search for <a href="Data_Types.html#.tourschedule." class="data">TourTicketSchd</a>] - &quot;Make changes to a list of&quot;
+<ul>
+<li>● <a href="Data_Types.html#.tourschedule." class="data">TourTicketSchd</a></li>
+<li><a href="#.type_option_tourscheduletype." class="elem">Type</a> = <a href="#.bTHsd." class="elem">Pickup</a></li>
+<li><a href="#.transporttype_text." class="elem">_SortTransType</a> = boat</li>
+</ul></li>
+<li><a href="#.numcheckedin_number." class="elem">NumCheckIn</a> = This <a href="#.tourschedule." class="elem">TourTicketSchd</a>&#39;s Ticket numcheckin number</li>
+<li>When: mTicketSchd&#39;s Ticket numcheckin number is not empty</li>
+
+</ul></li>
+<li>TourTransport : API workflow name = tourtransport
+<ul>
+<li>Key = mTransport : <a href="Data_Types.html#.tourtransport." class="data">TourTransport</a></li>
+<li>1. Make changes to mTransport - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.type_text." class="elem">TransType</a> = mTransport&#39;s TransType:trimmed:lowercase</li>
+</ul></li>
+</ul></li>
+<li>tourticketmanifest : API workflow name = tourticketmanifest
+<ul>
+<li>Key = mManifest : <a href="Data_Types.html#.tourticketmanifest." class="data">TourTicketManifest</a></li>
+<li>1. Delete mManifest - &quot;Delete&quot;
+<ul>
+<li>When: mManifest&#39;s Name:converted to number &gt; 70</li>
+</ul></li>
+</ul></li>
+<li>API Generate Manifest : API workflow name = gen_manifest
+<ul>
+<li>Key = mDate : Date</li>
+<li>Key = mType : <a href="#.tourscheduletype." class="elem">OptScheduleType</a></li>
+<li>1. Delete a list of <a href="Data_Types.html#.tourticketmanifest2." class="data">TourReportManifest</a> - &quot;Delete a list of&quot;
+<ul>
+<li>[Search for <a href="Data_Types.html#.tourticketmanifest2." class="data">TourReportManifest</a>]
+<ul>
+<li>● <a href="Data_Types.html#.tourticketmanifest2." class="data">TourReportManifest</a></li>
+<li></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

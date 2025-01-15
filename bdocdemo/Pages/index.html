@@ -1,0 +1,194 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: index</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>index - Page</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTHGj." class="elem">FloatingGroup: Backdrop Flt</span>
+<ul>
+<li>◆ <span id=".bTHHH." class="elem">HTML: HTML A</span></li>
+</ul></li>
+<li>◆ <span id=".bTHGt." class="elem">CustomElement: Header Flt</span></li>
+<li>◆ <span id=".bTJsg." class="elem">Group: Grp Content</span>
+<ul>
+<li>◆ <span id=".bTRXp." class="elem">Group: Grp Bottom</span>
+<ul>
+<li>Min height css = 280px</li>
+<li>◆ <span id=".bTRYI." class="elem">Group: Grp Agent</span>
+<ul>
+<li>Min height css = 400px</li>
+<li>◆ <span id=".bTRYr." class="elem">Repeating group: Rpt Agent</span>
+<ul>
+<li>◆ <span id=".bTTGv." class="elem">Group: Grp Agent</span>
+<ul>
+<li>Min height css = 30px</li>
+<li>◆ <span id=".bTTGw." class="elem">Text: Txt Agent Total</span>
+<ul>
+<li>Text = [Search for <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a>]&#39;s SubTotal:sum:formatted as 1,024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &gt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 0</li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &lt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 23 change minutes to 59</li>
+<li><a href="#.agent_custom_touragent." class="elem">Agent</a> = Parent group</li>
+<li><a href="#.numguest_number." class="elem">NumGuest</a> &gt; 0</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTTHA." class="elem">Text: Txt Agent Qty</span>
+<ul>
+<li>Text = [Search for <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a>]&#39;s NumGuest:sum:formatted as 1024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &gt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 0</li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &lt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 23 change minutes to 59</li>
+<li><a href="#.ratetype1_option_optratetype." class="elem">RateType</a> &lt;&gt; <a href="#.bTMVc." class="elem">Fee</a></li>
+<li><a href="#.agent_custom_touragent." class="elem">Agent</a> = Parent group</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTTHB." class="elem">Text: Txt Agent Name</span>
+<ul>
+<li>Text = Parent group&#39;s Name</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRZJ." class="elem">Text: Lbl A</span>
+<ul>
+<li>Text = Sales by Agent</li>
+</ul></li>
+<li>◆ <span id=".bTRZc." class="elem">Text: Lbl Agent Empty</span>  👓
+<ul>
+<li>Text = empty
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTRYr." class="elem">Rpt Agent</a>&#39;s List of Groupings:count &lt;= 0</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRZD." class="elem">Group: Grp Program</span>
+<ul>
+<li>Min height css = 400px</li>
+<li>◆ <span id=".bTRYr." class="elem">Repeating group: Rpt Program</span>
+<ul>
+<li>◆ <span id=".bTRYe." class="elem">Text: Txt Prog Name</span>
+<ul>
+<li>Text = Current cell&#39;s Grouping&#39;s Program name text</li>
+</ul></li>
+<li>◆ <span id=".bTRYk." class="elem">Text: Txt Prog Total</span>
+<ul>
+<li>Text = Current cell:sum of SubTotal:formatted as 1,024</li>
+</ul></li>
+<li>◆ <span id=".bTTEs." class="elem">Text: Txt Prog Qty</span>
+<ul>
+<li>Text = [Search for <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a>]&#39;s NumGuest:sum:formatted as 1024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li><a href="#.program_custom_tourpackage." class="elem">Program</a> = Current cell&#39;s Grouping&#39;s Program</li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &gt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 0</li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &lt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 23 change minutes to 59</li>
+<li><a href="#.ratetype1_option_optratetype." class="elem">RateType</a> &lt;&gt; <a href="#.bTMVc." class="elem">Fee</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRZP." class="elem">Text: Lbl B</span>
+<ul>
+<li>Text = Sales by Program</li>
+</ul></li>
+<li>◆ <span id=".bTRZm." class="elem">Text: Lbl Program Empty</span>  👓
+<ul>
+<li>Text = empty
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTRYr." class="elem">Rpt Program</a>&#39;s List of Groupings:count &lt;= 0</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRXv." class="elem">Group: Grp Top</span>
+<ul>
+<li>Min height css = 40px</li>
+<li>◆ <span id=".bTRYY." class="elem">Date input: Dtp Today</span>
+<ul>
+<li>Date format = custom</li>
+</ul></li>
+<li>◆ <span id=".bTRZs." class="elem">Text: Text Date:</span>
+<ul>
+<li>Text = Trip Date:</li>
+</ul></li>
+<li>◆ <span id=".bTRbs." class="elem">Group: Grp TopLeft</span>
+<ul>
+<li>◆ <span id=".bTRbw." class="elem">Text: Txt Time</span>
+<ul>
+<li>Text = Today: <a href="#.bTRXj." class="elem">index</a>&#39;s SttCurrentDate</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRaM." class="elem">Group: Grp Agent Total</span>
+<ul>
+<li>Min height css = 40px</li>
+<li>◆ <span id=".bTRaE." class="elem">Text: Txt Agent Total</span>
+<ul>
+<li>Text = Total: [Search for <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a>]&#39;s SubTotal:sum:formatted as 1,024
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticketfees." class="data">TourTicketDetail</a></li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &gt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 0</li>
+<li><a href="#.tripdate_date." class="elem">TripDate</a> &lt;= <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value change hours to 23 change minutes to 59</li>
+<li><a href="#.numguest_number." class="elem">NumGuest</a> &gt; 0</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTRbY." class="elem">Group: Grp BottomLeft</span>
+<ul>
+<li>Min height css = 40px</li>
+<li>◆ <span id=".bTRbZ." class="elem">Button: Btn AgentBalance</span>
+<ul>
+<li>Text = Agent Balance...</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJzt." class="elem">CustomElement: Flt Footer A</span></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTRbZ." class="elem">Btn AgentBalance</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Go to page <a href="#.bTREm." class="elem">agent_balance_sort</a> - &quot;Go to page&quot;
+<ul>
+<li>date = <a href="#.bTRYY." class="elem">Dtp Today</a>&#39;s value</li>
+</ul></li>
+</ul></li>
+<li>◆ Do every 0 secs - &quot;Do every&quot;
+<ul>
+<li>1. Set custom state of index - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttCurrentDate = <a href="#.value." class="elem">Current Date/Time</a></li>
+</ul></li>
+</ul></li>
+<li>◆ Page is loaded - &quot;Page is loaded&quot;
+<ul>
+<li>1. Set custom state of index - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttCurrentDate = <a href="#.value." class="elem">Current Date/Time</a></li>
+</ul></li>
+</ul></li>
+<li>◆ User is logged out - &quot;User is logged out&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRjj." class="elem">login</a> - &quot;Go to login if logged out&quot;</li>
+</ul></li>
+<li>◆ User is logged in - &quot;User is logged in - Check User Access Level&quot;
+<ul>
+<li>1. Go to page <a href="#.bTTMc." class="elem">index2</a> - &quot;Go to page&quot;
+<ul>
+<li>When: Current User&#39;s Team accesslevel number &gt; 1</li>
+</ul></li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

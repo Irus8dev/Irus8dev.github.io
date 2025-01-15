@@ -1,0 +1,255 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: company</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>company - Page</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTHGj." class="elem">FloatingGroup: Backdrop Flt</span>
+<ul>
+<li>◆ <span id=".bTHHH." class="elem">HTML: HTML A</span></li>
+</ul></li>
+<li>◆ <span id=".bTHGt." class="elem">CustomElement: Header Flt</span></li>
+<li>◆ <span id=".bTJsO." class="elem">Alert: Alrt Message</span>
+<ul>
+<li>Position at the top = true</li>
+</ul></li>
+<li>◆ <span id=".bTJzJ." class="elem">CustomElement: Flt Footer A</span></li>
+<li>◆ <span id=".bTPIa." class="elem">Group: Grp Main</span>
+<ul>
+<li>▪ SttEditing : <a href="#.popupmode." class="elem">DataMode</a></li>
+<li>▫ Comment: # Use SttEditing as a flag for editing state, default Idle</br></li>
+<li>◆ <span id=".bTItS." class="elem">Text: Company Lbl Name</span>
+<ul>
+<li>Text = Name</li>
+</ul></li>
+<li>◆ <span id=".bTItY." class="elem">Input: Company Inp Name</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Name
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIte." class="elem">Text: Company Lbl Address</span>
+<ul>
+<li>Text = Address</li>
+</ul></li>
+<li>◆ <span id=".bTItq." class="elem">Multiline input: Company Mip Address</span>
+<ul>
+<li>Placeholder = Address</li>
+<li>Initial content = Parent group&#39;s Address
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTItw." class="elem">Text: Company Lbl Telephone</span>
+<ul>
+<li>Text = Telephone</li>
+</ul></li>
+<li>◆ <span id=".bTIuC." class="elem">Input: Company Inp Telephone </span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Telephone
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIuI." class="elem">Text: Company Lbl AllotExpire</span>
+<ul>
+<li>Text = Allotment Expiration Time (Ex. 19, 19:30)</li>
+</ul></li>
+<li>◆ <span id=".bTIuO." class="elem">Input: Inp AllotExpire</span>
+<ul>
+<li>Placeholder = Type Here</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s AllotExpire:format date(HH:MM)
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIua." class="elem">Text: Company Txt Caption</span>
+<ul>
+<li>Text = Company Information</li>
+</ul></li>
+<li>◆ <span id=".bTIuy." class="elem">Text: Company Lbl EMail</span>
+<ul>
+<li>Text = EMail</li>
+</ul></li>
+<li>◆ <span id=".bTIvE." class="elem">Input: Company Inp EMail</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s EMail
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIxi." class="elem">Button: Company Btn Edit</span>
+<ul>
+<li>Text = Edit
+<ul>
+<li>Change: Background style = bgcolor</li>
+<li>Font color = var(--color_primary_contrast_default)</li>
+<li>Text = Save</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIxo." class="elem">Text: Company Lbl Telephone 2</span>
+<ul>
+<li>Text = Fax</li>
+</ul></li>
+<li>◆ <span id=".bTIxu." class="elem">Input: Company Inp Telephone 2</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Fax
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTIyQ." class="elem">Text: Grp Debug</span>  👓
+<ul>
+<li>Text = UTC: <a href="#.bTIyj." class="elem">Company Std AllotExpire</a>&#39;s <a href="#Plugin:get_AAT" class="elem"></a></br>Local: <a href="#.bTIyj." class="elem">Company Std AllotExpire</a>&#39;s Local Date (out)</li>
+</ul></li>
+<li>◆ <span id=".bTIyj." class="elem">Set Time Of Day: Company Std AllotExpire</span>
+<ul>
+<li>Date In = Arbitrary date/time(1/1/2000 5:00:00 PM)</li>
+<li>Offset = <a href="#.bTIuO." class="elem">Inp AllotExpire</a>&#39;s value</li>
+</ul></li>
+<li>◆ <span id=".bTKIg." class="elem">TabFix: TabFix A</span>
+<ul>
+<li>Use custom order = true</li>
+<li>Tab orders = 1,2,3,4,5,6,7,8,9,10</li>
+</ul></li>
+<li>◆ <span id=".bTKIu." class="elem">Button: Company Btn Cancel</span>  👓
+<ul>
+<li>Text = Cancel
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTNwF." class="elem">Text: Lbl BA</span>
+<ul>
+<li>Text = Group Start Number</br></li>
+</ul></li>
+<li>◆ <span id=".bTNwL." class="elem">Input: Inp GroupStart</span>
+<ul>
+<li>Placeholder = Group Start...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Content format = int_number</li>
+<li>Initial content = Parent group&#39;s StartGroup</li>
+<li>Has number range = true</li>
+<li>Minimum value = 0</li>
+<li>Maximum value = 900
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTNwR." class="elem">Input: Inp TicketStart</span>
+<ul>
+<li>Placeholder = Ticket Start...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Content format = int_number</li>
+<li>Initial content = Parent group&#39;s StartTicket</li>
+<li>Has number range = true</li>
+<li>Maximum value = 9999999999
+<ul>
+<li>Change: Font weight = 500</li>
+<li>Disabled = true</li>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing not equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTNwX." class="elem">Text: Lbl BA copy</span>
+<ul>
+<li>Text = Ticket Start Number</li>
+</ul></li>
+</ul></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTIxi." class="elem">Company Btn Edit</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Set custom state of Grp Main - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttEditing = <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+<li>2. Set focus to <a href="#.bTItY." class="elem">Company Inp Name</a> - &quot;Set focus to&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIxi." class="elem">Company Btn Edit</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: <a href="#.bTPIa." class="elem">Grp Main</a>&#39;s SttEditing equals <a href="#.bTJlu." class="elem">Edit</a></li>
+<li>1. Make changes to Parent group - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTItY." class="elem">Company Inp Name</a>&#39;s value</li>
+<li><a href="#.address_text." class="elem">Address</a> = <a href="#.bTItq." class="elem">Company Mip Address</a>&#39;s value</li>
+<li><a href="#.reservecutoff_date." class="elem">AllotExpire</a> = <a href="#.bTIyj." class="elem">Company Std AllotExpire</a>&#39;s Local Date (out)</li>
+<li><a href="#.email_text." class="elem">EMail</a> = <a href="#.bTIvE." class="elem">Company Inp EMail</a>&#39;s value</li>
+<li><a href="#.telephone_text." class="elem">Telephone</a> = <a href="#.bTIuC." class="elem">Company Inp Telephone </a>&#39;s value</li>
+<li><a href="#.telephone1_text." class="elem">Fax</a> = <a href="#.bTIxu." class="elem">Company Inp Telephone 2</a>&#39;s value</li>
+<li><a href="#.ticketstart_number." class="elem">StartTicket</a> = <a href="#.bTNwR." class="elem">Inp TicketStart</a>&#39;s value</li>
+<li><a href="#.groupstart_number." class="elem">StartGroup</a> = <a href="#.bTNwL." class="elem">Inp GroupStart</a>&#39;s value</li>
+<li><a href="#.startgroupedited_date." class="elem">StartGroupEdited</a> = <a href="#.value." class="elem">Current Date/Time</a></li>
+</ul></li>
+<li>2. Show alert <a href="#.bTJsO." class="elem">Alrt Message</a> - &quot;Show alert&quot;</li>
+<li>3. Set custom state of Grp Main - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttEditing = <a href="#.bTKIn." class="elem">Idle</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <a href="#.bTKIu." class="elem">Company Btn Cancel</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Set custom state of Grp Main - &quot;Set custom state&quot;
+<ul>
+<li>▪ SttEditing = <a href="#.bTKIn." class="elem">Idle</a></li>
+</ul></li>
+<li>2. Reset <a href="#.bTPIa." class="elem">Grp Main</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ User is logged out - &quot;User is logged out&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRjj." class="elem">login</a> - &quot;Go to login if logged out&quot;
+<ul>
+<li>page = company</li>
+</ul></li>
+</ul></li>
+<li>◆ User is logged in - &quot;User is logged in - Check User Access Level&quot;
+<ul>
+<li>1. Go to page <a href="#.bTRtg." class="elem">noaccess</a> - &quot;Go to page&quot;
+<ul>
+<li>When: Current User&#39;s Team accesslevel number &gt; 1</li>
+</ul></li>
+</ul></li>
+<li>◆ Page is loaded - &quot;Page is loaded&quot;
+<ul>
+<li>1. Create a new <a href="..\Data_Types.html#.toursettings." class="data">TourCompany</a> - &quot;Create a new&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.toursettings." class="data">TourCompany</a>]:count &lt;= 0
+<ul>
+<li>● <a href="..\Data_Types.html#.toursettings." class="data">TourCompany</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>

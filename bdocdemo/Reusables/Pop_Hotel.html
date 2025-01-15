@@ -1,0 +1,221 @@
+﻿<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..\favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles.css">
+    <title>seastar-reservation: Pop Hotel</title>
+</head>
+<body>
+<H4><a href="..\index.html">Home</a></H4>
+<H2>Pop Hotel - CustomDefinition</H2>
+<div class="sep"></div>
+<H3>Elements</H3>
+<ul>
+<li>◆ <span id=".bTIbB." class="elem">Button: Hotel btn Save</span>
+<ul>
+<li>Text = Save</li>
+</ul></li>
+<li>◆ <span id=".bTIbH." class="elem">Text: Lbl Name</span>
+<ul>
+<li>Text = Name</li>
+</ul></li>
+<li>◆ <span id=".bTIbN." class="elem">Input: Hotel Inp Name</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Name</li>
+</ul></li>
+<li>◆ <span id=".bTJHW." class="elem">TabFix: TabFix A</span>
+<ul>
+<li>Use custom order = true</li>
+<li>Tab orders = a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14</li>
+</ul></li>
+<li>◆ <span id=".bTJHc." class="elem">Text: Hotel Txt Delete</span>  👓
+<ul>
+<li>Text = Delete
+<ul>
+<li>Change: Visible = true</li>
+<li>When: <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJHd." class="elem">Icon: Hotel Ico Close</span>
+<ul>
+<li>Icon = material outlined close</li>
+</ul></li>
+<li>◆ <span id=".bTJHe." class="elem">Text: Hotel Txt Caption</span>
+<ul>
+<li>Text = <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttMode&#39;s Display Hotel</li>
+</ul></li>
+<li>◆ <span id=".bTJII." class="elem">Text: Lbl B</span>
+<ul>
+<li>Text = Address</br></li>
+</ul></li>
+<li>◆ <span id=".bTJIg." class="elem">Text: Lbl Remarks</span>
+<ul>
+<li>Text = Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJIm." class="elem">Multiline input: Hotel Inp Remarks</span>
+<ul>
+<li>Initial content = Parent group&#39;s Remarks</li>
+</ul></li>
+<li>◆ <span id=".bTJNE." class="elem">Popup: Pop Confirm Delete</span>
+<ul>
+<li>disp = default</li>
+<li>◆ <span id=".bTJLU." class="elem">Text: Text Delete, are you sure</span>
+<ul>
+<li>Text = Delete, are you sure?</li>
+</ul></li>
+<li>◆ <span id=".bTJLa." class="elem">Button: Btn Confirm Yes</span>
+<ul>
+<li>Text = Yes</li>
+</ul></li>
+<li>◆ <span id=".bTJLl." class="elem">Button: Btn Confirm No</span>
+<ul>
+<li>Text = No</li>
+</ul></li>
+</ul></li>
+<li>◆ <span id=".bTJNe." class="elem">Alert: Hotel Alrt</span>
+<ul>
+<li>Position at the top = true</li>
+</ul></li>
+<li>◆ <span id=".bTJiR." class="elem">Multiline input: Hotel Inp Address</span>
+<ul>
+<li>Initial content = Parent group&#39;s Address</li>
+</ul></li>
+<li>◆ <span id=".bTKUJ." class="elem">Input: Hotel Inp Website</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Website</li>
+</ul></li>
+<li>◆ <span id=".bTKUP." class="elem">Text: Lbl Website</span>
+<ul>
+<li>Text = Website</li>
+</ul></li>
+<li>◆ <span id=".bTKUV." class="elem">Text: Lbl Phone</span>
+<ul>
+<li>Text = Phone</li>
+</ul></li>
+<li>◆ <span id=".bTKUb." class="elem">Input: Hotel Inp Phone</span>
+<ul>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Phone</li>
+</ul></li>
+<li>◆ <span id=".bTQWm." class="elem">Text: Lbl A</span>
+<ul>
+<li>Text = Zone</li>
+</ul></li>
+<li>◆ <span id=".bTQWs." class="elem">Input: Inp Zone</span>
+<ul>
+<li>Placeholder = Zone...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s Zone</li>
+</ul></li>
+<li>◆ <span id=".bTRCG." class="elem">Text: Lbl A copy</span>
+<ul>
+<li>Text = Pickup Time</li>
+</ul></li>
+<li>◆ <span id=".bTRCM." class="elem">Input: Inp Pickup</span>
+<ul>
+<li>Placeholder = Pickup Time...</li>
+<li>Prevent &quot;enter&quot; key = true</li>
+<li>Initial content = Parent group&#39;s PickupTime</li>
+</ul></li>
+</ul>
+<H3>Workflow</H3>
+<ul>
+<li>◆ <a href="#.bTJHd." class="elem">Hotel Ico Close</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Hide <a href="#.bTJfe." class="elem">Pop Hotel</a> - &quot;Hide&quot;</li>
+<li>2. Reset <a href="#.bTJfe." class="elem">Pop Hotel</a> - &quot;Reset&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Hotel Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>]:count equals 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li><a href="#.hotel_custom_tourhotel." class="elem">Hotel</a> = <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a></li>
+</ul></li>
+<li>1. Show <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Show&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJLa." class="elem">Btn Confirm Yes</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Delete <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a> - &quot;Delete&quot;</li>
+<li>2. Hide <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Hide&quot;</li>
+<li>3. Hide <a href="#.bTJfe." class="elem">Pop Hotel</a> - &quot;Hide&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJLl." class="elem">Btn Confirm No</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Hide <a href="#.bTJNE." class="elem">Pop Confirm Delete</a> - &quot;Hide&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTIbB." class="elem">Hotel btn Save</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>1. Trigger Evt Add Edit - &quot;Trigger&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJfe." class="elem">Pop Hotel</a> is opened - &quot;is opened&quot;
+<ul>
+<li>1. Set focus to <a href="#.bTIbN." class="elem">Hotel Inp Name</a> - &quot;Set focus to&quot;</li>
+</ul></li>
+<li>◆ <a href="#.bTJHc." class="elem">Hotel Txt Delete</a> is clicked - &quot;is clicked&quot;
+<ul>
+<li>When: [Search for <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourticket." class="data">TourTicket</a></li>
+<li><a href="#.hotel_custom_tourhotel." class="elem">Hotel</a> = <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a></li>
+</ul></li>
+<li>1. Show alert <a href="#.bTJNe." class="elem">Hotel Alrt</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Hotel is in used.</li>
+</ul></li>
+</ul></li>
+<li>◆ Evt Add Edit - &quot;Evt Add Edit&quot;
+<ul>
+<li>1. Set custom state of Pop Hotel - &quot;See if Hotel already exists&quot;
+<ul>
+<li>▪ SttHotelExists = [Search for <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a>]:count &gt; 0
+<ul>
+<li>● <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a></li>
+<li>Unique id &lt;&gt; <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a>&#39;s unique id</li>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Hotel Inp Name</a>&#39;s value:trimmed</li>
+<li>Ignore empty contraints=true</li>
+</ul></li>
+</ul></li>
+<li>2. Show alert <a href="#.bTJNe." class="elem">Hotel Alrt</a> - &quot;Show alert&quot;
+<ul>
+<li>Change message = true</li>
+<li>Message = Hotel already exits</li>
+<li>When: <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttHotelExists is true</li>
+</ul></li>
+<li>3. Terminate this workflow. - &quot;Terminate this workflow&quot;
+<ul>
+<li>When: <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttHotelExists is true</li>
+</ul></li>
+<li>4. Make changes to <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a> - &quot;Make changes to&quot;
+<ul>
+<li><a href="#.name_text." class="elem">Name</a> = <a href="#.bTIbN." class="elem">Hotel Inp Name</a>&#39;s value</li>
+<li><a href="#.address_text." class="elem">Address</a> = <a href="#.bTJiR." class="elem">Hotel Inp Address</a>&#39;s value</li>
+<li><a href="#.phone_text." class="elem">Phone</a> = <a href="#.bTKUb." class="elem">Hotel Inp Phone</a>&#39;s value</li>
+<li><a href="#.pickuptime_text." class="elem">PickupTime</a> = <a href="#.bTRCM." class="elem">Inp Pickup</a>&#39;s value</li>
+<li><a href="#.remark_text." class="elem">Remarks</a> = <a href="#.bTJIm." class="elem">Hotel Inp Remarks</a>&#39;s value</li>
+<li><a href="#.website_text." class="elem">Website</a> = <a href="#.bTKUJ." class="elem">Hotel Inp Website</a>&#39;s value</li>
+<li><a href="#.zone_text." class="elem">Zone</a> = <a href="#.bTQWs." class="elem">Inp Zone</a>&#39;s value</li>
+<li>When: <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttMode equals <a href="#.bTJlu." class="elem">Edit</a></li>
+</ul></li>
+<li>5. Create a new <a href="..\Data_Types.html#.tourhotel." class="data">TourHotel</a> - &quot;Create a new&quot;
+<ul>
+<li>Name = <a href="#.bTIbN." class="elem">Hotel Inp Name</a>&#39;s value</li>
+<li>Address = <a href="#.bTJiR." class="elem">Hotel Inp Address</a>&#39;s value</li>
+<li>Phone = <a href="#.bTKUb." class="elem">Hotel Inp Phone</a>&#39;s value</li>
+<li>PickupTime = <a href="#.bTRCM." class="elem">Inp Pickup</a>&#39;s value</li>
+<li>Remarks = <a href="#.bTJIm." class="elem">Hotel Inp Remarks</a>&#39;s value</li>
+<li>Website = <a href="#.bTKUJ." class="elem">Hotel Inp Website</a>&#39;s value</li>
+<li>Zone = <a href="#.bTQWs." class="elem">Inp Zone</a>&#39;s value</li>
+<li>When: <a href="#.bTJfe." class="elem">Pop Hotel</a>&#39;s SttMode equals <a href="#.bTJlq." class="elem">Add</a></li>
+</ul></li>
+<li>6. Hide <a href="#.bTJfe." class="elem">Pop Hotel</a> - &quot;Hide&quot;</li>
+<li>7. Reset <a href="#.bTJfe." class="elem">Pop Hotel</a> - &quot;Reset&quot;</li>
+</ul></li>
+</ul>
+</br><p style="text-align: left; font-size: 0.8em; color: lightslategrey;">Generated by<a href="https://www.bdocumenter.com" style="color: rgb(73, 84, 94);">Bubble Documenter</a></p>
+</body>
+</html>
