@@ -1,0 +1,15 @@
+What is a primary goal of System Administration?,Support cost-effective use of the computer environment;Maximize hardware expenses;Increase system downtime;Complicate user interfaces,Support cost-effective use of the computer environment
+What does MDR stand for in the context of IT Service and System Administration?,Monitoring&c Diagnosing&c and Repairing;Managing Data Resources;Multi-Dimensional Reporting;Machine Data Recovery,Monitoring&c Diagnosing&c and Repairing
+Which of these is an example of a problem that MDR aims to address?,Web server crash;Increased user satisfaction;Improved network speed;Software updates,Web server crash
+In the context of MDR&c what is the purpose of "gathering"?,To collect system data for analysis;To ignore system errors;To manually fix hardware;To train new administrators,To collect system data for analysis
+What is a key requirement for "gathering" in MDR?,Flexible data gathering;Limited data collection;Static data storage;Manual data entry,Flexible data gathering
+Which of the following is NOT a fundamental requirement of MDR?,Analyzing;Visualizing;Ignoring;Gathering,Ignoring
+What is the benefit of "self-describing structures" in MDR?,Improved data understanding for humans and computers;Increased data complexity;Reduced data accessibility;Limited data storage,Improved data understanding for humans and computers
+What is the purpose of "End-to-End Notification" in MDR?,To guarantee important messages reach users;To prevent user notifications;To delay error reporting;To hide system problems,To guarantee important messages reach users
+What is the role of "Aggregation and High Resolution Color Displays" in MDR?,To reduce information to manageable amounts;To increase data volume;To hide critical system alerts;To complicate data visualization,To reduce information to manageable amounts
+Which of these is a key innovation in MDR?,Replicated data storage nodes;Centralized data storage;Manual repair processes;Limited system monitoring,Replicated data storage nodes
+What type of data storage nodes are used in MDR for handling scaling and fault-tolerance?,Semi-hierarchical;Centralized;Isolated;Linear,Semi-hierarchical
+What is the benefit of "Self-Configuring" systems in MDR?,Static system settings;Learning relevant statistics automatically;Manual configuration only;Ignoring system changes,Learning relevant statistics automatically
+What is the purpose of "Secure Remote Actions" in MDR?,To automate repairs securely;To allow unauthorized system access;To disable remote access;To perform manual repairs only,To automate repairs securely
+Which of these is a testing methodology used for MDR systems?,Fault injection;Ignoring system faults;Manual testing only;User surveys,Fault injection
+Automated ___ desk is part of supporting users in IT service.,service;help;support;technical,help
