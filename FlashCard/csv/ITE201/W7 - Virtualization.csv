@@ -1,0 +1,15 @@
+What is the main purpose of virtualization?,To optimize application performance;To reduce security risks;To increase the cost of IT infrastructure;To limit hardware compatibility,To optimize application performance
+Which of the following is a key benefit of virtualization?,Cost reduction through resource sharing;Increased hardware complexity;Reduced application compatibility;Higher energy consumption,Cost reduction through resource sharing
+Which type of virtualization involves encapsulating a complete computing environment?,Isolation;Encapsulation;Hardware independence;Portability,Encapsulation
+Which vendor is known for VMware Workstation?,Microsoft;Citrix;VMware;Oracle,VMware
+Which of these is NOT a component of a virtual machine?,Configuration file;Hard disk file(s);Physical CPU;In-memory file,Physical CPU
+What is one of the primary uses of desktop virtualization?,Development and testing;Data backup;Network security;Hardware maintenance,Development and testing
+Which term describes the software that allows multiple operating systems to share a single hardware host?,Hypervisor;Kernel;Firewall;Router,Hypervisor
+In virtualization&c what does "VM" stand for?,Virtual Machine;Verified Memory;Volume Management;Video Module,Virtual Machine
+What is the purpose of VMotion in VMware?,To quickly move a running virtual machine between hosts;To shut down a virtual machine;To back up virtual machine data;To encrypt virtual machine data,To quickly move a running virtual machine between hosts
+Which of the following is a potential security vulnerability in a virtualized environment?,Malicious software running on the same server;Physical hardware failures;Network congestion;Power outages,Malicious software running on the same server
+Which virtualization technique is primarily used for isolating applications from each other on a single operating system?,Application Virtualization;Desktop Virtualization;Server Virtualization;Storage Virtualization,Application Virtualization
+Which architecture separates host OS from the underlying hardware through a virtualization layer?,Type 1 Hypervisor;Type 2 Hypervisor;Containerization;Emulation,Type 1 Hypervisor
+Which of these is a security requirement for virtualization?,A secure run-time environment;Open network interface;Unsecured storage;Public API,A secure run-time environment
+___ are isolated from each other as if they are physically separated.,Virtual machines;Physical servers;Network routers;Storage devices,Virtual machines
+The active memory and precise execution state of a virtual machine can be rapidly transmitted over a high speed ___.,network;bluetooth;wire;USB,network

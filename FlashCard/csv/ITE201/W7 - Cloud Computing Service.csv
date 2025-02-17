@@ -1,0 +1,15 @@
+What is a key characteristic of cloud computing?,On-demand self-service;Limited scalability;Fixed resource allocation;Single-tenant architecture,On-demand self-service
+Which of the following is NOT a cloud deployment model?,Private cloud;Public cloud;Hybrid cloud;Personal cloud,Personal cloud
+Which service model provides access to computing resources such as virtual machines&c storage&c and networks?,IaaS;PaaS;SaaS;FaaS,IaaS
+Which cloud service model provides a platform allowing customers to develop&c run&c and manage applications without the complexity of managing the underlying infrastructure?,PaaS;IaaS;SaaS;DaaS,PaaS
+Which of these is a characteristic of SaaS?,Provides complete control over the operating system;Delivers software over the internet&c on demand;Requires significant upfront investment in hardware;Is only suitable for large enterprises,Delivers software over the internet&c on demand
+What does virtualization enable in cloud computing?,Sharing physical resources among multiple virtual machines;Dedicated hardware for each application;Limited network bandwidth;Restricted data access,Sharing physical resources among multiple virtual machines
+Which of the following is NOT a benefit of cloud computing?,Cost savings;Scalability;Increased security risks;Business agility,Increased security risks
+Which technology enables the creation of multiple virtual machines on a single physical server?,Hypervisor;Containerization;Microservices;Serverless computing,Hypervisor
+What is a major security concern in cloud computing?,Data breaches;Automatic backups;End-to-end encryption;Physical server security,Data breaches
+In the context of cloud computing&c what does the term "scalability" refer to?,Ability to increase or decrease computing resources as needed;Fixed storage capacity;Limited network bandwidth;Static IP addresses,Ability to increase or decrease computing resources as needed
+Which of the following is an example of a cloud storage service?,Amazon S3;Local hard drive;USB flash drive;Network-attached storage (NAS),Amazon S3
+What does the acronym "API" stand for in the context of cloud computing?,Application Programming Interface;Advanced Processing Instruction;Automated Protocol Implementation;Application Performance Indicator,Application Programming Interface
+Which cloud provider offers the Azure platform?,Google;Microsoft;Amazon;Oracle,Microsoft
+What is a virtual machine image (AMI) in Amazon EC2?,A pre-configured template containing an operating system and other software;A physical server;A network router;A database backup,A pre-configured template containing an operating system and other software
+___ computing is Internet-based computing&c whereby shared resources&c software and information are provided to computers and other devices on-demand.,Cloud;Edge;Fog;Grid,Cloud

@@ -1,0 +1,15 @@
+What is a key goal for system administrators when using system administration tools?,To increase system complexity;To automate and streamline tasks;To manually perform all tasks;To ignore system alerts,To automate and streamline tasks
+Which of the following is considered a good practice for system administrators?,Always use the root or administrator account;Avoid creating backups before editing files;Use wildcard characters extensively in commands;Use less privileged accounts for routine tasks,Use less privileged accounts for routine tasks
+In UNIX-like systems&c which command is used to change the current directory?,cd;ls;pwd;mkdir,cd
+Which command in UNIX displays the current working directory?,pwd;cd;ls;rmdir,pwd
+What is the purpose of the 'ls' command in UNIX?,List files and directories;Change directory;Print working directory;Remove directory,List files and directories
+Why is the 'vi' editor often favored by system administrators in UNIX environments?,It is the most user-friendly editor;It is always graphically based;It is widely available and accessible even in single-user mode;It automatically formats code,It is widely available and accessible even in single-user mode
+What are 'pipes' in command-line interfaces used for?,To create visual diagrams;To connect multiple computers;To redirect the output of one command as input to another;To encrypt data transmission,To redirect the output of one command as input to another
+Which command is used in UNIX to view the system process table?,ps;grep;tar;find,ps
+What is the function of the 'grep' command?,To create tape archives;To find a pattern in a file;To manage system processes;To change directory,To find a pattern in a file
+What does 'tar' command primarily do?,Create a tape archive of files;Display system processes;Find files by name;Edit text files,Create a tape archive of files
+Which tool is described as a powerful interpreted scripting language often used by system administrators?,Perl;Sed;Awk;Grep,Perl
+What is the first step in the boot sequence of a computer?,Loading the operating system kernel;Running diagnostic tests (POST);Loading the boot block;Executing start-up scripts,Running diagnostic tests (POST)
+What is the role of the PROM monitor during boot up?,To load the operating system;To initialize system hardware and run diagnostics;To manage user accounts;To configure network settings,To initialize system hardware and run diagnostics
+Which step in the boot sequence involves loading the secondary boot loader?,Step 1: PROM Monitor;Step 2: Boot Block;Step 3: Secondary Boot Loader;Step 4: OS Kernel,Step 2: Boot Block
+In the context of UNIX run levels&c what does 'single-user mode' primarily refer to?,A mode with only graphical interface;A mode for maintenance and administration tasks;A mode for regular user operations;A mode with no network access,A mode for maintenance and administration tasks
